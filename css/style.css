@@ -54,7 +54,8 @@ summary::-webkit-details-marker { display: none; }
 .notice { padding: 12px 16px; background: #fff4dd; color: #78562c; border-radius: 12px; font-size: 12px; margin-bottom: 20px; }
 .view-heading { padding: 14px 0 24px; }
 .panel { background: var(--panel); border: 1px solid var(--line); border-radius: 22px; padding: 26px; }
-.coach-panel { margin-bottom: 22px; }
+.coach-panel { margin-top: 22px; }
+.coach-panel h2 { margin-bottom: 18px; }
 .coach-panel .empty { border: none; padding: 0; }
 .metrics { display: grid; grid-template-columns: repeat(3,1fr); gap: 12px; margin-bottom: 22px; }
 .metric { padding: 18px 20px; border-bottom: 1px solid var(--line); }

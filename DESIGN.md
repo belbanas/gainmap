@@ -17,7 +17,7 @@ The site loads only local images. Missing artwork uses a local fallback.
 
 Strategy labels combine text and a symbol: ↗ weight, + repetition, = hold,
 ↘ correction. Meaning never relies on color alone. Progress displays stored
-coaching; absent coaching has an honest empty state. Hypotheses are labeled and
+coaching at the end of Progress; absent coaching has an honest empty state. Hypotheses are labeled and
 alternative exercises include a condition. No advice is inferred in the browser.
 
 Keyboard focus, semantic headings, details/summary, chart text alternatives and
