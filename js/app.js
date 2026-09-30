@@ -1,25 +1,35 @@
 import { $, number, date, escape as e, empty, strategies, loadJSON, assetPath, comparable, performanceText, durationText } from './utils.js';
 import { validate } from './schema.js';
 import { chart } from './charts.js';
+import { coachingView } from './coaching.js';
 
 let plan = null, history = { sessions: [], records: [] }, demo = false, historyLimit = 10;
 const notice = message => { $('notice').insertAdjacentHTML('beforeend', `<p class="notice">${e(message)}</p>`); };
 function exerciseCard(exercise, index) {
-  const rows = comparable(history.records,exercise);
+  const weights = exercise.workingWeights ?? exercise.targetReps.map(()=>exercise.weight);
   const strategy = strategies[exercise.strategy] ?? ['ISMERETLEN STRATÉGIA','?', 'hold'];
-  const previous = exercise.previous;
-  const sparkRecords = rows.length ? rows.slice(-10) : (exercise.chart??[]).map(point=>({date:point.date,weight:point.value}));
-  const spark = chart(sparkRecords,'weight',exercise.unit,true);
-  const mixedLoads = exercise.workingWeights && new Set(exercise.workingWeights).size > 1;
-  const loadText = mixedLoads ? exercise.workingWeights.map(number).join(' / ') : number(exercise.weight);
-  const previousText = previous ? performanceText(previous) : 'Még nincs összehasonlítható eredmény';
-  const setTargets = exercise.workingWeights ? `<div class="set-targets" aria-label="Sorozatonkénti cél">${exercise.workingWeights.map((weight,i)=>`<span><small>${i+1}. sorozat</small><strong>${number(weight)} ${e(exercise.unit)} × ${number(exercise.targetReps[i])}</strong></span>`).join('')}</div>` : '';
-  return `<article class="exercise-card"><div class="card-head"><img class="exercise-art" src="${assetPath(exercise)}" alt="" loading="lazy"><div><span class="card-index">${String(index+1).padStart(2,'0')} / GYAKORLAT</span><h3>${e(exercise.name)}</h3></div>${exercise.pr?'<span class="pr-chip">✦ Új rekord</span>':''}</div><div class="prescription ${mixedLoads?'mixed-loads':''}"><div><p class="eyebrow">MAI MUNKASÚLY</p><div class="load">${loadText}<small>${e(exercise.unit)}</small></div></div><div><p class="eyebrow">CÉLISMÉTLÉS</p><div class="reps">${exercise.targetReps.map(number).join(' / ')}</div><div class="set-label">${exercise.sets} munkasorozat${exercise.repRange?` · ${exercise.repRange.min}–${exercise.repRange.max} ism.`:''}</div></div></div>${setTargets}<span class="badge ${strategy[2]}"><span aria-hidden="true">${strategy[1]}</span>${strategy[0]}</span><p class="reason">${e(exercise.reasoning)}</p><div class="previous"><span>Előző${previous?` · ${date(previous.date)}`:''}</span><strong>${previousText}</strong></div>${spark?`<div class="mini-chart">${spark}<span>${e(exercise.progressSummary??'Munkasúly alakulása')}<br><span class="muted">${sparkRecords.length} összehasonlítható alkalom</span></span></div>`:''}<details><summary>Legutóbbi teljesítmény</summary>${rows.length?chart(rows.slice(-10),'totalReps',exercise.unit)+rows.slice(-5).reverse().map(r=>`<div class="session-row"><span>${date(r.date)}</span><strong>${performanceText(r)}</strong></div>`).join(''):empty('Még nincs teljesítménytörténet.')}${exercise.estimated1RM!=null?`<p class="muted">Becsült 1RM: ${number(exercise.estimated1RM)} ${e(exercise.unit)}</p>`:''}</details></article>`;
+  const rows = comparable(history.records,exercise).slice(-5).reverse();
+  return `<article class="exercise-card">
+    <div class="exercise-main">
+      <div class="exercise-picture"><img class="exercise-art" src="${assetPath(exercise)}" alt="${e(exercise.name)} bemutatóképe" loading="${index?'lazy':'eager'}"></div>
+      <div class="exercise-content"><span class="card-index">${String(index+1).padStart(2,'0')} · ${exercise.sets} sorozat</span>
+        <h3>${e(exercise.displayName??exercise.name)}</h3>
+        <div class="set-targets" aria-label="Sorozatonkénti cél">${weights.map((weight,i)=>`<span><strong>${number(weight)}<small> ${e(exercise.unit)}</small></strong><span class="times">×</span><strong>${number(exercise.targetReps[i])}<small> ism.</small></strong></span>`).join('')}</div>
+        <span class="strategy ${strategy[2]}">${strategy[1]} ${strategy[0]}</span>
+      </div>
+    </div>
+    <details class="exercise-details"><summary>Előzmény és értékelés <span aria-hidden="true">+</span></summary>
+      ${exercise.previous?`<p class="previous"><span>Előző · ${date(exercise.previous.date)}</span><strong>${performanceText(exercise.previous)}</strong></p>`:empty('Még nincs összehasonlítható előzmény.')}
+      <p class="reason">${e(exercise.reasoning)}</p>
+      ${coachingView(exercise.coaching)}
+      ${rows.length?`<h4>Legutóbbi eredmények</h4>${rows.map(r=>`<div class="session-row"><span>${date(r.date)}</span><strong>${performanceText(r)}</strong></div>`).join('')}`:''}
+    </details>
+  </article>`;
 }
 function renderToday() {
   const currentDate = new Intl.DateTimeFormat('hu-HU',{year:'numeric',month:'long',day:'numeric',weekday:'long',timeZone:'Europe/Budapest'}).format(new Date());
-  $('hero').innerHTML = `<div class="hero"><div><p class="eyebrow">${demo?'DEMO EDZÉSTERV':'KÖVETKEZŐ EDZÉS'}</p><h1>${plan?`Edzés ${plan.workoutType}`:'A következő lépés.'}</h1><p class="hero-description">${e(plan?.summary??'Az edzésterved itt vár majd. Minden fejlődés egy következő lépéssel kezdődik.')}</p><p class="hero-meta">${currentDate}${plan?`<span>${demo?'Demópélda készült':'Utolsó frissítés'}: ${date(plan.generatedAt)} · ${new Intl.DateTimeFormat('hu-HU',{hour:'2-digit',minute:'2-digit',timeZone:'Europe/Budapest'}).format(new Date(plan.generatedAt))}</span>`:''}</p></div><div class="workout-letter" aria-hidden="true">${plan?.workoutType??'↗'}</div></div>`;
-  $('focus').innerHTML = plan?.mainFocus.length?`<div class="focus-box"><p class="eyebrow">↗ MAI FŐ FÓKUSZ</p><div class="focus-items">${plan.mainFocus.map(f=>`<span class="focus-item">${e(f)}</span>`).join('')}</div></div>`:'';
+  $('hero').innerHTML = `<div class="hero"><div><p class="eyebrow">${demo?'DEMO EDZÉSTERV':'KÖVETKEZŐ EDZÉS'} · ${currentDate}</p><h1>${plan?'Csak a következő lépés.':'Itt kezdődik a haladás.'}</h1><p class="hero-meta">${plan?`${plan.exercises.length} gyakorlat · Frissítve: ${date(plan.generatedAt)}`:'Az edzésterved hamarosan itt vár.'}</p></div>${plan?`<span class="workout-letter" aria-label="Edzés ${plan.workoutType}">${plan.workoutType}</span>`:''}</div>`;
+  $('focus').innerHTML = plan?.mainFocus.length?`<details class="focus-box"><summary>Mai fókusz <span aria-hidden="true">↗</span></summary>${plan.mainFocus.map(f=>`<p>${e(f)}</p>`).join('')}</details>`:'';
   $('exercise-count').textContent = plan?`${plan.exercises.length} gyakorlat · ${plan.exercises.reduce((n,x)=>n+x.sets,0)} sorozat`:'';
   $('exercises').innerHTML = plan?plan.exercises.map(exerciseCard).join(''):empty('Nincs még aktuális edzésterv');
   document.querySelectorAll('.exercise-art').forEach(img=>{img.addEventListener('error',()=>{img.src='assets/exercises/fallback.svg';},{once:true});});
@@ -64,12 +74,14 @@ function renderProgress() {
   const prs=history.records.filter(r=>r.pr).sort((a,b)=>b.date.localeCompare(a.date)).slice(0,5);
   const types={weight:'Munkasúly',reps:'Ismétlés adott súlyon',totalReps:'Összismétlés',estimatedStrength:'Becsült erő',estimated1RM:'Becsült 1RM'};
   $('prs').innerHTML=prs.length?prs.map(r=>`<div class="record"><div>✦ ${e(r.name)}<br><span>${date(r.date)} · ${types[r.prType]??'Jelölt rekord'}</span></div><strong>${number(r[r.prType==='reps'?'totalReps':r.prType]??r.weight)} ${r.prType==='reps'||r.prType==='totalReps'?'ism.':e(r.unit)}</strong></div>`).join(''):empty('Még nincs jelölt rekord. A stabil munka is haladás.');
+  $('coaching').innerHTML=coachingView(plan?.coaching);
   renderChart();renderHistory();
 }
 function renderHistory() {
   const sessions=history.sessions.slice().sort((a,b)=>b.date.localeCompare(a.date));
-  $('history-list').innerHTML=sessions.length?sessions.slice(0,historyLimit).map(s=>{const rows=history.records.filter(r=>r.sessionId===s.id);return `<div class="timeline"><span class="type-icon">${s.workoutType}</span><div><strong>Edzés ${s.workoutType}</strong><p>${rows.length+(s.timedExercises?.length??0)} gyakorlat${s.durationMinutes!=null?` · ${number(s.durationMinutes)} perc`:''}${rows.some(r=>r.pr)?' · ✦ Rekord':''}</p></div><time datetime="${s.date}">${date(s.date)}</time></div>${s.timedExercises?.length?`<details><summary>Időalapú gyakorlatok</summary>${s.timedExercises.map(t=>`<div class="session-row"><span>${e(t.name)}</span><strong>${t.durationSeconds.map(durationText).join(' / ')}</strong></div>`).join('')}</details>`:''}`;}).join(''):empty('Még nincsenek rögzített edzések.');
+  $('history-list').innerHTML=sessions.length?sessions.slice(0,historyLimit).map(s=>{const rows=history.records.filter(r=>r.sessionId===s.id);return `<div class="timeline"><span class="type-icon">${s.workoutType??'–'}</span><div><strong>${s.workoutType?`Edzés ${s.workoutType}`:'Egyéb edzés'}</strong><p>${rows.length+(s.timedExercises?.length??0)} gyakorlat${s.durationMinutes!=null?` · ${number(s.durationMinutes)} perc`:''}${rows.some(r=>r.pr)?' · ✦ Rekord':''}</p></div><time datetime="${s.date}">${date(s.date)}</time></div>${s.timedExercises?.length?`<details><summary>Időalapú gyakorlatok</summary>${s.timedExercises.map(t=>`<div class="session-row"><span>${e(t.name)}</span><strong>${t.durationSeconds.map(durationText).join(' / ')}</strong></div>`).join('')}</details>`:''}`;}).join(''):empty('Még nincsenek rögzített edzések.');
   $('more-history').hidden=sessions.length<=historyLimit;
+  $('history-coverage').textContent=sessions.length?`${sessions.length} mentett edzés · ${date(sessions[sessions.length-1].date)} – ${date(sessions[0].date)}`:'';
 }
 async function init() {
   const results=await Promise.allSettled([loadJSON('data/latest.json'),loadJSON('data/history.json')]);
@@ -90,5 +102,13 @@ async function init() {
 }
 for(const id of ['exercise-select','metric-select','window-select'])$(id).addEventListener('change',renderChart);
 $('more-history').addEventListener('click',()=>{historyLimit+=20;renderHistory();});
-document.querySelectorAll('.bottom-nav a').forEach(link=>link.addEventListener('click',()=>{document.querySelectorAll('.bottom-nav a').forEach(a=>a.removeAttribute('aria-current'));link.setAttribute('aria-current','page');}));
+function showView() {
+  const id=['today','progress','history'].includes(location.hash.slice(1))?location.hash.slice(1):'today';
+  for(const view of ['today','progress','history'])$(view).hidden=view!==id;
+  document.querySelectorAll('.bottom-nav a').forEach(link=>{
+    if(link.hash===`#${id}`)link.setAttribute('aria-current','page');else link.removeAttribute('aria-current');
+  });
+}
+window.addEventListener('hashchange',()=>{showView();window.scrollTo({top:0,behavior:'instant'});});
+showView();
 init().catch(()=>{ $('exercises').innerHTML=empty('Nincs még aktuális edzésterv');$('mode').textContent='Nincs adat'; });

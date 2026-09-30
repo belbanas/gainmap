@@ -1,23 +1,28 @@
 # GainMap visual system
 
-Dark-first, mobile-first Hungarian workout companion. Training is first; analytics
-follow all exercise cards. The opening screen shows the A/B plan, focus, and first
-exercise at 375–430 px. Desktop uses two exercise columns within a 1180 px container.
+Light, mobile-first Hungarian workout companion. White cards on #f7f8fa, text
+#202530, secondary text #667080, restrained blue #2864d7. No green theme. System
+fonts and local assets avoid external runtime dependencies.
 
-Palette: background #101513, panel #19211d, text #eef3ed, secondary #a6b3aa,
-progress lime #c7f894, repetition mint #86dfc5, correction amber #f1c38c.
-System fonts avoid remote dependencies. Load and target reps dominate each card.
-Rounded 22 px panels, faint borders, restrained gradients, and ample spacing create
-depth. The original upward map mark is available as SVG and raster home-screen icons.
+Today, Progress and History are separate hash-routed views. Today's screen shows
+the next A/B plan and one column of spacious exercise rows in a 940 px container.
+Each row has an exercise-specific picture, title and per-set load × target reps.
+Detailed reasoning, past results and coaching are collapsed under a 44 px summary.
+The focus list is also collapsed. Rounded white panels, thin gray borders and
+generous spacing keep the main plan readable at 375–430 px widths.
 
-Strategy labels always include a symbol and producer-supplied reasoning: ↗ weight,
-+ repetition, = hold, ↘ correction. Never encode meaning with color alone.
-Decorative fallback illustrations use the same palette. Touch targets are ≥44 px.
-Keyboard focus, semantic sections, details/summary, chart text alternatives, and
-reduced-motion behavior are required. Avoid animated chart reveals.
+Original public Lyfta thumbnails were added at the user's explicit request; their
+public sources and third-party ownership are documented in assets/exercises/README.md.
+The site loads only local images. Missing artwork uses a local fallback.
 
-Charts have explicit numeric axes, chronological x coordinates, units, subtle grids,
-and expanded minimum domains to avoid exaggerating small changes. Missing metric
-values break lines. A comparison group and unit never share a line with another.
-Every detailed chart exposes readable values for keyboard and touch users.
-Visible windows anchor to the last recorded session, with a full-history option.
+Strategy labels combine text and a symbol: ↗ weight, + repetition, = hold,
+↘ correction. Meaning never relies on color alone. Progress displays stored
+coaching; absent coaching has an honest empty state. Hypotheses are labeled and
+alternative exercises include a condition. No advice is inferred in the browser.
+
+Keyboard focus, semantic headings, details/summary, chart text alternatives and
+reduced-motion behavior are required. Bottom navigation identifies the current
+view. Charts use numeric axes, chronological coordinates, units, subtle grids and
+expanded minimum domains. Missing values break lines. A line requires identical
+exercise, comparison group and unit. Charts expose readable data for touch and
+keyboard users. Windows anchor to the last recorded session; full history is optional.

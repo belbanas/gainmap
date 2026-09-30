@@ -26,21 +26,38 @@ export function validate(kind, data, strict = false) {
     day(v.date,p+'.date'); num(v.weight,p+'.weight'); text(v.unit,p+'.unit'); num(v.sets,p+'.sets',true); reps(v.reps,p+'.reps',v.sets); id(v.comparisonGroup,p+'.comparisonGroup');
     weights(v,p);
   };
+  const coaching = (v,p) => {
+    if(v===undefined||v===null)return;
+    if(!object(v,p,['generatedAt','assessment','evaluation','evidence','advice','possibleCauses','alternative','followUp']))return;
+    timestamp(v.generatedAt,p+'.generatedAt');
+    choice(v.assessment,p+'.assessment',['improving','stable','mixed','needs_attention','insufficient_data']);
+    text(v.evaluation,p+'.evaluation');
+    for(const key of ['evidence','advice','followUp'])list(v[key],p+'.'+key,text);
+    list(v.possibleCauses,p+'.possibleCauses',(c,cp)=>{
+      if(!object(c,cp,['text','confidence']))return;
+      text(c.text,cp+'.text');choice(c.confidence,cp+'.confidence',['hypothesis','supported']);
+    });
+    if(v.alternative!==null&&object(v.alternative,p+'.alternative',['name','reason','condition']))
+      for(const key of ['name','reason','condition'])text(v.alternative[key],p+'.alternative.'+key);
+  };
   function latest(v,p) {
-    if (!object(v,p,['schemaVersion','generatedAt','status','workoutType','mainFocus','exercises','summary'])) return;
+    if (!object(v,p,['schemaVersion','generatedAt','status','workoutType','mainFocus','exercises','summary','coaching'])) return;
     if(v.schemaVersion!==1) fail(p+'.schemaVersion','unsupported schema version');
     timestamp(v.generatedAt,p+'.generatedAt'); choice(v.status,p+'.status',['ready','empty','upstream_error']);
     choice(v.workoutType,p+'.workoutType',v.status==='empty'?[null]:['A','B']);
     if(v.summary!==undefined) text(v.summary,p+'.summary');
+    coaching(v.coaching,p+'.coaching');
     list(v.mainFocus,p+'.mainFocus',text); if(Array.isArray(v.mainFocus)&&v.mainFocus.length>3) fail(p+'.mainFocus','maximum 3 items');
     const ids=new Set();
     list(v.exercises,p+'.exercises',(e,ep)=>{
-      if(!object(e,ep,['id','name','image','weight','workingWeights','unit','sets','targetReps','repRange','strategy','previous','reasoning','progressSummary','comparisonGroup','pr','change','estimatedStrength','estimated1RM','chart'])) return;
+      if(!object(e,ep,['id','name','displayName','image','weight','workingWeights','unit','sets','targetReps','repRange','strategy','previous','reasoning','progressSummary','comparisonGroup','pr','change','estimatedStrength','estimated1RM','chart','coaching'])) return;
       id(e.id,ep+'.id'); if(ids.has(e.id)) fail(ep+'.id','duplicate exercise'); ids.add(e.id);
       text(e.name,ep+'.name'); num(e.weight,ep+'.weight'); text(e.unit,ep+'.unit'); num(e.sets,ep+'.sets',true); reps(e.targetReps,ep+'.targetReps',e.sets);
       weights(e,ep);
+      coaching(e.coaching,ep+'.coaching');
+      if(e.displayName!==undefined)text(e.displayName,ep+'.displayName');
       choice(e.strategy,ep+'.strategy',STRATEGIES); text(e.reasoning,ep+'.reasoning'); id(e.comparisonGroup,ep+'.comparisonGroup');
-      if(e.image!==undefined && e.image!==null && !/^assets\/exercises\/[a-z0-9-]+\.(svg|png|webp)$/.test(e.image)) fail(ep+'.image','local exercise asset required');
+      if(e.image!==undefined && e.image!==null && !/^assets\/exercises\/[a-z0-9-]+\.(svg|png|webp|jpg)$/.test(e.image)) fail(ep+'.image','local exercise asset required');
       if(e.previous!==null){ performance(e.previous,ep+'.previous'); if(e.previous && (e.previous.comparisonGroup!==e.comparisonGroup||e.previous.unit!==e.unit)) fail(ep+'.previous','incomparable previous performance'); }
       if(e.repRange!==undefined&&e.repRange!==null){ if(object(e.repRange,ep+'.repRange',['min','max'])){num(e.repRange.min,ep+'.repRange.min',true);num(e.repRange.max,ep+'.repRange.max',true);if(e.repRange.min>e.repRange.max)fail(ep+'.repRange','min exceeds max');}}
       for(const key of ['progressSummary']) if(e[key]!==undefined&&e[key]!==null) text(e[key],ep+'.'+key);
@@ -57,7 +74,7 @@ export function validate(kind, data, strict = false) {
     const sessions=new Map();
     list(v.sessions,p+'.sessions',(s,sp)=>{
       if(!object(s,sp,['id','date','workoutType','durationMinutes','timedExercises']))return;
-      id(s.id,sp+'.id');day(s.date,sp+'.date');choice(s.workoutType,sp+'.workoutType',['A','B']);
+      id(s.id,sp+'.id');day(s.date,sp+'.date');choice(s.workoutType,sp+'.workoutType',['A','B',null]);
       if(s.durationMinutes!==undefined&&s.durationMinutes!==null)num(s.durationMinutes,sp+'.durationMinutes');
       if(s.timedExercises!==undefined)list(s.timedExercises,sp+'.timedExercises',(t,tp)=>{
         if(!object(t,tp,['id','name','durationSeconds']))return;
@@ -76,7 +93,7 @@ export function validate(kind, data, strict = false) {
       if(r.volume!=null&&(!Number.isFinite(volume)||Math.abs(r.volume-volume)>0.01))fail(rp+'.volume','must equal sum of set weight × reps');
       if(typeof r.pr!=='boolean')fail(rp+'.pr','boolean required');
       if(r.prType!==undefined&&r.prType!==null)choice(r.prType,rp+'.prType',['weight','reps','totalReps','estimatedStrength','estimated1RM']);
-      choice(r.workoutType,rp+'.workoutType',['A','B']);choice(r.progressionResult,rp+'.progressionResult',['improved','stable','dip','unknown']);
+      choice(r.workoutType,rp+'.workoutType',['A','B',null]);choice(r.progressionResult,rp+'.progressionResult',['improved','stable','dip','unknown']);
       const s=sessions.get(r.sessionId);if(!s||s.date!==r.date||s.workoutType!==r.workoutType)fail(rp+'.sessionId','matching local session required');
       const key=r.sessionId+'|'+r.exerciseId+'|'+r.comparisonGroup;if(records.has(key))fail(rp,'duplicate record');records.add(key);
     });

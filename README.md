@@ -4,7 +4,8 @@ A Hungarian, mobile-first static workout dashboard: today's A/B recommendation,
 working load, target reps, progression guidance, and comparable performance trends.
 The foundation included synthetic demo examples; current latest/history may contain
 sanitized real training data. Demo remains separately available. There is no live Lyfta
-connection, scheduled updater, backend, authentication, framework, or build step.
+connection in the browser, backend, authentication, framework, or build step.
+The authorized Codex schedule updates the local data and pushes it to GitHub.
 
 ## Preview and validate
 
@@ -93,11 +94,20 @@ or offline cache that could conceal stale workout recommendations.
 
 ## Future local updater
 
-Not implemented here. An authorized local agent will access the read-only Lyfta
-plugin, infer the next A/B session from completed workouts, analyze comparable
-working sets, sanitize data, and update **data/latest.json and data/history.json**.
+The Codex schedule runs Monday, Wednesday and Friday at 15:00 Europe/Budapest.
+Its reusable instructions are in AUTOMATION_PROMPT.md. The scheduled agent accesses the read-only Lyfta
+plugin, infers the next A/B session from completed workouts, analyzes comparable
+working sets, sanitizes data, and updates **data/latest.json and data/history.json**.
 Follow AGENTS.md, WORKOUT_RULES.md, DATA_SCHEMA.md, and SECURITY.md.
 Never regenerate the interface on routine runs or overwrite valid data on failure.
+
+The expanded import preserves 61 retrieved sessions, 2026-03-10 to 2026-09-30,
+including duration-only sessions with no invented A/B type. The connector limits
+recent workouts and each exercise history to 20 matches; this is all retrieved
+history, not a claim that every past workout was accessible. Existing local IDs and
+per-set loads are preserved. Imported older results do not invent PRs or coaching.
+Stored coaching fields support evidence, advice, possible causes and conditional
+exercise alternatives; they remain empty until a scheduled analysis supplies them.
 
 ```sh
 node scripts/validate-data.mjs

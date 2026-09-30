@@ -24,6 +24,7 @@ missing/null break chart lines. Chart groups require identical exercise, group, 
 | mainFocus | string[], yes | 0–3 reviewed guidance items |
 | exercises | exercise[], yes | Nonempty for ready; empty for empty; retained plan for upstream_error |
 | summary | string, optional | Short reviewed workout introduction |
+| coaching | object/null, optional | Stored scheduled assessment; see Coaching below |
 
 Empty status explicitly enables synthetic demo fallback. It must never be used to
 replace valid real data after upstream failure. upstream_error may have an empty
@@ -35,7 +36,9 @@ exercise array only when no previous valid plan exists; otherwise retain the pla
 |---|---|---|
 | id | slug, yes | Stable local exercise ID, chest-press |
 | name | string, yes | Display name, Chest Press |
-| image | string/null, optional | assets/exercises/chest-press.svg; local svg/png/webp |
+| displayName | string, optional | Short display label; name remains the source exercise name |
+| image | string/null, optional | assets/exercises/chest-press.svg; local svg/png/webp/jpg |
+| coaching | object/null, optional | Exercise-specific stored assessment; see Coaching below |
 | weight | number, yes | Recommended first working-set load, 70 |
 | workingWeights | number[], optional | One load per working set, e.g. [70,60]; first equals weight. Omission means weight applies to every set. Not nullable. |
 | unit | string, yes | Preserved unit, kg; no implicit conversion |
@@ -84,7 +87,7 @@ Required top-level fields: `schemaVersion` (exactly 1), `sessions` (session arra
 |---|---|---|
 | id | slug, yes | Generated local session ID, session-001; not source workout ID |
 | date | date, yes | Completion date |
-| workoutType | A/B, yes | Actual completed workout |
+| workoutType | A/B/null, yes | Actual completed workout; null for an unclassified session |
 | durationMinutes | number/null, optional | Duration if available |
 | timedExercises | object[], optional | Duration-only exercises; each requires local id (slug), name (string), durationSeconds (nonempty array of nonnegative integer seconds, one per recorded set). No weight or fabricated reps. |
 
@@ -112,7 +115,7 @@ charts or volume calculations. Example: Front Plank with durationSeconds [94,94]
 | estimated1RM | number/null, optional | Same-unit 1RM estimate |
 | pr | boolean, yes | Explicit producer decision |
 | prType | enum/null, optional | weight, reps, totalReps, estimatedStrength, estimated1RM |
-| workoutType | A/B, yes | Must match session |
+| workoutType | A/B/null, yes | Must match session |
 | progressionResult | enum, yes | improved, stable, dip, unknown |
 
 One record per session/exercise/group. Different unit histories remain separate even
@@ -124,6 +127,29 @@ For `reps` PRs the UI shows total reps at the stored load; PR criteria remain pr
 responsibility. This foundation's demo estimates use Epley on the best working set,
 weight × (1 + max reps/30), for demonstration only. Future estimates must use a
 consistent documented calculation within a comparison group.
+
+## Coaching
+
+Optional `latest.coaching` and `latest.exercises[].coaching` are null or objects.
+The browser displays these fields and never generates training advice. Missing/null
+shows an empty assessment state; the scheduled producer supplies the content.
+All fields below are required when an object exists. Text uses the same 500-character
+limit and privacy rules as other strings; empty arrays are allowed.
+
+| Field | Type | Meaning |
+|---|---|---|
+| generatedAt | timestamp | Assessment creation time |
+| assessment | enum | improving, stable, mixed, needs_attention, insufficient_data |
+| evaluation | string | Concise Hungarian progress evaluation |
+| evidence | string[] | Factual observations from comparable working sets |
+| advice | string[] | Practical next steps |
+| possibleCauses | object[] | Each requires text (string), confidence (hypothesis or supported) |
+| alternative | object/null | A conditional substitution: name, reason, condition (all strings) |
+| followUp | string[] | Questions needed to clarify insufficient evidence |
+
+Never present a possible cause as established without evidence. The UI labels
+hypotheses explicitly. A substitution is a suggestion, not a silent plan change.
+Do not store identifying comments or raw source notes in any coaching text.
 
 ## demo.json
 

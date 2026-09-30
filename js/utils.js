@@ -20,7 +20,7 @@ export async function loadJSON(path) {
 }
 export function assetPath(exercise) {
   const path = exercise.image ?? `assets/exercises/${exercise.id}.svg`;
-  return /^assets\/exercises\/[a-z0-9-]+\.(svg|png|webp)$/.test(path) ? path : 'assets/exercises/fallback.svg';
+  return /^assets\/exercises\/[a-z0-9-]+\.(svg|png|webp|jpg)$/.test(path) ? path : 'assets/exercises/fallback.svg';
 }
 export function comparable(records, exercise) {
   return records.filter(record => record.exerciseId === exercise.id && record.comparisonGroup === exercise.comparisonGroup && record.unit === exercise.unit).sort((a, b) => a.date.localeCompare(b.date));

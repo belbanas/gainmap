@@ -18,8 +18,9 @@ valid only on the previous setup. Do not store source comments verbatim.
 Future authorized workflow: read-only Lyfta plugin → sanitized history → infer A/B
 from completed sessions → comparable working-set analysis → JSON update → validate
 → review staged diff → commit → push → GitHub Pages. Do not implement this workflow
-or connect to Lyfta as part of foundation work. Schedules may run Monday, Wednesday,
-Friday before training, but weekdays do not determine A/B.
+or connect to Lyfta as part of foundation work. The user has now authorized an
+ongoing update schedule on Monday, Wednesday, Friday at 15:00 Europe/Budapest;
+weekdays do not determine A/B. See AUTOMATION_PROMPT.md for the authorized workflow.
 
 Never fabricate history or recommendations. Never commit identity, credentials,
 account metadata, external IDs, raw responses, or unreviewed free-text source notes.

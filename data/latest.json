@@ -47,7 +47,8 @@
       "change": {
         "weight": 0,
         "totalReps": 0
-      }
+      },
+      "image": "assets/exercises/dumbbell-bench-press.jpg"
     },
     {
       "id": "dumbbell-incline-bench-press",
@@ -86,7 +87,8 @@
       "change": {
         "weight": 0,
         "totalReps": 0
-      }
+      },
+      "image": "assets/exercises/dumbbell-incline-bench-press.jpg"
     },
     {
       "id": "cable-standing-fly",
@@ -125,7 +127,8 @@
       "change": {
         "weight": 0,
         "totalReps": 0
-      }
+      },
+      "image": "assets/exercises/cable-standing-fly.jpg"
     },
     {
       "id": "sled-45-leg-wide-press",
@@ -164,7 +167,8 @@
       "change": {
         "weight": 0,
         "totalReps": 0
-      }
+      },
+      "image": "assets/exercises/sled-45-leg-wide-press.jpg"
     },
     {
       "id": "lever-seated-leg-curl",
@@ -203,7 +207,8 @@
       "change": {
         "weight": 0,
         "totalReps": 0
-      }
+      },
+      "image": "assets/exercises/lever-seated-leg-curl.jpg"
     },
     {
       "id": "lever-standing-calf-raise",
@@ -242,7 +247,8 @@
       "change": {
         "weight": 0,
         "totalReps": 0
-      }
+      },
+      "image": "assets/exercises/lever-standing-calf-raise.jpg"
     },
     {
       "id": "lever-preacher-curl",
@@ -281,7 +287,8 @@
       "change": {
         "weight": 0,
         "totalReps": 0
-      }
+      },
+      "image": "assets/exercises/lever-preacher-curl.jpg"
     },
     {
       "id": "dumbbell-incline-biceps-curl",
@@ -320,7 +327,8 @@
       "change": {
         "weight": 0,
         "totalReps": 1
-      }
+      },
+      "image": "assets/exercises/dumbbell-incline-biceps-curl.jpg"
     },
     {
       "id": "dumbbell-one-arm-hammer-preacher-curl",
@@ -355,7 +363,8 @@
       "change": {
         "weight": 0,
         "totalReps": 1
-      }
+      },
+      "image": "assets/exercises/dumbbell-one-arm-hammer-preacher-curl.jpg"
     }
   ]
 }
