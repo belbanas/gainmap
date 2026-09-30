@@ -1,0 +1,1981 @@
+{
+  "schemaVersion": 1,
+  "synthetic": true,
+  "latest": {
+    "schemaVersion": 1,
+    "generatedAt": "2026-09-28T05:00:00Z",
+    "status": "ready",
+    "workoutType": "A",
+    "summary": "Egy ismétléssel előrébb. Egy lépéssel erősebb.",
+    "mainFocus": [
+      "Chest Press: +1 összismétlés",
+      "Lat Pulldown: +5 kg",
+      "Leg Press: stabil teljesítmény"
+    ],
+    "exercises": [
+      {
+        "id": "chest-press",
+        "name": "Chest Press",
+        "weight": 70,
+        "unit": "kg",
+        "sets": 3,
+        "targetReps": [
+          10,
+          10,
+          9
+        ],
+        "repRange": {
+          "min": 8,
+          "max": 12
+        },
+        "strategy": "REP_PROGRESSION",
+        "previous": {
+          "date": "2026-09-23",
+          "weight": 70,
+          "unit": "kg",
+          "sets": 3,
+          "reps": [
+            10,
+            10,
+            8
+          ],
+          "comparisonGroup": "chest-press-machine-1"
+        },
+        "reasoning": "Tartsd a súlyt, a harmadik sorozatban célozz meg még egy ismétlést.",
+        "comparisonGroup": "chest-press-machine-1",
+        "pr": true,
+        "change": {
+          "weight": 0,
+          "totalReps": 1
+        },
+        "progressSummary": "Munkasúly: 60 → 70 kg",
+        "estimatedStrength": 93.3,
+        "estimated1RM": 93.3
+      },
+      {
+        "id": "lat-pulldown",
+        "name": "Lat Pulldown",
+        "weight": 60,
+        "unit": "kg",
+        "sets": 3,
+        "targetReps": [
+          8,
+          8,
+          8
+        ],
+        "repRange": {
+          "min": 8,
+          "max": 12
+        },
+        "strategy": "WEIGHT_INCREASE",
+        "previous": {
+          "date": "2026-09-23",
+          "weight": 55,
+          "unit": "kg",
+          "sets": 3,
+          "reps": [
+            12,
+            12,
+            12
+          ],
+          "comparisonGroup": "lat-pulldown-machine-1"
+        },
+        "reasoning": "Az előző terhelésen stabil a felső ismétléshatár. A következő lépés +5 kg.",
+        "comparisonGroup": "lat-pulldown-machine-1",
+        "pr": false,
+        "change": {
+          "weight": 5,
+          "totalReps": -12
+        },
+        "progressSummary": "Munkasúly: 50 → 55 kg",
+        "estimatedStrength": 77.0,
+        "estimated1RM": 77.0
+      },
+      {
+        "id": "leg-press",
+        "name": "Leg Press",
+        "weight": 160,
+        "unit": "kg",
+        "sets": 3,
+        "targetReps": [
+          10,
+          10,
+          10
+        ],
+        "repRange": {
+          "min": 8,
+          "max": 12
+        },
+        "strategy": "HOLD",
+        "previous": {
+          "date": "2026-09-23",
+          "weight": 160,
+          "unit": "kg",
+          "sets": 3,
+          "reps": [
+            10,
+            10,
+            10
+          ],
+          "comparisonGroup": "leg-press-machine-1"
+        },
+        "reasoning": "Ismételd meg az új súlyon elért eredményt, kontrollált végrehajtással.",
+        "comparisonGroup": "leg-press-machine-1",
+        "pr": true,
+        "change": {
+          "weight": 0,
+          "totalReps": 0
+        },
+        "progressSummary": "Munkasúly: 140 → 160 kg",
+        "estimatedStrength": 213.3,
+        "estimated1RM": 213.3
+      },
+      {
+        "id": "cable-curl",
+        "name": "Cable Curl",
+        "weight": 17.5,
+        "unit": "kg",
+        "sets": 3,
+        "targetReps": [
+          10,
+          10,
+          10
+        ],
+        "repRange": {
+          "min": 8,
+          "max": 12
+        },
+        "strategy": "CORRECTION",
+        "previous": {
+          "date": "2026-09-23",
+          "weight": 20,
+          "unit": "kg",
+          "sets": 3,
+          "reps": [
+            8,
+            7,
+            6
+          ],
+          "comparisonGroup": "cable-curl-machine-1"
+        },
+        "reasoning": "Három összehasonlítható alkalom csökkenő ismétlésszáma után mérsékelt terheléskorrekció.",
+        "comparisonGroup": "cable-curl-machine-1",
+        "pr": false,
+        "change": {
+          "weight": -2.5,
+          "totalReps": 9
+        },
+        "progressSummary": "Munkasúly: 17.5 → 20 kg",
+        "estimatedStrength": 25.3,
+        "estimated1RM": 25.3
+      }
+    ]
+  },
+  "history": {
+    "schemaVersion": 1,
+    "sessions": [
+      {
+        "id": "session-001",
+        "date": "2026-08-03",
+        "workoutType": "A",
+        "durationMinutes": 48
+      },
+      {
+        "id": "session-002",
+        "date": "2026-08-05",
+        "workoutType": "B",
+        "durationMinutes": 51
+      },
+      {
+        "id": "session-003",
+        "date": "2026-08-07",
+        "workoutType": "A",
+        "durationMinutes": 54
+      },
+      {
+        "id": "session-004",
+        "date": "2026-08-10",
+        "workoutType": "B",
+        "durationMinutes": 57
+      },
+      {
+        "id": "session-005",
+        "date": "2026-08-12",
+        "workoutType": "A",
+        "durationMinutes": 60
+      },
+      {
+        "id": "session-006",
+        "date": "2026-08-14",
+        "workoutType": "B",
+        "durationMinutes": 48
+      },
+      {
+        "id": "session-007",
+        "date": "2026-08-17",
+        "workoutType": "A",
+        "durationMinutes": 51
+      },
+      {
+        "id": "session-008",
+        "date": "2026-08-19",
+        "workoutType": "B",
+        "durationMinutes": 54
+      },
+      {
+        "id": "session-009",
+        "date": "2026-08-21",
+        "workoutType": "A",
+        "durationMinutes": 57
+      },
+      {
+        "id": "session-010",
+        "date": "2026-08-24",
+        "workoutType": "B",
+        "durationMinutes": 60
+      },
+      {
+        "id": "session-011",
+        "date": "2026-08-26",
+        "workoutType": "A",
+        "durationMinutes": 48
+      },
+      {
+        "id": "session-012",
+        "date": "2026-08-28",
+        "workoutType": "B",
+        "durationMinutes": 51
+      },
+      {
+        "id": "session-013",
+        "date": "2026-08-31",
+        "workoutType": "A",
+        "durationMinutes": 54
+      },
+      {
+        "id": "session-014",
+        "date": "2026-09-02",
+        "workoutType": "B",
+        "durationMinutes": 57
+      },
+      {
+        "id": "session-015",
+        "date": "2026-09-04",
+        "workoutType": "A",
+        "durationMinutes": 60
+      },
+      {
+        "id": "session-016",
+        "date": "2026-09-07",
+        "workoutType": "B",
+        "durationMinutes": 48
+      },
+      {
+        "id": "session-017",
+        "date": "2026-09-09",
+        "workoutType": "A",
+        "durationMinutes": 51
+      },
+      {
+        "id": "session-018",
+        "date": "2026-09-11",
+        "workoutType": "B",
+        "durationMinutes": 54
+      },
+      {
+        "id": "session-019",
+        "date": "2026-09-14",
+        "workoutType": "A",
+        "durationMinutes": 57
+      },
+      {
+        "id": "session-020",
+        "date": "2026-09-16",
+        "workoutType": "B",
+        "durationMinutes": 60
+      },
+      {
+        "id": "session-021",
+        "date": "2026-09-18",
+        "workoutType": "A",
+        "durationMinutes": 48
+      },
+      {
+        "id": "session-022",
+        "date": "2026-09-21",
+        "workoutType": "B",
+        "durationMinutes": 51
+      },
+      {
+        "id": "session-023",
+        "date": "2026-09-23",
+        "workoutType": "A",
+        "durationMinutes": 54
+      },
+      {
+        "id": "session-024",
+        "date": "2026-09-25",
+        "workoutType": "B",
+        "durationMinutes": 57
+      }
+    ],
+    "records": [
+      {
+        "sessionId": "session-001",
+        "date": "2026-08-03",
+        "exerciseId": "chest-press",
+        "name": "Chest Press",
+        "comparisonGroup": "chest-press-machine-1",
+        "weight": 60,
+        "unit": "kg",
+        "sets": 3,
+        "reps": [
+          10,
+          10,
+          8
+        ],
+        "totalReps": 28,
+        "volume": 1680,
+        "estimatedStrength": 80.0,
+        "estimated1RM": 80.0,
+        "pr": false,
+        "prType": null,
+        "workoutType": "A",
+        "progressionResult": "improved"
+      },
+      {
+        "sessionId": "session-001",
+        "date": "2026-08-03",
+        "exerciseId": "lat-pulldown",
+        "name": "Lat Pulldown",
+        "comparisonGroup": "lat-pulldown-machine-1",
+        "weight": 50,
+        "unit": "kg",
+        "sets": 3,
+        "reps": [
+          10,
+          10,
+          9
+        ],
+        "totalReps": 29,
+        "volume": 1450,
+        "estimatedStrength": 66.7,
+        "estimated1RM": 66.7,
+        "pr": false,
+        "prType": null,
+        "workoutType": "A",
+        "progressionResult": "improved"
+      },
+      {
+        "sessionId": "session-001",
+        "date": "2026-08-03",
+        "exerciseId": "leg-press",
+        "name": "Leg Press",
+        "comparisonGroup": "leg-press-machine-1",
+        "weight": 140,
+        "unit": "kg",
+        "sets": 3,
+        "reps": [
+          10,
+          10,
+          10
+        ],
+        "totalReps": 30,
+        "volume": 4200,
+        "estimatedStrength": 186.7,
+        "estimated1RM": 186.7,
+        "pr": false,
+        "prType": null,
+        "workoutType": "A",
+        "progressionResult": "improved"
+      },
+      {
+        "sessionId": "session-001",
+        "date": "2026-08-03",
+        "exerciseId": "cable-curl",
+        "name": "Cable Curl",
+        "comparisonGroup": "cable-curl-machine-1",
+        "weight": 17.5,
+        "unit": "kg",
+        "sets": 3,
+        "reps": [
+          10,
+          10,
+          9
+        ],
+        "totalReps": 29,
+        "volume": 507.5,
+        "estimatedStrength": 23.3,
+        "estimated1RM": 23.3,
+        "pr": false,
+        "prType": null,
+        "workoutType": "A",
+        "progressionResult": "improved"
+      },
+      {
+        "sessionId": "session-002",
+        "date": "2026-08-05",
+        "exerciseId": "seated-row",
+        "name": "Seated Row",
+        "comparisonGroup": "seated-row-machine-1",
+        "weight": 45.0,
+        "unit": "kg",
+        "sets": 3,
+        "reps": [
+          10,
+          10,
+          9
+        ],
+        "totalReps": 29,
+        "volume": 1305.0,
+        "estimatedStrength": 60.0,
+        "estimated1RM": 60.0,
+        "pr": false,
+        "prType": null,
+        "workoutType": "B",
+        "progressionResult": "stable"
+      },
+      {
+        "sessionId": "session-002",
+        "date": "2026-08-05",
+        "exerciseId": "goblet-squat",
+        "name": "Goblet Squat",
+        "comparisonGroup": "goblet-squat-machine-1",
+        "weight": 22.5,
+        "unit": "kg",
+        "sets": 3,
+        "reps": [
+          12,
+          12,
+          11
+        ],
+        "totalReps": 35,
+        "volume": 787.5,
+        "estimatedStrength": 31.5,
+        "estimated1RM": 31.5,
+        "pr": false,
+        "prType": null,
+        "workoutType": "B",
+        "progressionResult": "stable"
+      },
+      {
+        "sessionId": "session-003",
+        "date": "2026-08-07",
+        "exerciseId": "chest-press",
+        "name": "Chest Press",
+        "comparisonGroup": "chest-press-machine-1",
+        "weight": 60,
+        "unit": "kg",
+        "sets": 3,
+        "reps": [
+          10,
+          10,
+          9
+        ],
+        "totalReps": 29,
+        "volume": 1740,
+        "estimatedStrength": 80.0,
+        "estimated1RM": 80.0,
+        "pr": false,
+        "prType": null,
+        "workoutType": "A",
+        "progressionResult": "stable"
+      },
+      {
+        "sessionId": "session-003",
+        "date": "2026-08-07",
+        "exerciseId": "lat-pulldown",
+        "name": "Lat Pulldown",
+        "comparisonGroup": "lat-pulldown-machine-1",
+        "weight": 50,
+        "unit": "kg",
+        "sets": 3,
+        "reps": [
+          10,
+          10,
+          10
+        ],
+        "totalReps": 30,
+        "volume": 1500,
+        "estimatedStrength": 66.7,
+        "estimated1RM": 66.7,
+        "pr": false,
+        "prType": null,
+        "workoutType": "A",
+        "progressionResult": "stable"
+      },
+      {
+        "sessionId": "session-003",
+        "date": "2026-08-07",
+        "exerciseId": "leg-press",
+        "name": "Leg Press",
+        "comparisonGroup": "leg-press-machine-1",
+        "weight": 140,
+        "unit": "kg",
+        "sets": 3,
+        "reps": [
+          10,
+          10,
+          10
+        ],
+        "totalReps": 30,
+        "volume": 4200,
+        "estimatedStrength": 186.7,
+        "estimated1RM": 186.7,
+        "pr": false,
+        "prType": null,
+        "workoutType": "A",
+        "progressionResult": "stable"
+      },
+      {
+        "sessionId": "session-003",
+        "date": "2026-08-07",
+        "exerciseId": "cable-curl",
+        "name": "Cable Curl",
+        "comparisonGroup": "cable-curl-machine-1",
+        "weight": 17.5,
+        "unit": "kg",
+        "sets": 3,
+        "reps": [
+          10,
+          10,
+          9
+        ],
+        "totalReps": 29,
+        "volume": 507.5,
+        "estimatedStrength": 23.3,
+        "estimated1RM": 23.3,
+        "pr": false,
+        "prType": null,
+        "workoutType": "A",
+        "progressionResult": "stable"
+      },
+      {
+        "sessionId": "session-004",
+        "date": "2026-08-10",
+        "exerciseId": "seated-row",
+        "name": "Seated Row",
+        "comparisonGroup": "seated-row-machine-1",
+        "weight": 45.0,
+        "unit": "kg",
+        "sets": 3,
+        "reps": [
+          10,
+          10,
+          9
+        ],
+        "totalReps": 29,
+        "volume": 1305.0,
+        "estimatedStrength": 60.0,
+        "estimated1RM": 60.0,
+        "pr": false,
+        "prType": null,
+        "workoutType": "B",
+        "progressionResult": "stable"
+      },
+      {
+        "sessionId": "session-004",
+        "date": "2026-08-10",
+        "exerciseId": "goblet-squat",
+        "name": "Goblet Squat",
+        "comparisonGroup": "goblet-squat-machine-1",
+        "weight": 22.5,
+        "unit": "kg",
+        "sets": 3,
+        "reps": [
+          12,
+          12,
+          11
+        ],
+        "totalReps": 35,
+        "volume": 787.5,
+        "estimatedStrength": 31.5,
+        "estimated1RM": 31.5,
+        "pr": false,
+        "prType": null,
+        "workoutType": "B",
+        "progressionResult": "stable"
+      },
+      {
+        "sessionId": "session-005",
+        "date": "2026-08-12",
+        "exerciseId": "chest-press",
+        "name": "Chest Press",
+        "comparisonGroup": "chest-press-machine-1",
+        "weight": 60,
+        "unit": "kg",
+        "sets": 3,
+        "reps": [
+          10,
+          10,
+          8
+        ],
+        "totalReps": 28,
+        "volume": 1680,
+        "estimatedStrength": 80.0,
+        "estimated1RM": 80.0,
+        "pr": false,
+        "prType": null,
+        "workoutType": "A",
+        "progressionResult": "improved"
+      },
+      {
+        "sessionId": "session-005",
+        "date": "2026-08-12",
+        "exerciseId": "lat-pulldown",
+        "name": "Lat Pulldown",
+        "comparisonGroup": "lat-pulldown-machine-1",
+        "weight": 50,
+        "unit": "kg",
+        "sets": 3,
+        "reps": [
+          10,
+          10,
+          9
+        ],
+        "totalReps": 29,
+        "volume": 1450,
+        "estimatedStrength": 66.7,
+        "estimated1RM": 66.7,
+        "pr": false,
+        "prType": null,
+        "workoutType": "A",
+        "progressionResult": "improved"
+      },
+      {
+        "sessionId": "session-005",
+        "date": "2026-08-12",
+        "exerciseId": "leg-press",
+        "name": "Leg Press",
+        "comparisonGroup": "leg-press-machine-1",
+        "weight": 140,
+        "unit": "kg",
+        "sets": 3,
+        "reps": [
+          10,
+          10,
+          10
+        ],
+        "totalReps": 30,
+        "volume": 4200,
+        "estimatedStrength": 186.7,
+        "estimated1RM": 186.7,
+        "pr": false,
+        "prType": null,
+        "workoutType": "A",
+        "progressionResult": "improved"
+      },
+      {
+        "sessionId": "session-005",
+        "date": "2026-08-12",
+        "exerciseId": "cable-curl",
+        "name": "Cable Curl",
+        "comparisonGroup": "cable-curl-machine-1",
+        "weight": 17.5,
+        "unit": "kg",
+        "sets": 3,
+        "reps": [
+          10,
+          10,
+          9
+        ],
+        "totalReps": 29,
+        "volume": 507.5,
+        "estimatedStrength": 23.3,
+        "estimated1RM": 23.3,
+        "pr": false,
+        "prType": null,
+        "workoutType": "A",
+        "progressionResult": "improved"
+      },
+      {
+        "sessionId": "session-006",
+        "date": "2026-08-14",
+        "exerciseId": "seated-row",
+        "name": "Seated Row",
+        "comparisonGroup": "seated-row-machine-1",
+        "weight": 45.0,
+        "unit": "kg",
+        "sets": 3,
+        "reps": [
+          10,
+          10,
+          9
+        ],
+        "totalReps": 29,
+        "volume": 1305.0,
+        "estimatedStrength": 60.0,
+        "estimated1RM": 60.0,
+        "pr": false,
+        "prType": null,
+        "workoutType": "B",
+        "progressionResult": "stable"
+      },
+      {
+        "sessionId": "session-006",
+        "date": "2026-08-14",
+        "exerciseId": "goblet-squat",
+        "name": "Goblet Squat",
+        "comparisonGroup": "goblet-squat-machine-1",
+        "weight": 22.5,
+        "unit": "kg",
+        "sets": 3,
+        "reps": [
+          12,
+          12,
+          11
+        ],
+        "totalReps": 35,
+        "volume": 787.5,
+        "estimatedStrength": 31.5,
+        "estimated1RM": 31.5,
+        "pr": false,
+        "prType": null,
+        "workoutType": "B",
+        "progressionResult": "stable"
+      },
+      {
+        "sessionId": "session-007",
+        "date": "2026-08-17",
+        "exerciseId": "chest-press",
+        "name": "Chest Press",
+        "comparisonGroup": "chest-press-machine-1",
+        "weight": 60,
+        "unit": "kg",
+        "sets": 3,
+        "reps": [
+          10,
+          10,
+          9
+        ],
+        "totalReps": 29,
+        "volume": 1740,
+        "estimatedStrength": 80.0,
+        "estimated1RM": 80.0,
+        "pr": false,
+        "prType": null,
+        "workoutType": "A",
+        "progressionResult": "stable"
+      },
+      {
+        "sessionId": "session-007",
+        "date": "2026-08-17",
+        "exerciseId": "lat-pulldown",
+        "name": "Lat Pulldown",
+        "comparisonGroup": "lat-pulldown-machine-1",
+        "weight": 50,
+        "unit": "kg",
+        "sets": 3,
+        "reps": [
+          10,
+          10,
+          10
+        ],
+        "totalReps": 30,
+        "volume": 1500,
+        "estimatedStrength": 66.7,
+        "estimated1RM": 66.7,
+        "pr": false,
+        "prType": null,
+        "workoutType": "A",
+        "progressionResult": "stable"
+      },
+      {
+        "sessionId": "session-007",
+        "date": "2026-08-17",
+        "exerciseId": "leg-press",
+        "name": "Leg Press",
+        "comparisonGroup": "leg-press-machine-1",
+        "weight": 140,
+        "unit": "kg",
+        "sets": 3,
+        "reps": [
+          10,
+          10,
+          10
+        ],
+        "totalReps": 30,
+        "volume": 4200,
+        "estimatedStrength": 186.7,
+        "estimated1RM": 186.7,
+        "pr": false,
+        "prType": null,
+        "workoutType": "A",
+        "progressionResult": "stable"
+      },
+      {
+        "sessionId": "session-007",
+        "date": "2026-08-17",
+        "exerciseId": "cable-curl",
+        "name": "Cable Curl",
+        "comparisonGroup": "cable-curl-machine-1",
+        "weight": 17.5,
+        "unit": "kg",
+        "sets": 3,
+        "reps": [
+          10,
+          10,
+          9
+        ],
+        "totalReps": 29,
+        "volume": 507.5,
+        "estimatedStrength": 23.3,
+        "estimated1RM": 23.3,
+        "pr": false,
+        "prType": null,
+        "workoutType": "A",
+        "progressionResult": "stable"
+      },
+      {
+        "sessionId": "session-008",
+        "date": "2026-08-19",
+        "exerciseId": "seated-row",
+        "name": "Seated Row",
+        "comparisonGroup": "seated-row-machine-1",
+        "weight": 45.0,
+        "unit": "kg",
+        "sets": 3,
+        "reps": [
+          10,
+          10,
+          9
+        ],
+        "totalReps": 29,
+        "volume": 1305.0,
+        "estimatedStrength": 60.0,
+        "estimated1RM": 60.0,
+        "pr": false,
+        "prType": null,
+        "workoutType": "B",
+        "progressionResult": "stable"
+      },
+      {
+        "sessionId": "session-008",
+        "date": "2026-08-19",
+        "exerciseId": "goblet-squat",
+        "name": "Goblet Squat",
+        "comparisonGroup": "goblet-squat-machine-1",
+        "weight": 22.5,
+        "unit": "kg",
+        "sets": 3,
+        "reps": [
+          12,
+          12,
+          11
+        ],
+        "totalReps": 35,
+        "volume": 787.5,
+        "estimatedStrength": 31.5,
+        "estimated1RM": 31.5,
+        "pr": false,
+        "prType": null,
+        "workoutType": "B",
+        "progressionResult": "stable"
+      },
+      {
+        "sessionId": "session-009",
+        "date": "2026-08-21",
+        "exerciseId": "chest-press",
+        "name": "Chest Press",
+        "comparisonGroup": "chest-press-machine-1",
+        "weight": 65,
+        "unit": "kg",
+        "sets": 3,
+        "reps": [
+          10,
+          10,
+          8
+        ],
+        "totalReps": 28,
+        "volume": 1820,
+        "estimatedStrength": 86.7,
+        "estimated1RM": 86.7,
+        "pr": true,
+        "prType": "weight",
+        "workoutType": "A",
+        "progressionResult": "improved"
+      },
+      {
+        "sessionId": "session-009",
+        "date": "2026-08-21",
+        "exerciseId": "lat-pulldown",
+        "name": "Lat Pulldown",
+        "comparisonGroup": "lat-pulldown-machine-1",
+        "weight": 50,
+        "unit": "kg",
+        "sets": 3,
+        "reps": [
+          10,
+          10,
+          9
+        ],
+        "totalReps": 29,
+        "volume": 1450,
+        "estimatedStrength": 66.7,
+        "estimated1RM": 66.7,
+        "pr": false,
+        "prType": null,
+        "workoutType": "A",
+        "progressionResult": "improved"
+      },
+      {
+        "sessionId": "session-009",
+        "date": "2026-08-21",
+        "exerciseId": "leg-press",
+        "name": "Leg Press",
+        "comparisonGroup": "leg-press-machine-1",
+        "weight": 150,
+        "unit": "kg",
+        "sets": 3,
+        "reps": [
+          10,
+          10,
+          10
+        ],
+        "totalReps": 30,
+        "volume": 4500,
+        "estimatedStrength": 200.0,
+        "estimated1RM": 200.0,
+        "pr": true,
+        "prType": "weight",
+        "workoutType": "A",
+        "progressionResult": "improved"
+      },
+      {
+        "sessionId": "session-009",
+        "date": "2026-08-21",
+        "exerciseId": "cable-curl",
+        "name": "Cable Curl",
+        "comparisonGroup": "cable-curl-machine-1",
+        "weight": 17.5,
+        "unit": "kg",
+        "sets": 3,
+        "reps": [
+          10,
+          10,
+          9
+        ],
+        "totalReps": 29,
+        "volume": 507.5,
+        "estimatedStrength": 23.3,
+        "estimated1RM": 23.3,
+        "pr": false,
+        "prType": null,
+        "workoutType": "A",
+        "progressionResult": "improved"
+      },
+      {
+        "sessionId": "session-010",
+        "date": "2026-08-24",
+        "exerciseId": "seated-row",
+        "name": "Seated Row",
+        "comparisonGroup": "seated-row-machine-1",
+        "weight": 47.5,
+        "unit": "kg",
+        "sets": 3,
+        "reps": [
+          10,
+          10,
+          9
+        ],
+        "totalReps": 29,
+        "volume": 1377.5,
+        "estimatedStrength": 63.3,
+        "estimated1RM": 63.3,
+        "pr": false,
+        "prType": null,
+        "workoutType": "B",
+        "progressionResult": "stable"
+      },
+      {
+        "sessionId": "session-010",
+        "date": "2026-08-24",
+        "exerciseId": "goblet-squat",
+        "name": "Goblet Squat",
+        "comparisonGroup": "goblet-squat-machine-1",
+        "weight": 22.5,
+        "unit": "kg",
+        "sets": 3,
+        "reps": [
+          12,
+          12,
+          11
+        ],
+        "totalReps": 35,
+        "volume": 787.5,
+        "estimatedStrength": 31.5,
+        "estimated1RM": 31.5,
+        "pr": false,
+        "prType": null,
+        "workoutType": "B",
+        "progressionResult": "stable"
+      },
+      {
+        "sessionId": "session-011",
+        "date": "2026-08-26",
+        "exerciseId": "chest-press",
+        "name": "Chest Press",
+        "comparisonGroup": "chest-press-machine-1",
+        "weight": 65,
+        "unit": "kg",
+        "sets": 3,
+        "reps": [
+          10,
+          10,
+          9
+        ],
+        "totalReps": 29,
+        "volume": 1885,
+        "estimatedStrength": 86.7,
+        "estimated1RM": 86.7,
+        "pr": false,
+        "prType": null,
+        "workoutType": "A",
+        "progressionResult": "stable"
+      },
+      {
+        "sessionId": "session-011",
+        "date": "2026-08-26",
+        "exerciseId": "lat-pulldown",
+        "name": "Lat Pulldown",
+        "comparisonGroup": "lat-pulldown-machine-1",
+        "weight": 55,
+        "unit": "kg",
+        "sets": 3,
+        "reps": [
+          10,
+          10,
+          10
+        ],
+        "totalReps": 30,
+        "volume": 1650,
+        "estimatedStrength": 73.3,
+        "estimated1RM": 73.3,
+        "pr": false,
+        "prType": null,
+        "workoutType": "A",
+        "progressionResult": "stable"
+      },
+      {
+        "sessionId": "session-011",
+        "date": "2026-08-26",
+        "exerciseId": "leg-press",
+        "name": "Leg Press",
+        "comparisonGroup": "leg-press-machine-1",
+        "weight": 150,
+        "unit": "kg",
+        "sets": 3,
+        "reps": [
+          10,
+          10,
+          10
+        ],
+        "totalReps": 30,
+        "volume": 4500,
+        "estimatedStrength": 200.0,
+        "estimated1RM": 200.0,
+        "pr": false,
+        "prType": null,
+        "workoutType": "A",
+        "progressionResult": "stable"
+      },
+      {
+        "sessionId": "session-011",
+        "date": "2026-08-26",
+        "exerciseId": "cable-curl",
+        "name": "Cable Curl",
+        "comparisonGroup": "cable-curl-machine-1",
+        "weight": 17.5,
+        "unit": "kg",
+        "sets": 3,
+        "reps": [
+          10,
+          10,
+          9
+        ],
+        "totalReps": 29,
+        "volume": 507.5,
+        "estimatedStrength": 23.3,
+        "estimated1RM": 23.3,
+        "pr": false,
+        "prType": null,
+        "workoutType": "A",
+        "progressionResult": "stable"
+      },
+      {
+        "sessionId": "session-012",
+        "date": "2026-08-28",
+        "exerciseId": "seated-row",
+        "name": "Seated Row",
+        "comparisonGroup": "seated-row-machine-1",
+        "weight": 47.5,
+        "unit": "kg",
+        "sets": 3,
+        "reps": [
+          10,
+          10,
+          9
+        ],
+        "totalReps": 29,
+        "volume": 1377.5,
+        "estimatedStrength": 63.3,
+        "estimated1RM": 63.3,
+        "pr": false,
+        "prType": null,
+        "workoutType": "B",
+        "progressionResult": "stable"
+      },
+      {
+        "sessionId": "session-012",
+        "date": "2026-08-28",
+        "exerciseId": "goblet-squat",
+        "name": "Goblet Squat",
+        "comparisonGroup": "goblet-squat-machine-1",
+        "weight": 22.5,
+        "unit": "kg",
+        "sets": 3,
+        "reps": [
+          12,
+          12,
+          11
+        ],
+        "totalReps": 35,
+        "volume": 787.5,
+        "estimatedStrength": 31.5,
+        "estimated1RM": 31.5,
+        "pr": false,
+        "prType": null,
+        "workoutType": "B",
+        "progressionResult": "stable"
+      },
+      {
+        "sessionId": "session-013",
+        "date": "2026-08-31",
+        "exerciseId": "chest-press",
+        "name": "Chest Press",
+        "comparisonGroup": "chest-press-machine-1",
+        "weight": 65,
+        "unit": "kg",
+        "sets": 3,
+        "reps": [
+          10,
+          10,
+          8
+        ],
+        "totalReps": 28,
+        "volume": 1820,
+        "estimatedStrength": 86.7,
+        "estimated1RM": 86.7,
+        "pr": false,
+        "prType": null,
+        "workoutType": "A",
+        "progressionResult": "improved"
+      },
+      {
+        "sessionId": "session-013",
+        "date": "2026-08-31",
+        "exerciseId": "lat-pulldown",
+        "name": "Lat Pulldown",
+        "comparisonGroup": "lat-pulldown-machine-1",
+        "weight": 55,
+        "unit": "kg",
+        "sets": 3,
+        "reps": [
+          10,
+          10,
+          9
+        ],
+        "totalReps": 29,
+        "volume": 1595,
+        "estimatedStrength": 73.3,
+        "estimated1RM": 73.3,
+        "pr": false,
+        "prType": null,
+        "workoutType": "A",
+        "progressionResult": "improved"
+      },
+      {
+        "sessionId": "session-013",
+        "date": "2026-08-31",
+        "exerciseId": "leg-press",
+        "name": "Leg Press",
+        "comparisonGroup": "leg-press-machine-1",
+        "weight": 150,
+        "unit": "kg",
+        "sets": 3,
+        "reps": [
+          10,
+          10,
+          10
+        ],
+        "totalReps": 30,
+        "volume": 4500,
+        "estimatedStrength": 200.0,
+        "estimated1RM": 200.0,
+        "pr": false,
+        "prType": null,
+        "workoutType": "A",
+        "progressionResult": "improved"
+      },
+      {
+        "sessionId": "session-013",
+        "date": "2026-08-31",
+        "exerciseId": "cable-curl",
+        "name": "Cable Curl",
+        "comparisonGroup": "cable-curl-machine-1",
+        "weight": 17.5,
+        "unit": "kg",
+        "sets": 3,
+        "reps": [
+          10,
+          10,
+          9
+        ],
+        "totalReps": 29,
+        "volume": 507.5,
+        "estimatedStrength": 23.3,
+        "estimated1RM": 23.3,
+        "pr": false,
+        "prType": null,
+        "workoutType": "A",
+        "progressionResult": "improved"
+      },
+      {
+        "sessionId": "session-014",
+        "date": "2026-09-02",
+        "exerciseId": "seated-row",
+        "name": "Seated Row",
+        "comparisonGroup": "seated-row-machine-1",
+        "weight": 47.5,
+        "unit": "kg",
+        "sets": 3,
+        "reps": [
+          10,
+          10,
+          9
+        ],
+        "totalReps": 29,
+        "volume": 1377.5,
+        "estimatedStrength": 63.3,
+        "estimated1RM": 63.3,
+        "pr": false,
+        "prType": null,
+        "workoutType": "B",
+        "progressionResult": "stable"
+      },
+      {
+        "sessionId": "session-014",
+        "date": "2026-09-02",
+        "exerciseId": "goblet-squat",
+        "name": "Goblet Squat",
+        "comparisonGroup": "goblet-squat-machine-1",
+        "weight": 22.5,
+        "unit": "kg",
+        "sets": 3,
+        "reps": [
+          12,
+          12,
+          11
+        ],
+        "totalReps": 35,
+        "volume": 787.5,
+        "estimatedStrength": 31.5,
+        "estimated1RM": 31.5,
+        "pr": false,
+        "prType": null,
+        "workoutType": "B",
+        "progressionResult": "stable"
+      },
+      {
+        "sessionId": "session-015",
+        "date": "2026-09-04",
+        "exerciseId": "chest-press",
+        "name": "Chest Press",
+        "comparisonGroup": "chest-press-machine-1",
+        "weight": 65,
+        "unit": "kg",
+        "sets": 3,
+        "reps": [
+          10,
+          10,
+          9
+        ],
+        "totalReps": 29,
+        "volume": 1885,
+        "estimatedStrength": 86.7,
+        "estimated1RM": 86.7,
+        "pr": false,
+        "prType": null,
+        "workoutType": "A",
+        "progressionResult": "stable"
+      },
+      {
+        "sessionId": "session-015",
+        "date": "2026-09-04",
+        "exerciseId": "lat-pulldown",
+        "name": "Lat Pulldown",
+        "comparisonGroup": "lat-pulldown-machine-1",
+        "weight": 55,
+        "unit": "kg",
+        "sets": 3,
+        "reps": [
+          10,
+          10,
+          10
+        ],
+        "totalReps": 30,
+        "volume": 1650,
+        "estimatedStrength": 73.3,
+        "estimated1RM": 73.3,
+        "pr": false,
+        "prType": null,
+        "workoutType": "A",
+        "progressionResult": "stable"
+      },
+      {
+        "sessionId": "session-015",
+        "date": "2026-09-04",
+        "exerciseId": "leg-press",
+        "name": "Leg Press",
+        "comparisonGroup": "leg-press-machine-1",
+        "weight": 150,
+        "unit": "kg",
+        "sets": 3,
+        "reps": [
+          10,
+          10,
+          10
+        ],
+        "totalReps": 30,
+        "volume": 4500,
+        "estimatedStrength": 200.0,
+        "estimated1RM": 200.0,
+        "pr": false,
+        "prType": null,
+        "workoutType": "A",
+        "progressionResult": "stable"
+      },
+      {
+        "sessionId": "session-015",
+        "date": "2026-09-04",
+        "exerciseId": "cable-curl",
+        "name": "Cable Curl",
+        "comparisonGroup": "cable-curl-machine-1",
+        "weight": 20,
+        "unit": "kg",
+        "sets": 3,
+        "reps": [
+          10,
+          10,
+          9
+        ],
+        "totalReps": 29,
+        "volume": 580,
+        "estimatedStrength": 26.7,
+        "estimated1RM": 26.7,
+        "pr": false,
+        "prType": null,
+        "workoutType": "A",
+        "progressionResult": "stable"
+      },
+      {
+        "sessionId": "session-016",
+        "date": "2026-09-07",
+        "exerciseId": "seated-row",
+        "name": "Seated Row",
+        "comparisonGroup": "seated-row-machine-1",
+        "weight": 47.5,
+        "unit": "kg",
+        "sets": 3,
+        "reps": [
+          10,
+          10,
+          9
+        ],
+        "totalReps": 29,
+        "volume": 1377.5,
+        "estimatedStrength": 63.3,
+        "estimated1RM": 63.3,
+        "pr": false,
+        "prType": null,
+        "workoutType": "B",
+        "progressionResult": "stable"
+      },
+      {
+        "sessionId": "session-016",
+        "date": "2026-09-07",
+        "exerciseId": "goblet-squat",
+        "name": "Goblet Squat",
+        "comparisonGroup": "goblet-squat-machine-1",
+        "weight": 22.5,
+        "unit": "kg",
+        "sets": 3,
+        "reps": [
+          12,
+          12,
+          11
+        ],
+        "totalReps": 35,
+        "volume": 787.5,
+        "estimatedStrength": 31.5,
+        "estimated1RM": 31.5,
+        "pr": false,
+        "prType": null,
+        "workoutType": "B",
+        "progressionResult": "stable"
+      },
+      {
+        "sessionId": "session-017",
+        "date": "2026-09-09",
+        "exerciseId": "chest-press",
+        "name": "Chest Press",
+        "comparisonGroup": "chest-press-machine-1",
+        "weight": 70,
+        "unit": "kg",
+        "sets": 3,
+        "reps": [
+          10,
+          10,
+          8
+        ],
+        "totalReps": 28,
+        "volume": 1960,
+        "estimatedStrength": 93.3,
+        "estimated1RM": 93.3,
+        "pr": true,
+        "prType": "weight",
+        "workoutType": "A",
+        "progressionResult": "improved"
+      },
+      {
+        "sessionId": "session-017",
+        "date": "2026-09-09",
+        "exerciseId": "lat-pulldown",
+        "name": "Lat Pulldown",
+        "comparisonGroup": "lat-pulldown-machine-1",
+        "weight": 55,
+        "unit": "kg",
+        "sets": 3,
+        "reps": [
+          10,
+          10,
+          9
+        ],
+        "totalReps": 29,
+        "volume": 1595,
+        "estimatedStrength": 73.3,
+        "estimated1RM": 73.3,
+        "pr": false,
+        "prType": null,
+        "workoutType": "A",
+        "progressionResult": "improved"
+      },
+      {
+        "sessionId": "session-017",
+        "date": "2026-09-09",
+        "exerciseId": "leg-press",
+        "name": "Leg Press",
+        "comparisonGroup": "leg-press-machine-1",
+        "weight": 160,
+        "unit": "kg",
+        "sets": 3,
+        "reps": [
+          10,
+          10,
+          10
+        ],
+        "totalReps": 30,
+        "volume": 4800,
+        "estimatedStrength": 213.3,
+        "estimated1RM": 213.3,
+        "pr": true,
+        "prType": "weight",
+        "workoutType": "A",
+        "progressionResult": "improved"
+      },
+      {
+        "sessionId": "session-017",
+        "date": "2026-09-09",
+        "exerciseId": "cable-curl",
+        "name": "Cable Curl",
+        "comparisonGroup": "cable-curl-machine-1",
+        "weight": 20,
+        "unit": "kg",
+        "sets": 3,
+        "reps": [
+          10,
+          10,
+          9
+        ],
+        "totalReps": 29,
+        "volume": 580,
+        "estimatedStrength": 26.7,
+        "estimated1RM": 26.7,
+        "pr": false,
+        "prType": null,
+        "workoutType": "A",
+        "progressionResult": "improved"
+      },
+      {
+        "sessionId": "session-018",
+        "date": "2026-09-11",
+        "exerciseId": "seated-row",
+        "name": "Seated Row",
+        "comparisonGroup": "seated-row-machine-1",
+        "weight": 50.0,
+        "unit": "kg",
+        "sets": 3,
+        "reps": [
+          10,
+          10,
+          9
+        ],
+        "totalReps": 29,
+        "volume": 1450.0,
+        "estimatedStrength": 66.7,
+        "estimated1RM": 66.7,
+        "pr": false,
+        "prType": null,
+        "workoutType": "B",
+        "progressionResult": "stable"
+      },
+      {
+        "sessionId": "session-018",
+        "date": "2026-09-11",
+        "exerciseId": "goblet-squat",
+        "name": "Goblet Squat",
+        "comparisonGroup": "goblet-squat-machine-1",
+        "weight": 22.5,
+        "unit": "kg",
+        "sets": 3,
+        "reps": [
+          12,
+          12,
+          11
+        ],
+        "totalReps": 35,
+        "volume": 787.5,
+        "estimatedStrength": 31.5,
+        "estimated1RM": 31.5,
+        "pr": false,
+        "prType": null,
+        "workoutType": "B",
+        "progressionResult": "stable"
+      },
+      {
+        "sessionId": "session-019",
+        "date": "2026-09-14",
+        "exerciseId": "chest-press",
+        "name": "Chest Press",
+        "comparisonGroup": "chest-press-machine-1",
+        "weight": 70,
+        "unit": "kg",
+        "sets": 3,
+        "reps": [
+          10,
+          10,
+          9
+        ],
+        "totalReps": 29,
+        "volume": 2030,
+        "estimatedStrength": 93.3,
+        "estimated1RM": 93.3,
+        "pr": false,
+        "prType": null,
+        "workoutType": "A",
+        "progressionResult": "stable"
+      },
+      {
+        "sessionId": "session-019",
+        "date": "2026-09-14",
+        "exerciseId": "lat-pulldown",
+        "name": "Lat Pulldown",
+        "comparisonGroup": "lat-pulldown-machine-1",
+        "weight": 55,
+        "unit": "kg",
+        "sets": 3,
+        "reps": [
+          12,
+          12,
+          12
+        ],
+        "totalReps": 36,
+        "volume": 1980,
+        "estimatedStrength": 77.0,
+        "estimated1RM": 77.0,
+        "pr": false,
+        "prType": null,
+        "workoutType": "A",
+        "progressionResult": "stable"
+      },
+      {
+        "sessionId": "session-019",
+        "date": "2026-09-14",
+        "exerciseId": "leg-press",
+        "name": "Leg Press",
+        "comparisonGroup": "leg-press-machine-1",
+        "weight": 160,
+        "unit": "kg",
+        "sets": 3,
+        "reps": [
+          10,
+          10,
+          8
+        ],
+        "totalReps": 28,
+        "volume": 4480,
+        "estimatedStrength": 213.3,
+        "estimated1RM": 213.3,
+        "pr": false,
+        "prType": null,
+        "workoutType": "A",
+        "progressionResult": "dip"
+      },
+      {
+        "sessionId": "session-019",
+        "date": "2026-09-14",
+        "exerciseId": "cable-curl",
+        "name": "Cable Curl",
+        "comparisonGroup": "cable-curl-machine-1",
+        "weight": 20,
+        "unit": "kg",
+        "sets": 3,
+        "reps": [
+          10,
+          9,
+          8
+        ],
+        "totalReps": 27,
+        "volume": 540,
+        "estimatedStrength": 26.7,
+        "estimated1RM": 26.7,
+        "pr": false,
+        "prType": null,
+        "workoutType": "A",
+        "progressionResult": "dip"
+      },
+      {
+        "sessionId": "session-020",
+        "date": "2026-09-16",
+        "exerciseId": "seated-row",
+        "name": "Seated Row",
+        "comparisonGroup": "seated-row-machine-1",
+        "weight": 50.0,
+        "unit": "kg",
+        "sets": 3,
+        "reps": [
+          10,
+          10,
+          9
+        ],
+        "totalReps": 29,
+        "volume": 1450.0,
+        "estimatedStrength": 66.7,
+        "estimated1RM": 66.7,
+        "pr": false,
+        "prType": null,
+        "workoutType": "B",
+        "progressionResult": "stable"
+      },
+      {
+        "sessionId": "session-020",
+        "date": "2026-09-16",
+        "exerciseId": "goblet-squat",
+        "name": "Goblet Squat",
+        "comparisonGroup": "goblet-squat-machine-1",
+        "weight": 22.5,
+        "unit": "kg",
+        "sets": 3,
+        "reps": [
+          12,
+          12,
+          11
+        ],
+        "totalReps": 35,
+        "volume": 787.5,
+        "estimatedStrength": 31.5,
+        "estimated1RM": 31.5,
+        "pr": false,
+        "prType": null,
+        "workoutType": "B",
+        "progressionResult": "stable"
+      },
+      {
+        "sessionId": "session-021",
+        "date": "2026-09-18",
+        "exerciseId": "chest-press",
+        "name": "Chest Press",
+        "comparisonGroup": "chest-press-machine-1",
+        "weight": 70,
+        "unit": "kg",
+        "sets": 3,
+        "reps": [
+          10,
+          10,
+          8
+        ],
+        "totalReps": 28,
+        "volume": 1960,
+        "estimatedStrength": 93.3,
+        "estimated1RM": 93.3,
+        "pr": false,
+        "prType": null,
+        "workoutType": "A",
+        "progressionResult": "improved"
+      },
+      {
+        "sessionId": "session-021",
+        "date": "2026-09-18",
+        "exerciseId": "lat-pulldown",
+        "name": "Lat Pulldown",
+        "comparisonGroup": "lat-pulldown-machine-1",
+        "weight": 55,
+        "unit": "kg",
+        "sets": 3,
+        "reps": [
+          12,
+          12,
+          12
+        ],
+        "totalReps": 36,
+        "volume": 1980,
+        "estimatedStrength": 77.0,
+        "estimated1RM": 77.0,
+        "pr": false,
+        "prType": null,
+        "workoutType": "A",
+        "progressionResult": "improved"
+      },
+      {
+        "sessionId": "session-021",
+        "date": "2026-09-18",
+        "exerciseId": "leg-press",
+        "name": "Leg Press",
+        "comparisonGroup": "leg-press-machine-1",
+        "weight": 160,
+        "unit": "kg",
+        "sets": 3,
+        "reps": [
+          10,
+          10,
+          10
+        ],
+        "totalReps": 30,
+        "volume": 4800,
+        "estimatedStrength": 213.3,
+        "estimated1RM": 213.3,
+        "pr": false,
+        "prType": null,
+        "workoutType": "A",
+        "progressionResult": "improved"
+      },
+      {
+        "sessionId": "session-021",
+        "date": "2026-09-18",
+        "exerciseId": "cable-curl",
+        "name": "Cable Curl",
+        "comparisonGroup": "cable-curl-machine-1",
+        "weight": 20,
+        "unit": "kg",
+        "sets": 3,
+        "reps": [
+          9,
+          8,
+          7
+        ],
+        "totalReps": 24,
+        "volume": 480,
+        "estimatedStrength": 26.0,
+        "estimated1RM": 26.0,
+        "pr": false,
+        "prType": null,
+        "workoutType": "A",
+        "progressionResult": "dip"
+      },
+      {
+        "sessionId": "session-022",
+        "date": "2026-09-21",
+        "exerciseId": "seated-row",
+        "name": "Seated Row",
+        "comparisonGroup": "seated-row-machine-1",
+        "weight": 50.0,
+        "unit": "kg",
+        "sets": 3,
+        "reps": [
+          10,
+          10,
+          9
+        ],
+        "totalReps": 29,
+        "volume": 1450.0,
+        "estimatedStrength": 66.7,
+        "estimated1RM": 66.7,
+        "pr": false,
+        "prType": null,
+        "workoutType": "B",
+        "progressionResult": "stable"
+      },
+      {
+        "sessionId": "session-022",
+        "date": "2026-09-21",
+        "exerciseId": "goblet-squat",
+        "name": "Goblet Squat",
+        "comparisonGroup": "goblet-squat-machine-1",
+        "weight": 22.5,
+        "unit": "kg",
+        "sets": 3,
+        "reps": [
+          12,
+          12,
+          11
+        ],
+        "totalReps": 35,
+        "volume": 787.5,
+        "estimatedStrength": 31.5,
+        "estimated1RM": 31.5,
+        "pr": false,
+        "prType": null,
+        "workoutType": "B",
+        "progressionResult": "stable"
+      },
+      {
+        "sessionId": "session-023",
+        "date": "2026-09-23",
+        "exerciseId": "chest-press",
+        "name": "Chest Press",
+        "comparisonGroup": "chest-press-machine-1",
+        "weight": 70,
+        "unit": "kg",
+        "sets": 3,
+        "reps": [
+          10,
+          10,
+          8
+        ],
+        "totalReps": 28,
+        "volume": 1960,
+        "estimatedStrength": 93.3,
+        "estimated1RM": 93.3,
+        "pr": false,
+        "prType": null,
+        "workoutType": "A",
+        "progressionResult": "stable"
+      },
+      {
+        "sessionId": "session-023",
+        "date": "2026-09-23",
+        "exerciseId": "lat-pulldown",
+        "name": "Lat Pulldown",
+        "comparisonGroup": "lat-pulldown-machine-1",
+        "weight": 55,
+        "unit": "kg",
+        "sets": 3,
+        "reps": [
+          12,
+          12,
+          12
+        ],
+        "totalReps": 36,
+        "volume": 1980,
+        "estimatedStrength": 77.0,
+        "estimated1RM": 77.0,
+        "pr": false,
+        "prType": null,
+        "workoutType": "A",
+        "progressionResult": "stable"
+      },
+      {
+        "sessionId": "session-023",
+        "date": "2026-09-23",
+        "exerciseId": "leg-press",
+        "name": "Leg Press",
+        "comparisonGroup": "leg-press-machine-1",
+        "weight": 160,
+        "unit": "kg",
+        "sets": 3,
+        "reps": [
+          10,
+          10,
+          10
+        ],
+        "totalReps": 30,
+        "volume": 4800,
+        "estimatedStrength": 213.3,
+        "estimated1RM": 213.3,
+        "pr": false,
+        "prType": null,
+        "workoutType": "A",
+        "progressionResult": "stable"
+      },
+      {
+        "sessionId": "session-023",
+        "date": "2026-09-23",
+        "exerciseId": "cable-curl",
+        "name": "Cable Curl",
+        "comparisonGroup": "cable-curl-machine-1",
+        "weight": 20,
+        "unit": "kg",
+        "sets": 3,
+        "reps": [
+          8,
+          7,
+          6
+        ],
+        "totalReps": 21,
+        "volume": 420,
+        "estimatedStrength": 25.3,
+        "estimated1RM": 25.3,
+        "pr": false,
+        "prType": null,
+        "workoutType": "A",
+        "progressionResult": "dip"
+      },
+      {
+        "sessionId": "session-024",
+        "date": "2026-09-25",
+        "exerciseId": "seated-row",
+        "name": "Seated Row",
+        "comparisonGroup": "seated-row-machine-1",
+        "weight": 50.0,
+        "unit": "kg",
+        "sets": 3,
+        "reps": [
+          10,
+          10,
+          9
+        ],
+        "totalReps": 29,
+        "volume": 1450.0,
+        "estimatedStrength": 66.7,
+        "estimated1RM": 66.7,
+        "pr": false,
+        "prType": null,
+        "workoutType": "B",
+        "progressionResult": "stable"
+      },
+      {
+        "sessionId": "session-024",
+        "date": "2026-09-25",
+        "exerciseId": "goblet-squat",
+        "name": "Goblet Squat",
+        "comparisonGroup": "goblet-squat-machine-1",
+        "weight": 22.5,
+        "unit": "kg",
+        "sets": 3,
+        "reps": [
+          12,
+          12,
+          11
+        ],
+        "totalReps": 35,
+        "volume": 787.5,
+        "estimatedStrength": 31.5,
+        "estimated1RM": 31.5,
+        "pr": false,
+        "prType": null,
+        "workoutType": "B",
+        "progressionResult": "stable"
+      }
+    ]
+  }
+}

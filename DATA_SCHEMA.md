@@ -1,0 +1,134 @@
+# GainMap schema v1
+
+JSON uses UTF-8. Required means the field must exist. Optional fields may be omitted;
+only fields explicitly listed as nullable accept null. All numeric values are finite,
+nonnegative, ≤10,000,000 unless marked signed. Reps/sets are integers. Strings are
+nonempty, ≤500 characters. IDs are local lowercase hyphen-separated slugs (example
+`chest-press`); no external identifiers. Dates are real calendar `YYYY-MM-DD` values.
+Timestamp format is UTC ISO `YYYY-MM-DDTHH:mm:ss[.sss]Z`.
+
+Frontend tolerates unknown additive fields but validates required known fields;
+publication validator rejects unknown fields until this contract and allowlists are
+reviewed. Unsupported schemaVersion is rejected. Invalid documents are isolated;
+missing history does not invalidate the current plan. Optional numeric estimates
+missing/null break chart lines. Chart groups require identical exercise, group, unit.
+
+## latest.json / demo.latest
+
+| Field | Type / required | Values, meaning, example |
+|---|---|---|
+| schemaVersion | integer, yes | Exactly 1 |
+| generatedAt | timestamp, yes | Recommendation creation, `2026-09-28T05:00:00Z` |
+| status | string, yes | ready, empty, upstream_error |
+| workoutType | string or null, yes | A/B; null only for empty |
+| mainFocus | string[], yes | 0–3 reviewed guidance items |
+| exercises | exercise[], yes | Nonempty for ready; empty for empty; retained plan for upstream_error |
+| summary | string, optional | Short reviewed workout introduction |
+
+Empty status explicitly enables synthetic demo fallback. It must never be used to
+replace valid real data after upstream failure. upstream_error may have an empty
+exercise array only when no previous valid plan exists; otherwise retain the plan.
+
+## Exercise object
+
+| Field | Type / required | Meaning / example |
+|---|---|---|
+| id | slug, yes | Stable local exercise ID, chest-press |
+| name | string, yes | Display name, Chest Press |
+| image | string/null, optional | assets/exercises/chest-press.svg; local svg/png/webp |
+| weight | number, yes | Recommended load, 70 |
+| unit | string, yes | Preserved unit, kg; no implicit conversion |
+| sets | integer, yes | Working sets, 3; reps array must have this length |
+| targetReps | integer[], yes | One target per set, [10,10,9], nonempty |
+| repRange | object/null, optional | `{ "min":8, "max":12 }`, integer min ≤ max |
+| strategy | enum, yes | WEIGHT_INCREASE, REP_PROGRESSION, HOLD, CORRECTION |
+| previous | performance/null, yes | Most recent comparable result; null when absent |
+| reasoning | string, yes | Reviewed concise recommendation explanation |
+| progressSummary | string/null, optional | Factual producer-derived summary |
+| comparisonGroup | slug, yes | Local comparability label, chest-press-machine-1 |
+| pr | boolean, optional | Producer marked recent PR; omitted means no badge |
+| change | object/null, optional | Required signed finite weight and totalReps deltas versus previous |
+| estimatedStrength | number/null, optional | Producer's load-unit strength estimate |
+| estimated1RM | number/null, optional | Estimated maximum in the same load unit |
+| chart | point[], optional | Same-group weight sparkline fallback if history absent |
+
+Strategy mapping: SÚLYEMELÉS, REP-PROGRESSZIÓ, TARTÁS, KORREKCIÓ.
+Reasoning is supplied by the future coach, not invented by the browser.
+Change fields and optional estimates are supported storage; card targets and history
+charts remain the primary display. Do not insert identifying text into these strings.
+
+### previous performance
+
+All fields required: `date` (date), `weight` (number), `unit` (string), `sets`
+(integer), `reps` (nonempty integer array, one per set), `comparisonGroup` (slug).
+Unit and comparisonGroup must match the parent exercise. Example: 70 kg, three sets,
+[10,10,8]. No external ID or free-text notes.
+
+### chart point
+
+All fields required: `date` (date), `value` (nonnegative working weight),
+`comparisonGroup` (slug identical to parent), `unit` (same as parent).
+Example: `{ "date":"2026-09-25", "value":70,
+"comparisonGroup":"chest-press-machine-1", "unit":"kg" }`.
+
+## history.json / demo.history
+
+Required top-level fields: `schemaVersion` (exactly 1), `sessions` (session array),
+`records` (performance record array). Empty arrays are valid. Preserve full history.
+
+### Session
+
+| Field | Type / required | Meaning |
+|---|---|---|
+| id | slug, yes | Generated local session ID, session-001; not source workout ID |
+| date | date, yes | Completion date |
+| workoutType | A/B, yes | Actual completed workout |
+| durationMinutes | number/null, optional | Duration if available |
+
+IDs are unique. Multiple sessions on one date are allowed and counted separately.
+
+### Performance record
+
+| Field | Type / required | Meaning |
+|---|---|---|
+| sessionId | slug, yes | References a local session |
+| date | date, yes | Must match referenced session date |
+| exerciseId | slug, yes | Matches stable exercise id |
+| name | string, yes | Exercise display name |
+| comparisonGroup | slug, yes | Reviewed machine comparability group |
+| weight | number, yes | Working weight |
+| unit | string, yes | Source load unit |
+| sets | integer, yes | Working-set count |
+| reps | integer[], yes | One result per working set, nonempty |
+| totalReps | integer, yes | Exact sum of reps |
+| volume | number/null, optional | weight × totalReps in load-unit·reps |
+| estimatedStrength | number/null, optional | Same-unit estimate |
+| estimated1RM | number/null, optional | Same-unit 1RM estimate |
+| pr | boolean, yes | Explicit producer decision |
+| prType | enum/null, optional | weight, reps, totalReps, estimatedStrength, estimated1RM |
+| workoutType | A/B, yes | Must match session |
+| progressionResult | enum, yes | improved, stable, dip, unknown |
+
+One record per session/exercise/group. Different unit histories remain separate even
+if their group names match. Mixed-load working sets must be normalized into separate
+comparable exercise variants by the producer; do not encode one misleading weight.
+For `reps` PRs the UI shows total reps at the stored load; PR criteria remain producer
+responsibility. This foundation's demo estimates use Epley on the best working set,
+weight × (1 + max reps/30), for demonstration only. Future estimates must use a
+consistent documented calculation within a comparison group.
+
+## demo.json
+
+Required fields: `schemaVersion` (1), `synthetic` (exactly true), `latest` (latest
+object), `history` (history object). Demo content belongs to no real user. It must
+remain labeled Demo adatok when rendered. Replace latest/history with ready real
+documents to leave demo mode without editing frontend files.
+
+## Validation and security
+
+`node scripts/validate-data.mjs` validates every JSON under data/, required files,
+schema versions, fields, enums, numeric types, rep lengths/sums, dates, local assets,
+comparability, duplicate keys at record level, references, and suspicious metadata
+keys. Unknown publication fields are rejected. Exit code is nonzero on any failure.
+Review allowed string values manually: a key scanner cannot detect every identity
+embedded in an otherwise permitted field. See SECURITY.md.

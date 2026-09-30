@@ -1,0 +1,6 @@
+{
+  "name": "gainmap",
+  "private": true,
+  "type": "module",
+  "scripts": { "validate": "node scripts/validate-data.mjs", "test": "node scripts/test.mjs" }
+}

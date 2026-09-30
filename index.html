@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="hu">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="theme-color" content="#101513">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="GainMap">
+  <meta name="description" content="Az edzésed következő lépése. Átlátható edzésterv és teljesítménytörténet.">
+  <title>GainMap · A következő lépés</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/brand/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="module" src="js/app.js"></script>
+</head>
+<body>
+  <a class="skip" href="#today">Ugrás az edzéstervhez</a>
+  <header class="topbar"><a class="brand" href="#today"><img src="favicon.svg" alt="" width="36" height="36">Gain<span>Map</span></a><span class="brand-note">MINDEN EDZÉS EGY LÉPÉS.</span><span id="mode" class="mode">Betöltés…</span></header>
+  <main>
+    <section id="today" aria-labelledby="today-heading">
+      <div id="notice" role="status"></div>
+      <div id="hero"></div>
+      <div id="focus"></div>
+      <div class="section-heading"><div><p class="eyebrow">A TERVED, EGY HELYEN</p><h2 id="today-heading">Mai gyakorlatok</h2></div><span id="exercise-count" class="muted"></span></div>
+      <div id="exercises" class="exercise-grid"><div class="empty">Edzésterv betöltése…</div></div>
+    </section>
+    <section id="progress" aria-labelledby="progress-heading">
+      <div class="section-heading"><div><p class="eyebrow">A BEFEKTETETT MUNKA NYOMA</p><h2 id="progress-heading">Haladás</h2></div><span class="muted">Összehasonlítható edzések</span></div>
+      <div id="metrics" class="metrics"></div>
+      <div class="panel progress-panel"><div class="chart-controls"><label>Gyakorlat<select id="exercise-select"></select></label><label>Mutató<select id="metric-select"><option value="weight">Munkasúly</option><option value="totalReps">Összismétlés</option><option value="estimatedStrength">Becsült erő</option><option value="estimated1RM">Becsült 1RM</option><option value="volume">Volumen</option></select></label><label>Időszak<select id="window-select"><option value="10">10 hét</option><option value="26">26 hét</option><option value="all">Teljes történet</option></select></label></div><div id="main-chart"></div><p class="muted chart-note">A becsült erő és 1RM számított érték, nem ténylegesen végrehajtott emelés.</p></div>
+      <div class="secondary-grid"><div class="panel"><p class="eyebrow">RITMUS</p><h3>Edzések hetente</h3><div id="consistency"></div></div><div class="panel"><p class="eyebrow">MÉRFÖLDKÖVEK</p><h3>Legutóbbi rekordok</h3><div id="prs"></div></div></div>
+    </section>
+    <section id="history" aria-labelledby="history-heading"><div class="section-heading"><div><p class="eyebrow">EDZÉSRŐL EDZÉSRE</p><h2 id="history-heading">Előzmények</h2></div></div><div id="history-list" class="panel"></div><button id="more-history" class="quiet-button" hidden>További edzések</button></section>
+  </main>
+  <footer>GainMap <span>Hosszú távú fejlődés. Egy edzés egyszerre.</span></footer>
+  <nav class="bottom-nav" aria-label="Fő navigáció"><a href="#today" aria-current="page"><span aria-hidden="true">▣</span>Ma</a><a href="#progress"><span aria-hidden="true">↗</span>Haladás</a><a href="#history"><span aria-hidden="true">◷</span>Előzmények</a></nav>
+  <noscript><p class="empty">A GainMap megjelenítéséhez engedélyezd a JavaScriptet.</p></noscript>
+</body>
+</html>
