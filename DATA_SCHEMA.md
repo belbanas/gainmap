@@ -144,12 +144,28 @@ limit and privacy rules as other strings; empty arrays are allowed.
 | evidence | string[] | Factual observations from comparable working sets |
 | advice | string[] | Practical next steps |
 | possibleCauses | object[] | Each requires text (string), confidence (hypothesis or supported) |
-| alternative | object/null | A conditional substitution: name, reason, condition (all strings) |
+| alternative | object/null | A conditional substitution: name, reason, condition (all strings), optional startingPlan below |
 | followUp | string[] | Questions needed to clarify insufficient evidence |
 
 Never present a possible cause as established without evidence. The UI labels
 hypotheses explicitly. A substitution is a suggestion, not a silent plan change.
 Do not store identifying comments or raw source notes in any coaching text.
+
+### Alternative starting plan
+
+`alternative.startingPlan` is optional and nullable for compatibility. An object
+requires `weight` (first working-set load), `unit` (kg), `sets` (integer),
+`targetReps` (nonempty integer array, one per set), `basis` (comparable_history or
+estimate), and `reasoning` (string explaining the source and limits). Optional
+`workingWeights` preserves mixed loads and obeys the exercise weight-array rules.
+These are proposed starting targets, never completed lifts or PRs.
+
+Prefer the alternative exercise's own comparable history. A load from a different
+exercise or machine is not an equivalent kg value. A defensible starting estimate
+must be labeled estimate and explain its basis; missing evidence leaves startingPlan
+null with a followUp question rather than inventing a precise load. The card is
+visible on the original exercise, outside collapsed details; no program replacement
+or cross-group chart comparison occurs automatically.
 
 ## demo.json
 

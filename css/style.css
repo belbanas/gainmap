@@ -95,8 +95,15 @@ footer { padding-top: 40px; padding-bottom: 110px; color: var(--muted); font-siz
 .coaching-content li { margin-bottom: 8px; }
 .cause { font-size: 13px; margin-bottom: 14px; }
 .cause span { display: block; color: var(--muted); font-size: 10px; text-transform: uppercase; letter-spacing: .6px; }
-.alternative { padding: 16px; border-radius: 14px; background: #f5f2e9; margin-top: 20px; font-size: 13px; }
-.alternative h4 { margin-top: 0; }
+.alternative { padding: 16px; border: 1px solid #d8e3f7; border-radius: 14px; background: #f1f5fd; margin-top: 20px; font-size: 13px; }
+.exercise-card > .alternative { margin: 0 24px 18px; }
+.alternative h4 { margin: 0 0 8px; }
+.alternative p { margin-bottom: 8px; }
+.alternative p:last-child { margin-bottom: 0; }
+.alternative-label { color: #2864d7; font-size: 11px; font-weight: 650; }
+.alternative-basis { color: var(--muted); font-size: 11px; }
+.alternative-targets { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 10px; }
+.alternative-targets span { background: white; border: 1px solid #d8e3f7; border-radius: 8px; padding: 6px 9px; font-weight: 600; }
 @media(max-width:600px) {
   .topbar, main, footer { padding-left: 20px; padding-right: 20px; }
   .topbar { padding-top: 20px; padding-bottom: 24px; }
@@ -117,6 +124,7 @@ footer { padding-top: 40px; padding-bottom: 110px; color: var(--muted); font-siz
   .card-index { font-size: 10px; }
   .strategy { font-size: 9px; letter-spacing: .3px; }
   .exercise-details { padding: 0 18px; }
+  .exercise-card > .alternative { margin-left: 18px; margin-right: 18px; }
   .exercise-details summary { min-height: 44px; font-size: 11px; }
   .panel { padding: 20px; }
   .secondary-grid { grid-template-columns: 1fr; }

@@ -19,6 +19,10 @@ Strategy labels combine text and a symbol: ↗ weight, + repetition, = hold,
 ↘ correction. Meaning never relies on color alone. Progress displays stored
 coaching at the end of Progress; absent coaching has an honest empty state. Hypotheses are labeled and
 alternative exercises include a condition. No advice is inferred in the browser.
+Exercise substitution suggestions appear in a compact light-blue card outside
+collapsed details. The card shows the replacement name, reason, condition and
+proposed per-set kg × reps when available. Historical guidance and estimated
+starting loads have distinct text labels. No suggestion means no extra card.
 
 Keyboard focus, semantic headings, details/summary, chart text alternatives and
 reduced-motion behavior are required. Bottom navigation identifies the current

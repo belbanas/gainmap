@@ -31,3 +31,11 @@ two histories as comparable, it must normalize them into one documented group.
 PR flags and coaching reasoning are producer decisions. Estimates must be labeled
 as estimates and never presented as performed lifts. Do not publish source notes.
 On retrieval failure preserve valid prior data and report failure.
+
+When recommending an alternative exercise, also propose starting load and per-set
+reps in alternative.startingPlan when defensible. Prefer that exercise's own
+comparable results. Other movements can inform a conservative estimate but are not
+equivalent loads. Label estimates and explain their limits. Do not convert machine
+stacks to dumbbell or other machine loads by an arbitrary ratio. If no defensible
+load exists, keep startingPlan null and ask for the missing setup/result. Alternative
+targets are suggestions, not completed sets; retain the original plan until adopted.

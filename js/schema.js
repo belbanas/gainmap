@@ -37,8 +37,15 @@ export function validate(kind, data, strict = false) {
       if(!object(c,cp,['text','confidence']))return;
       text(c.text,cp+'.text');choice(c.confidence,cp+'.confidence',['hypothesis','supported']);
     });
-    if(v.alternative!==null&&object(v.alternative,p+'.alternative',['name','reason','condition']))
+    if(v.alternative!==null&&object(v.alternative,p+'.alternative',['name','reason','condition','startingPlan'])) {
       for(const key of ['name','reason','condition'])text(v.alternative[key],p+'.alternative.'+key);
+      const start=v.alternative.startingPlan,sp=p+'.alternative.startingPlan';
+      if(start!==undefined&&start!==null&&object(start,sp,['weight','workingWeights','unit','sets','targetReps','basis','reasoning'])) {
+        num(start.weight,sp+'.weight');choice(start.unit,sp+'.unit',['kg']);
+        num(start.sets,sp+'.sets',true);reps(start.targetReps,sp+'.targetReps',start.sets);weights(start,sp);
+        choice(start.basis,sp+'.basis',['comparable_history','estimate']);text(start.reasoning,sp+'.reasoning');
+      }
+    }
   };
   function latest(v,p) {
     if (!object(v,p,['schemaVersion','generatedAt','status','workoutType','mainFocus','exercises','summary','coaching'])) return;

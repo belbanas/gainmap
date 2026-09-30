@@ -1,7 +1,7 @@
 import { $, number, date, escape as e, empty, strategies, loadJSON, assetPath, comparable, performanceText, durationText } from './utils.js';
 import { validate } from './schema.js';
 import { chart } from './charts.js';
-import { coachingView } from './coaching.js';
+import { coachingView, alternativeCard } from './coaching.js';
 
 let plan = null, history = { sessions: [], records: [] }, demo = false, historyLimit = 10;
 const notice = message => { $('notice').insertAdjacentHTML('beforeend', `<p class="notice">${e(message)}</p>`); };
@@ -18,10 +18,11 @@ function exerciseCard(exercise, index) {
         <span class="strategy ${strategy[2]}">${strategy[1]} ${strategy[0]}</span>
       </div>
     </div>
+    ${alternativeCard(exercise.coaching?.alternative)}
     <details class="exercise-details"><summary>Előzmény és értékelés <span aria-hidden="true">+</span></summary>
       ${exercise.previous?`<p class="previous"><span>Előző · ${date(exercise.previous.date)}</span><strong>${performanceText(exercise.previous)}</strong></p>`:empty('Még nincs összehasonlítható előzmény.')}
       <p class="reason">${e(exercise.reasoning)}</p>
-      ${coachingView(exercise.coaching)}
+      ${coachingView(exercise.coaching,{showAlternative:false})}
       ${rows.length?`<h4>Legutóbbi eredmények</h4>${rows.map(r=>`<div class="session-row"><span>${date(r.date)}</span><strong>${performanceText(r)}</strong></div>`).join('')}`:''}
     </details>
   </article>`;
