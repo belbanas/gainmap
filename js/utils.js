@@ -3,6 +3,10 @@ export const number = value => new Intl.NumberFormat('hu-HU', { maximumFractionD
 export const date = value => new Intl.DateTimeFormat('hu-HU', { month: 'short', day: 'numeric', timeZone: 'Europe/Budapest' }).format(new Date(value.length === 10 ? value + 'T12:00:00Z' : value));
 export const escape = value => String(value ?? '').replace(/[&<>"']/g, char => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[char]));
 export const empty = message => `<div class="empty">${escape(message)}</div>`;
+export const performanceText = value => value.workingWeights
+  ? value.reps.map((reps,i)=>`${number(value.workingWeights[i])} ${escape(value.unit)} × ${number(reps)}`).join(' · ')
+  : `${number(value.weight)} ${escape(value.unit)} · ${value.reps.map(number).join(' / ')}`;
+export const durationText = seconds => `${Math.floor(seconds/60)}:${String(seconds%60).padStart(2,'0')}`;
 export const strategies = {
   WEIGHT_INCREASE: ['SÚLYEMELÉS', '↗', 'weight'],
   REP_PROGRESSION: ['REP-PROGRESSZIÓ', '+', 'rep'],

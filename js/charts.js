@@ -1,5 +1,5 @@
 import { escape, number, date, empty } from './utils.js';
-export const metricNames = { weight: 'Munkasúly', totalReps: 'Összismétlés', estimatedStrength: 'Becsült erő', estimated1RM: 'Becsült 1RM', volume: 'Volumen' };
+export const metricNames = { weight: 'Munkasúly (1. sorozat)', totalReps: 'Összismétlés', estimatedStrength: 'Becsült erő', estimated1RM: 'Becsült 1RM', volume: 'Volumen' };
 export function chart(records, metric = 'weight', unit = 'kg', compact = false) {
   // A null metric breaks a line; it is never interpolated into a result.
   const valid = records.filter(r => Number.isFinite(r[metric]));

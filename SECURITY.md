@@ -2,7 +2,8 @@
 
 Workout performance is intentionally permitted to be public: exercise names,
 weights, units, sets, reps, dates, trends, volume, frequency, PRs, and estimated
-strength. No real performance data ships in this foundation.
+strength. Real updates may contain these sanitized metrics; the separate demo bundle
+remains synthetic. Units and source set semantics must be verified before import.
 
 Public GitHub Pages is public. `robots.txt` and `noindex,nofollow` discourage
 indexing; they do not provide access control or make the site private.

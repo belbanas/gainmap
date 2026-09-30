@@ -642,3 +642,19 @@ footer {
 .exercise-card .card-head {
   margin-bottom:14px}
 }
+.set-targets {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: -6px 0 18px;
+}
+.set-targets span {
+  background: #c7f89409;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 8px 12px;
+}
+.set-targets small { display: block; color: var(--muted); font-size: 10px; }
+.set-targets strong { font-size: 14px; font-weight: 600; }
+.mixed-loads .load { font-size: 34px; letter-spacing: -1px; }
+.mixed-loads { flex-wrap: wrap; gap: 14px; }

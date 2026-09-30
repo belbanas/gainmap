@@ -16,9 +16,15 @@ export function validate(kind, data, strict = false) {
   const choice = (v, p, values) => { if (!values.includes(v)) fail(p, `expected ${values.join(', ')}`); };
   const list = (v, p, fn) => { if (!Array.isArray(v)) fail(p, 'array required'); else v.forEach((item,i) => fn(item,`${p}[${i}]`)); };
   const reps = (v, p, count) => { list(v,p,(r,rp)=>num(r,rp,true)); if (Array.isArray(v) && (!v.length || v.length !== count)) fail(p,'must contain one value per working set'); };
+  const weights = (v, p) => {
+    if (v.workingWeights === undefined) return;
+    list(v.workingWeights, p+'.workingWeights', num);
+    if (Array.isArray(v.workingWeights) && (v.workingWeights.length !== v.sets || v.workingWeights[0] !== v.weight)) fail(p+'.workingWeights', 'one weight per set required; first must equal primary weight');
+  };
   const performance = (v,p) => {
-    if (!object(v,p,['date','weight','unit','sets','reps','comparisonGroup'])) return;
+    if (!object(v,p,['date','weight','workingWeights','unit','sets','reps','comparisonGroup'])) return;
     day(v.date,p+'.date'); num(v.weight,p+'.weight'); text(v.unit,p+'.unit'); num(v.sets,p+'.sets',true); reps(v.reps,p+'.reps',v.sets); id(v.comparisonGroup,p+'.comparisonGroup');
+    weights(v,p);
   };
   function latest(v,p) {
     if (!object(v,p,['schemaVersion','generatedAt','status','workoutType','mainFocus','exercises','summary'])) return;
@@ -29,9 +35,10 @@ export function validate(kind, data, strict = false) {
     list(v.mainFocus,p+'.mainFocus',text); if(Array.isArray(v.mainFocus)&&v.mainFocus.length>3) fail(p+'.mainFocus','maximum 3 items');
     const ids=new Set();
     list(v.exercises,p+'.exercises',(e,ep)=>{
-      if(!object(e,ep,['id','name','image','weight','unit','sets','targetReps','repRange','strategy','previous','reasoning','progressSummary','comparisonGroup','pr','change','estimatedStrength','estimated1RM','chart'])) return;
+      if(!object(e,ep,['id','name','image','weight','workingWeights','unit','sets','targetReps','repRange','strategy','previous','reasoning','progressSummary','comparisonGroup','pr','change','estimatedStrength','estimated1RM','chart'])) return;
       id(e.id,ep+'.id'); if(ids.has(e.id)) fail(ep+'.id','duplicate exercise'); ids.add(e.id);
       text(e.name,ep+'.name'); num(e.weight,ep+'.weight'); text(e.unit,ep+'.unit'); num(e.sets,ep+'.sets',true); reps(e.targetReps,ep+'.targetReps',e.sets);
+      weights(e,ep);
       choice(e.strategy,ep+'.strategy',STRATEGIES); text(e.reasoning,ep+'.reasoning'); id(e.comparisonGroup,ep+'.comparisonGroup');
       if(e.image!==undefined && e.image!==null && !/^assets\/exercises\/[a-z0-9-]+\.(svg|png|webp)$/.test(e.image)) fail(ep+'.image','local exercise asset required');
       if(e.previous!==null){ performance(e.previous,ep+'.previous'); if(e.previous && (e.previous.comparisonGroup!==e.comparisonGroup||e.previous.unit!==e.unit)) fail(ep+'.previous','incomparable previous performance'); }
@@ -48,14 +55,25 @@ export function validate(kind, data, strict = false) {
     if(!object(v,p,['schemaVersion','sessions','records']))return;
     if(v.schemaVersion!==1)fail(p+'.schemaVersion','unsupported schema version');
     const sessions=new Map();
-    list(v.sessions,p+'.sessions',(s,sp)=>{if(!object(s,sp,['id','date','workoutType','durationMinutes']))return;id(s.id,sp+'.id');day(s.date,sp+'.date');choice(s.workoutType,sp+'.workoutType',['A','B']);if(s.durationMinutes!==undefined&&s.durationMinutes!==null)num(s.durationMinutes,sp+'.durationMinutes');if(sessions.has(s.id))fail(sp+'.id','duplicate session');sessions.set(s.id,s);});
+    list(v.sessions,p+'.sessions',(s,sp)=>{
+      if(!object(s,sp,['id','date','workoutType','durationMinutes','timedExercises']))return;
+      id(s.id,sp+'.id');day(s.date,sp+'.date');choice(s.workoutType,sp+'.workoutType',['A','B']);
+      if(s.durationMinutes!==undefined&&s.durationMinutes!==null)num(s.durationMinutes,sp+'.durationMinutes');
+      if(s.timedExercises!==undefined)list(s.timedExercises,sp+'.timedExercises',(t,tp)=>{
+        if(!object(t,tp,['id','name','durationSeconds']))return;
+        id(t.id,tp+'.id');text(t.name,tp+'.name');list(t.durationSeconds,tp+'.durationSeconds',(d,dp)=>num(d,dp,true));
+        if(Array.isArray(t.durationSeconds)&&!t.durationSeconds.length)fail(tp+'.durationSeconds','nonempty array required');
+      });
+      if(sessions.has(s.id))fail(sp+'.id','duplicate session');sessions.set(s.id,s);
+    });
     const records=new Set();
     list(v.records,p+'.records',(r,rp)=>{
-      if(!object(r,rp,['sessionId','date','exerciseId','name','comparisonGroup','weight','unit','sets','reps','totalReps','volume','estimatedStrength','estimated1RM','pr','prType','workoutType','progressionResult']))return;
-      id(r.sessionId,rp+'.sessionId');id(r.exerciseId,rp+'.exerciseId');text(r.name,rp+'.name');performance({date:r.date,weight:r.weight,unit:r.unit,sets:r.sets,reps:r.reps,comparisonGroup:r.comparisonGroup},rp);
+      if(!object(r,rp,['sessionId','date','exerciseId','name','comparisonGroup','weight','workingWeights','unit','sets','reps','totalReps','volume','estimatedStrength','estimated1RM','pr','prType','workoutType','progressionResult']))return;
+      id(r.sessionId,rp+'.sessionId');id(r.exerciseId,rp+'.exerciseId');text(r.name,rp+'.name');performance({date:r.date,weight:r.weight,workingWeights:r.workingWeights,unit:r.unit,sets:r.sets,reps:r.reps,comparisonGroup:r.comparisonGroup},rp);
       num(r.totalReps,rp+'.totalReps',true);if(Array.isArray(r.reps)&&r.totalReps!==r.reps.reduce((a,b)=>a+b,0))fail(rp+'.totalReps','must equal sum of reps');
       for(const k of ['volume','estimatedStrength','estimated1RM'])if(r[k]!==undefined&&r[k]!==null)num(r[k],rp+'.'+k);
-      if(r.volume!=null&&Math.abs(r.volume-r.weight*r.totalReps)>0.01)fail(rp+'.volume','must equal weight × totalReps');
+      const volume=Array.isArray(r.reps)?r.reps.reduce((sum,reps,i)=>sum+(r.workingWeights?.[i]??r.weight)*reps,0):NaN;
+      if(r.volume!=null&&(!Number.isFinite(volume)||Math.abs(r.volume-volume)>0.01))fail(rp+'.volume','must equal sum of set weight × reps');
       if(typeof r.pr!=='boolean')fail(rp+'.pr','boolean required');
       if(r.prType!==undefined&&r.prType!==null)choice(r.prType,rp+'.prType',['weight','reps','totalReps','estimatedStrength','estimated1RM']);
       choice(r.workoutType,rp+'.workoutType',['A','B']);choice(r.progressionResult,rp+'.progressionResult',['improved','stable','dip','unknown']);

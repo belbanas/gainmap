@@ -7,6 +7,14 @@ The frontend is stable. Scheduled runs normally modify only `data/latest.json` a
 `data/history.json`. Do not regenerate HTML, CSS, JS, or DESIGN.md each workout.
 Assets may occasionally be added using the documented local slug convention.
 
+Real-data import: preserve per-set workingWeights; never apply the first load to
+every set. Timed exercises use session.timedExercises, not invented reps. The current
+Lyfta connector does not expose units, set type, reliable completion semantics, or
+exercise comments. Obtain missing unit/set semantics from the user. Do not infer
+machine identity from an exercise name. Without reviewed machine identification,
+use separate local comparison groups per session and conservative HOLD guidance
+valid only on the previous setup. Do not store source comments verbatim.
+
 Future authorized workflow: read-only Lyfta plugin → sanitized history → infer A/B
 from completed sessions → comparable working-set analysis → JSON update → validate
 → review staged diff → commit → push → GitHub Pages. Do not implement this workflow
@@ -32,3 +40,6 @@ Prefer a subject under 72 characters, without a trailing period.
 Example: `Update GainMap workout plan for YYYY-MM-DD`.
 The user has authorized committing and pushing the completed foundation for this
 task. For future tasks, follow the user's authorization and repository policy.
+When the user authorizes an update, complete validation, commit, and push in that
+run without asking again. Verify the remote branch matches the committed HEAD.
+Report commit and push separately; locally committed is not remotely published.

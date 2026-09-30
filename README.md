@@ -2,7 +2,8 @@
 
 A Hungarian, mobile-first static workout dashboard: today's A/B recommendation,
 working load, target reps, progression guidance, and comparable performance trends.
-The initial repository contains synthetic demo examples only. There is no Lyfta
+The foundation included synthetic demo examples; current latest/history may contain
+sanitized real training data. Demo remains separately available. There is no live Lyfta
 connection, scheduled updater, backend, authentication, framework, or build step.
 
 ## Preview and validate
@@ -54,6 +55,12 @@ Exercise cards, chart metric/window selectors, expandable results, weekly traini
 frequency, producer-marked PRs, and paginated session history use only stored facts.
 Summary counts cover 28 days ending at the last recorded session, not today.
 PRs come from explicit producer flags. Becsült erő/1RM are estimates.
+Cards show mixed per-set loads explicitly, with each load paired to its rep target.
+Duration-only exercises appear in session history rather than fabricated rep charts.
+Unidentified machines remain in separate session groups; older single-point groups
+are preserved in history without crowding the chart selector. No machine equivalence
+is assumed from the exercise name. This connector does not currently expose notes
+or unit metadata; import requires reviewed user clarification. See AGENTS.md.
 
 ## Comparability and images
 

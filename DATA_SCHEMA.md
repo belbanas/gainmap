@@ -36,7 +36,8 @@ exercise array only when no previous valid plan exists; otherwise retain the pla
 | id | slug, yes | Stable local exercise ID, chest-press |
 | name | string, yes | Display name, Chest Press |
 | image | string/null, optional | assets/exercises/chest-press.svg; local svg/png/webp |
-| weight | number, yes | Recommended load, 70 |
+| weight | number, yes | Recommended first working-set load, 70 |
+| workingWeights | number[], optional | One load per working set, e.g. [70,60]; first equals weight. Omission means weight applies to every set. Not nullable. |
 | unit | string, yes | Preserved unit, kg; no implicit conversion |
 | sets | integer, yes | Working sets, 3; reps array must have this length |
 | targetReps | integer[], yes | One target per set, [10,10,9], nonempty |
@@ -61,7 +62,8 @@ charts remain the primary display. Do not insert identifying text into these str
 
 All fields required: `date` (date), `weight` (number), `unit` (string), `sets`
 (integer), `reps` (nonempty integer array, one per set), `comparisonGroup` (slug).
-Unit and comparisonGroup must match the parent exercise. Example: 70 kg, three sets,
+Optional `workingWeights` uses the same rules as the exercise array and preserves
+mixed loads. Unit and comparisonGroup must match the parent exercise. Example: 70 kg, three sets,
 [10,10,8]. No external ID or free-text notes.
 
 ### chart point
@@ -84,8 +86,11 @@ Required top-level fields: `schemaVersion` (exactly 1), `sessions` (session arra
 | date | date, yes | Completion date |
 | workoutType | A/B, yes | Actual completed workout |
 | durationMinutes | number/null, optional | Duration if available |
+| timedExercises | object[], optional | Duration-only exercises; each requires local id (slug), name (string), durationSeconds (nonempty array of nonnegative integer seconds, one per recorded set). No weight or fabricated reps. |
 
 IDs are unique. Multiple sessions on one date are allowed and counted separately.
+Timed exercises are displayed within session history. They do not enter load/reps
+charts or volume calculations. Example: Front Plank with durationSeconds [94,94].
 
 ### Performance record
 
@@ -96,12 +101,13 @@ IDs are unique. Multiple sessions on one date are allowed and counted separately
 | exerciseId | slug, yes | Matches stable exercise id |
 | name | string, yes | Exercise display name |
 | comparisonGroup | slug, yes | Reviewed machine comparability group |
-| weight | number, yes | Working weight |
+| weight | number, yes | First working-set load, chart's primary weight |
+| workingWeights | number[], optional | All working-set loads in order; first equals weight; one per rep value; omission means uniform load |
 | unit | string, yes | Source load unit |
 | sets | integer, yes | Working-set count |
 | reps | integer[], yes | One result per working set, nonempty |
 | totalReps | integer, yes | Exact sum of reps |
-| volume | number/null, optional | weight × totalReps in load-unit·reps |
+| volume | number/null, optional | Sum of each working-set weight × reps, in load-unit·reps |
 | estimatedStrength | number/null, optional | Same-unit estimate |
 | estimated1RM | number/null, optional | Same-unit 1RM estimate |
 | pr | boolean, yes | Explicit producer decision |
@@ -110,8 +116,10 @@ IDs are unique. Multiple sessions on one date are allowed and counted separately
 | progressionResult | enum, yes | improved, stable, dip, unknown |
 
 One record per session/exercise/group. Different unit histories remain separate even
-if their group names match. Mixed-load working sets must be normalized into separate
-comparable exercise variants by the producer; do not encode one misleading weight.
+if their group names match. Mixed-load working sets use workingWeights; never imply
+every set used the first load. Weight charts compare first working-set load; estimates
+may use only same-method comparable sets. Volume does not assume doubled dumbbell
+or unilateral loads unless that meaning is explicitly documented by the source.
 For `reps` PRs the UI shows total reps at the stored load; PR criteria remain producer
 responsibility. This foundation's demo estimates use Epley on the best working set,
 weight × (1 + max reps/30), for demonstration only. Future estimates must use a

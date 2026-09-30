@@ -1,5 +1,4494 @@
 {
   "schemaVersion": 1,
-  "sessions": [],
-  "records": []
+  "sessions": [
+    {
+      "id": "session-001",
+      "date": "2026-08-17",
+      "workoutType": "A"
+    },
+    {
+      "id": "session-002",
+      "date": "2026-08-19",
+      "workoutType": "B",
+      "timedExercises": [
+        {
+          "id": "front-plank",
+          "name": "Front Plank",
+          "durationSeconds": [
+            85,
+            80
+          ]
+        },
+        {
+          "id": "side-plank",
+          "name": "Side Plank",
+          "durationSeconds": [
+            45,
+            40
+          ]
+        }
+      ]
+    },
+    {
+      "id": "session-003",
+      "date": "2026-08-21",
+      "workoutType": "A"
+    },
+    {
+      "id": "session-004",
+      "date": "2026-08-24",
+      "workoutType": "B",
+      "timedExercises": [
+        {
+          "id": "front-plank",
+          "name": "Front Plank",
+          "durationSeconds": [
+            90,
+            90
+          ]
+        },
+        {
+          "id": "side-plank",
+          "name": "Side Plank",
+          "durationSeconds": [
+            45,
+            45
+          ]
+        }
+      ]
+    },
+    {
+      "id": "session-005",
+      "date": "2026-08-26",
+      "workoutType": "A"
+    },
+    {
+      "id": "session-006",
+      "date": "2026-08-28",
+      "workoutType": "B",
+      "timedExercises": [
+        {
+          "id": "front-plank",
+          "name": "Front Plank",
+          "durationSeconds": [
+            90,
+            90
+          ]
+        },
+        {
+          "id": "side-plank",
+          "name": "Side Plank",
+          "durationSeconds": [
+            45,
+            45
+          ]
+        },
+        {
+          "id": "walking-on-incline-treadmill",
+          "name": "Walking on Incline Treadmill",
+          "durationSeconds": [
+            600
+          ]
+        }
+      ]
+    },
+    {
+      "id": "session-007",
+      "date": "2026-08-31",
+      "workoutType": "A"
+    },
+    {
+      "id": "session-008",
+      "date": "2026-09-02",
+      "workoutType": "B",
+      "timedExercises": [
+        {
+          "id": "front-plank",
+          "name": "Front Plank",
+          "durationSeconds": [
+            92,
+            92
+          ]
+        },
+        {
+          "id": "side-plank",
+          "name": "Side Plank",
+          "durationSeconds": [
+            46,
+            46
+          ]
+        }
+      ]
+    },
+    {
+      "id": "session-009",
+      "date": "2026-09-04",
+      "workoutType": "A"
+    },
+    {
+      "id": "session-010",
+      "date": "2026-09-07",
+      "workoutType": "B",
+      "timedExercises": [
+        {
+          "id": "front-plank",
+          "name": "Front Plank",
+          "durationSeconds": [
+            94,
+            94
+          ]
+        },
+        {
+          "id": "side-plank",
+          "name": "Side Plank",
+          "durationSeconds": [
+            47,
+            47
+          ]
+        }
+      ]
+    },
+    {
+      "id": "session-011",
+      "date": "2026-09-09",
+      "workoutType": "A"
+    },
+    {
+      "id": "session-012",
+      "date": "2026-09-12",
+      "workoutType": "B"
+    },
+    {
+      "id": "session-013",
+      "date": "2026-09-14",
+      "workoutType": "A"
+    },
+    {
+      "id": "session-014",
+      "date": "2026-09-16",
+      "workoutType": "B",
+      "timedExercises": [
+        {
+          "id": "front-plank",
+          "name": "Front Plank",
+          "durationSeconds": [
+            94,
+            94
+          ]
+        },
+        {
+          "id": "side-plank",
+          "name": "Side Plank",
+          "durationSeconds": [
+            47,
+            47
+          ]
+        }
+      ]
+    },
+    {
+      "id": "session-015",
+      "date": "2026-09-18",
+      "workoutType": "A"
+    },
+    {
+      "id": "session-016",
+      "date": "2026-09-21",
+      "workoutType": "B",
+      "timedExercises": [
+        {
+          "id": "front-plank",
+          "name": "Front Plank",
+          "durationSeconds": [
+            94,
+            94
+          ]
+        },
+        {
+          "id": "side-plank",
+          "name": "Side Plank",
+          "durationSeconds": [
+            47,
+            47
+          ]
+        }
+      ]
+    },
+    {
+      "id": "session-017",
+      "date": "2026-09-23",
+      "workoutType": "A"
+    },
+    {
+      "id": "session-018",
+      "date": "2026-09-25",
+      "workoutType": "B",
+      "timedExercises": [
+        {
+          "id": "front-plank",
+          "name": "Front Plank",
+          "durationSeconds": [
+            94,
+            94
+          ]
+        },
+        {
+          "id": "side-plank",
+          "name": "Side Plank",
+          "durationSeconds": [
+            47,
+            47
+          ]
+        }
+      ]
+    },
+    {
+      "id": "session-019",
+      "date": "2026-09-28",
+      "workoutType": "A"
+    },
+    {
+      "id": "session-020",
+      "date": "2026-09-30",
+      "workoutType": "B"
+    }
+  ],
+  "records": [
+    {
+      "sessionId": "session-001",
+      "date": "2026-08-17",
+      "exerciseId": "dumbbell-bench-press",
+      "name": "Dumbbell Bench Press",
+      "comparisonGroup": "dumbbell-bench-press-free-weight",
+      "weight": 30,
+      "workingWeights": [
+        30,
+        27.5
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        7,
+        10
+      ],
+      "totalReps": 17,
+      "volume": 485,
+      "pr": false,
+      "prType": null,
+      "workoutType": "A",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-001",
+      "date": "2026-08-17",
+      "exerciseId": "dumbbell-incline-bench-press",
+      "name": "Dumbbell Incline Bench Press",
+      "comparisonGroup": "dumbbell-incline-bench-press-free-weight",
+      "weight": 25,
+      "workingWeights": [
+        25,
+        22.5
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        9,
+        9
+      ],
+      "totalReps": 18,
+      "volume": 427.5,
+      "pr": false,
+      "prType": null,
+      "workoutType": "A",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-001",
+      "date": "2026-08-17",
+      "exerciseId": "lever-seated-fly",
+      "name": "Lever Seated Fly",
+      "comparisonGroup": "lever-seated-fly-unverified-001",
+      "weight": 59,
+      "workingWeights": [
+        59,
+        45.4
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        5,
+        6
+      ],
+      "totalReps": 11,
+      "volume": 567.4,
+      "pr": false,
+      "prType": null,
+      "workoutType": "A",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-001",
+      "date": "2026-08-17",
+      "exerciseId": "sled-45-leg-wide-press",
+      "name": "Sled 45° Leg Wide Press",
+      "comparisonGroup": "sled-45-leg-wide-press-unverified-001",
+      "weight": 70,
+      "workingWeights": [
+        70,
+        60
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        12,
+        18
+      ],
+      "totalReps": 30,
+      "volume": 1920,
+      "pr": false,
+      "prType": null,
+      "workoutType": "A",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-001",
+      "date": "2026-08-17",
+      "exerciseId": "lever-seated-leg-curl",
+      "name": "Lever Seated Leg Curl",
+      "comparisonGroup": "lever-seated-leg-curl-unverified-001",
+      "weight": 65,
+      "workingWeights": [
+        65,
+        55
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        9,
+        10
+      ],
+      "totalReps": 19,
+      "volume": 1135,
+      "pr": false,
+      "prType": null,
+      "workoutType": "A",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-001",
+      "date": "2026-08-17",
+      "exerciseId": "lever-seated-hip-abduction",
+      "name": "Lever Seated Hip Abduction",
+      "comparisonGroup": "lever-seated-hip-abduction-unverified-001",
+      "weight": 65,
+      "workingWeights": [
+        65,
+        55
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        15,
+        16
+      ],
+      "totalReps": 31,
+      "volume": 1855,
+      "pr": false,
+      "prType": null,
+      "workoutType": "A",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-001",
+      "date": "2026-08-17",
+      "exerciseId": "lever-standing-calf-raise",
+      "name": "Lever Standing Calf Raise",
+      "comparisonGroup": "lever-standing-calf-raise-unverified-001",
+      "weight": 100,
+      "workingWeights": [
+        100,
+        100
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        16,
+        13
+      ],
+      "totalReps": 29,
+      "volume": 2900,
+      "pr": false,
+      "prType": null,
+      "workoutType": "A",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-001",
+      "date": "2026-08-17",
+      "exerciseId": "lever-preacher-curl",
+      "name": "Lever Preacher Curl",
+      "comparisonGroup": "lever-preacher-curl-unverified-001",
+      "weight": 50,
+      "workingWeights": [
+        50,
+        40
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        9,
+        8
+      ],
+      "totalReps": 17,
+      "volume": 770,
+      "pr": false,
+      "prType": null,
+      "workoutType": "A",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-001",
+      "date": "2026-08-17",
+      "exerciseId": "dumbbell-incline-biceps-curl",
+      "name": "Dumbbell Incline Biceps Curl",
+      "comparisonGroup": "dumbbell-incline-biceps-curl-free-weight",
+      "weight": 15,
+      "workingWeights": [
+        15,
+        12.5
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        7,
+        12
+      ],
+      "totalReps": 19,
+      "volume": 255,
+      "pr": false,
+      "prType": null,
+      "workoutType": "A",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-001",
+      "date": "2026-08-17",
+      "exerciseId": "dumbbell-one-arm-hammer-preacher-curl",
+      "name": "Dumbbell One Arm Hammer Preacher Curl",
+      "comparisonGroup": "dumbbell-one-arm-hammer-preacher-curl-free-weight",
+      "weight": 12.5,
+      "workingWeights": [
+        12.5,
+        10
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        9,
+        10
+      ],
+      "totalReps": 19,
+      "volume": 212.5,
+      "pr": false,
+      "prType": null,
+      "workoutType": "A",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-002",
+      "date": "2026-08-19",
+      "exerciseId": "pulldown",
+      "name": "Pulldown",
+      "comparisonGroup": "pulldown-unverified-002",
+      "weight": 65,
+      "workingWeights": [
+        65,
+        50
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        7,
+        14
+      ],
+      "totalReps": 21,
+      "volume": 1155,
+      "pr": false,
+      "prType": null,
+      "workoutType": "B",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-002",
+      "date": "2026-08-19",
+      "exerciseId": "lever-alternating-narrow-grip-seated-row",
+      "name": "Lever Alternating Narrow Grip Seated Row",
+      "comparisonGroup": "lever-alternating-narrow-grip-seated-row-unverified-002",
+      "weight": 30,
+      "workingWeights": [
+        30,
+        25
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        6,
+        8
+      ],
+      "totalReps": 14,
+      "volume": 380,
+      "pr": false,
+      "prType": null,
+      "workoutType": "B",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-002",
+      "date": "2026-08-19",
+      "exerciseId": "lever-shoulder-press",
+      "name": "Lever Shoulder Press",
+      "comparisonGroup": "lever-shoulder-press-unverified-002",
+      "weight": 60,
+      "workingWeights": [
+        60,
+        50
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        9,
+        11
+      ],
+      "totalReps": 20,
+      "volume": 1090,
+      "pr": false,
+      "prType": null,
+      "workoutType": "B",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-002",
+      "date": "2026-08-19",
+      "exerciseId": "cable-one-arm-lateral-raise",
+      "name": "Cable One Arm Lateral Raise",
+      "comparisonGroup": "cable-one-arm-lateral-raise-unverified-002",
+      "weight": 10,
+      "workingWeights": [
+        10,
+        7.5
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        10,
+        10
+      ],
+      "totalReps": 20,
+      "volume": 175,
+      "pr": false,
+      "prType": null,
+      "workoutType": "B",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-002",
+      "date": "2026-08-19",
+      "exerciseId": "lever-seated-reverse-fly",
+      "name": "Lever Seated Reverse Fly",
+      "comparisonGroup": "lever-seated-reverse-fly-unverified-002",
+      "weight": 40.8,
+      "workingWeights": [
+        40.8,
+        31.8
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        8,
+        8
+      ],
+      "totalReps": 16,
+      "volume": 580.8,
+      "pr": false,
+      "prType": null,
+      "workoutType": "B",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-002",
+      "date": "2026-08-19",
+      "exerciseId": "triceps-pushdown",
+      "name": "Triceps Pushdown",
+      "comparisonGroup": "triceps-pushdown-unverified-002",
+      "weight": 35,
+      "workingWeights": [
+        35,
+        30
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        8,
+        11
+      ],
+      "totalReps": 19,
+      "volume": 610,
+      "pr": false,
+      "prType": null,
+      "workoutType": "B",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-002",
+      "date": "2026-08-19",
+      "exerciseId": "standing-triceps-extension",
+      "name": "Standing Triceps Extension",
+      "comparisonGroup": "standing-triceps-extension-unverified-002",
+      "weight": 22.5,
+      "workingWeights": [
+        22.5,
+        20
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        12,
+        10
+      ],
+      "totalReps": 22,
+      "volume": 470,
+      "pr": false,
+      "prType": null,
+      "workoutType": "B",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-003",
+      "date": "2026-08-21",
+      "exerciseId": "dumbbell-bench-press",
+      "name": "Dumbbell Bench Press",
+      "comparisonGroup": "dumbbell-bench-press-free-weight",
+      "weight": 30,
+      "workingWeights": [
+        30,
+        27.5
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        8,
+        12
+      ],
+      "totalReps": 20,
+      "volume": 570,
+      "pr": false,
+      "prType": null,
+      "workoutType": "A",
+      "progressionResult": "improved"
+    },
+    {
+      "sessionId": "session-003",
+      "date": "2026-08-21",
+      "exerciseId": "dumbbell-incline-bench-press",
+      "name": "Dumbbell Incline Bench Press",
+      "comparisonGroup": "dumbbell-incline-bench-press-free-weight",
+      "weight": 25,
+      "workingWeights": [
+        25,
+        22.5
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        11,
+        11
+      ],
+      "totalReps": 22,
+      "volume": 522.5,
+      "pr": false,
+      "prType": null,
+      "workoutType": "A",
+      "progressionResult": "improved"
+    },
+    {
+      "sessionId": "session-003",
+      "date": "2026-08-21",
+      "exerciseId": "lever-seated-fly",
+      "name": "Lever Seated Fly",
+      "comparisonGroup": "lever-seated-fly-unverified-003",
+      "weight": 45.4,
+      "workingWeights": [
+        45.4,
+        36.3
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        9,
+        9
+      ],
+      "totalReps": 18,
+      "volume": 735.3,
+      "pr": false,
+      "prType": null,
+      "workoutType": "A",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-003",
+      "date": "2026-08-21",
+      "exerciseId": "sled-45-leg-wide-press",
+      "name": "Sled 45° Leg Wide Press",
+      "comparisonGroup": "sled-45-leg-wide-press-unverified-003",
+      "weight": 80,
+      "workingWeights": [
+        80,
+        70
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        12,
+        17
+      ],
+      "totalReps": 29,
+      "volume": 2150,
+      "pr": false,
+      "prType": null,
+      "workoutType": "A",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-003",
+      "date": "2026-08-21",
+      "exerciseId": "lever-seated-leg-curl",
+      "name": "Lever Seated Leg Curl",
+      "comparisonGroup": "lever-seated-leg-curl-unverified-003",
+      "weight": 65,
+      "workingWeights": [
+        65,
+        55
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        11,
+        10
+      ],
+      "totalReps": 21,
+      "volume": 1265,
+      "pr": false,
+      "prType": null,
+      "workoutType": "A",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-003",
+      "date": "2026-08-21",
+      "exerciseId": "lever-standing-calf-raise",
+      "name": "Lever Standing Calf Raise",
+      "comparisonGroup": "lever-standing-calf-raise-unverified-003",
+      "weight": 100,
+      "workingWeights": [
+        100,
+        100
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        17,
+        15
+      ],
+      "totalReps": 32,
+      "volume": 3200,
+      "pr": false,
+      "prType": null,
+      "workoutType": "A",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-003",
+      "date": "2026-08-21",
+      "exerciseId": "lever-preacher-curl",
+      "name": "Lever Preacher Curl",
+      "comparisonGroup": "lever-preacher-curl-unverified-003",
+      "weight": 50,
+      "workingWeights": [
+        50,
+        40
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        9,
+        8
+      ],
+      "totalReps": 17,
+      "volume": 770,
+      "pr": false,
+      "prType": null,
+      "workoutType": "A",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-003",
+      "date": "2026-08-21",
+      "exerciseId": "dumbbell-incline-biceps-curl",
+      "name": "Dumbbell Incline Biceps Curl",
+      "comparisonGroup": "dumbbell-incline-biceps-curl-free-weight",
+      "weight": 15,
+      "workingWeights": [
+        15,
+        12
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        8,
+        12
+      ],
+      "totalReps": 20,
+      "volume": 264,
+      "pr": false,
+      "prType": null,
+      "workoutType": "A",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-004",
+      "date": "2026-08-24",
+      "exerciseId": "pulldown",
+      "name": "Pulldown",
+      "comparisonGroup": "pulldown-unverified-004",
+      "weight": 65,
+      "workingWeights": [
+        65,
+        50
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        8,
+        16
+      ],
+      "totalReps": 24,
+      "volume": 1320,
+      "pr": false,
+      "prType": null,
+      "workoutType": "B",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-004",
+      "date": "2026-08-24",
+      "exerciseId": "lever-alternating-narrow-grip-seated-row",
+      "name": "Lever Alternating Narrow Grip Seated Row",
+      "comparisonGroup": "lever-alternating-narrow-grip-seated-row-unverified-004",
+      "weight": 30,
+      "workingWeights": [
+        30,
+        25
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        7,
+        9
+      ],
+      "totalReps": 16,
+      "volume": 435,
+      "pr": false,
+      "prType": null,
+      "workoutType": "B",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-004",
+      "date": "2026-08-24",
+      "exerciseId": "lever-shoulder-press",
+      "name": "Lever Shoulder Press",
+      "comparisonGroup": "lever-shoulder-press-unverified-004",
+      "weight": 60,
+      "workingWeights": [
+        60,
+        50
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        10,
+        11
+      ],
+      "totalReps": 21,
+      "volume": 1150,
+      "pr": false,
+      "prType": null,
+      "workoutType": "B",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-004",
+      "date": "2026-08-24",
+      "exerciseId": "cable-one-arm-lateral-raise",
+      "name": "Cable One Arm Lateral Raise",
+      "comparisonGroup": "cable-one-arm-lateral-raise-unverified-004",
+      "weight": 10,
+      "workingWeights": [
+        10,
+        7.5
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        11,
+        12
+      ],
+      "totalReps": 23,
+      "volume": 200,
+      "pr": false,
+      "prType": null,
+      "workoutType": "B",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-004",
+      "date": "2026-08-24",
+      "exerciseId": "lever-seated-reverse-fly",
+      "name": "Lever Seated Reverse Fly",
+      "comparisonGroup": "lever-seated-reverse-fly-unverified-004",
+      "weight": 31.8,
+      "workingWeights": [
+        31.8,
+        27.2
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        13,
+        10
+      ],
+      "totalReps": 23,
+      "volume": 685.4,
+      "pr": false,
+      "prType": null,
+      "workoutType": "B",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-004",
+      "date": "2026-08-24",
+      "exerciseId": "triceps-pushdown",
+      "name": "Triceps Pushdown",
+      "comparisonGroup": "triceps-pushdown-unverified-004",
+      "weight": 35,
+      "workingWeights": [
+        35,
+        30
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        8,
+        11
+      ],
+      "totalReps": 19,
+      "volume": 610,
+      "pr": false,
+      "prType": null,
+      "workoutType": "B",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-004",
+      "date": "2026-08-24",
+      "exerciseId": "standing-triceps-extension",
+      "name": "Standing Triceps Extension",
+      "comparisonGroup": "standing-triceps-extension-unverified-004",
+      "weight": 25,
+      "workingWeights": [
+        25,
+        22.5
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        6,
+        7
+      ],
+      "totalReps": 13,
+      "volume": 307.5,
+      "pr": false,
+      "prType": null,
+      "workoutType": "B",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-004",
+      "date": "2026-08-24",
+      "exerciseId": "hyperextension",
+      "name": "Hyperextension",
+      "comparisonGroup": "hyperextension-bodyweight",
+      "weight": 16,
+      "workingWeights": [
+        16,
+        16
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        15,
+        12
+      ],
+      "totalReps": 27,
+      "volume": 432,
+      "pr": false,
+      "prType": null,
+      "workoutType": "B",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-005",
+      "date": "2026-08-26",
+      "exerciseId": "dumbbell-bench-press",
+      "name": "Dumbbell Bench Press",
+      "comparisonGroup": "dumbbell-bench-press-free-weight",
+      "weight": 30,
+      "workingWeights": [
+        30,
+        27.5
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        9,
+        11
+      ],
+      "totalReps": 20,
+      "volume": 572.5,
+      "pr": false,
+      "prType": null,
+      "workoutType": "A",
+      "progressionResult": "stable"
+    },
+    {
+      "sessionId": "session-005",
+      "date": "2026-08-26",
+      "exerciseId": "dumbbell-incline-bench-press",
+      "name": "Dumbbell Incline Bench Press",
+      "comparisonGroup": "dumbbell-incline-bench-press-free-weight",
+      "weight": 25,
+      "workingWeights": [
+        25,
+        20
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        12,
+        14
+      ],
+      "totalReps": 26,
+      "volume": 580,
+      "pr": false,
+      "prType": null,
+      "workoutType": "A",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-005",
+      "date": "2026-08-26",
+      "exerciseId": "lever-seated-fly",
+      "name": "Lever Seated Fly",
+      "comparisonGroup": "lever-seated-fly-unverified-005",
+      "weight": 45.4,
+      "workingWeights": [
+        45.4,
+        36.3
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        11,
+        12
+      ],
+      "totalReps": 23,
+      "volume": 935,
+      "pr": false,
+      "prType": null,
+      "workoutType": "A",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-005",
+      "date": "2026-08-26",
+      "exerciseId": "sled-45-leg-wide-press",
+      "name": "Sled 45° Leg Wide Press",
+      "comparisonGroup": "sled-45-leg-wide-press-unverified-005",
+      "weight": 90,
+      "workingWeights": [
+        90,
+        75
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        9,
+        14
+      ],
+      "totalReps": 23,
+      "volume": 1860,
+      "pr": false,
+      "prType": null,
+      "workoutType": "A",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-005",
+      "date": "2026-08-26",
+      "exerciseId": "lever-seated-leg-curl",
+      "name": "Lever Seated Leg Curl",
+      "comparisonGroup": "lever-seated-leg-curl-unverified-005",
+      "weight": 65,
+      "workingWeights": [
+        65,
+        55
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        10,
+        13
+      ],
+      "totalReps": 23,
+      "volume": 1365,
+      "pr": false,
+      "prType": null,
+      "workoutType": "A",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-005",
+      "date": "2026-08-26",
+      "exerciseId": "lever-seated-hip-abduction",
+      "name": "Lever Seated Hip Abduction",
+      "comparisonGroup": "lever-seated-hip-abduction-unverified-005",
+      "weight": 70,
+      "workingWeights": [
+        70,
+        55
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        15,
+        18
+      ],
+      "totalReps": 33,
+      "volume": 2040,
+      "pr": false,
+      "prType": null,
+      "workoutType": "A",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-005",
+      "date": "2026-08-26",
+      "exerciseId": "lever-standing-calf-raise",
+      "name": "Lever Standing Calf Raise",
+      "comparisonGroup": "lever-standing-calf-raise-unverified-005",
+      "weight": 100,
+      "workingWeights": [
+        100,
+        100
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        18,
+        13
+      ],
+      "totalReps": 31,
+      "volume": 3100,
+      "pr": false,
+      "prType": null,
+      "workoutType": "A",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-005",
+      "date": "2026-08-26",
+      "exerciseId": "lever-preacher-curl",
+      "name": "Lever Preacher Curl",
+      "comparisonGroup": "lever-preacher-curl-unverified-005",
+      "weight": 50,
+      "workingWeights": [
+        50,
+        40
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        10,
+        9
+      ],
+      "totalReps": 19,
+      "volume": 860,
+      "pr": false,
+      "prType": null,
+      "workoutType": "A",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-005",
+      "date": "2026-08-26",
+      "exerciseId": "dumbbell-incline-biceps-curl",
+      "name": "Dumbbell Incline Biceps Curl",
+      "comparisonGroup": "dumbbell-incline-biceps-curl-free-weight",
+      "weight": 15,
+      "workingWeights": [
+        15,
+        12.5
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        6,
+        11
+      ],
+      "totalReps": 17,
+      "volume": 227.5,
+      "pr": false,
+      "prType": null,
+      "workoutType": "A",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-005",
+      "date": "2026-08-26",
+      "exerciseId": "dumbbell-one-arm-hammer-preacher-curl",
+      "name": "Dumbbell One Arm Hammer Preacher Curl",
+      "comparisonGroup": "dumbbell-one-arm-hammer-preacher-curl-free-weight",
+      "weight": 12.5,
+      "workingWeights": [
+        12.5,
+        10
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        10,
+        12
+      ],
+      "totalReps": 22,
+      "volume": 245,
+      "pr": false,
+      "prType": null,
+      "workoutType": "A",
+      "progressionResult": "improved"
+    },
+    {
+      "sessionId": "session-006",
+      "date": "2026-08-28",
+      "exerciseId": "pulldown",
+      "name": "Pulldown",
+      "comparisonGroup": "pulldown-unverified-006",
+      "weight": 65,
+      "workingWeights": [
+        65,
+        55
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        8,
+        11
+      ],
+      "totalReps": 19,
+      "volume": 1125,
+      "pr": false,
+      "prType": null,
+      "workoutType": "B",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-006",
+      "date": "2026-08-28",
+      "exerciseId": "lever-alternating-narrow-grip-seated-row",
+      "name": "Lever Alternating Narrow Grip Seated Row",
+      "comparisonGroup": "lever-alternating-narrow-grip-seated-row-unverified-006",
+      "weight": 30,
+      "workingWeights": [
+        30,
+        25
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        7,
+        10
+      ],
+      "totalReps": 17,
+      "volume": 460,
+      "pr": false,
+      "prType": null,
+      "workoutType": "B",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-006",
+      "date": "2026-08-28",
+      "exerciseId": "lever-shoulder-press",
+      "name": "Lever Shoulder Press",
+      "comparisonGroup": "lever-shoulder-press-unverified-006",
+      "weight": 60,
+      "workingWeights": [
+        60,
+        50
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        10,
+        12
+      ],
+      "totalReps": 22,
+      "volume": 1200,
+      "pr": false,
+      "prType": null,
+      "workoutType": "B",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-006",
+      "date": "2026-08-28",
+      "exerciseId": "cable-one-arm-lateral-raise",
+      "name": "Cable One Arm Lateral Raise",
+      "comparisonGroup": "cable-one-arm-lateral-raise-unverified-006",
+      "weight": 10,
+      "workingWeights": [
+        10,
+        7.5
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        11,
+        12
+      ],
+      "totalReps": 23,
+      "volume": 200,
+      "pr": false,
+      "prType": null,
+      "workoutType": "B",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-006",
+      "date": "2026-08-28",
+      "exerciseId": "cable-standing-single-delt-row",
+      "name": "Cable Standing Single Delt Row",
+      "comparisonGroup": "cable-standing-single-delt-row-unverified-006",
+      "weight": 10,
+      "workingWeights": [
+        10,
+        7.5
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        8,
+        13
+      ],
+      "totalReps": 21,
+      "volume": 177.5,
+      "pr": false,
+      "prType": null,
+      "workoutType": "B",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-006",
+      "date": "2026-08-28",
+      "exerciseId": "triceps-pushdown",
+      "name": "Triceps Pushdown",
+      "comparisonGroup": "triceps-pushdown-unverified-006",
+      "weight": 35,
+      "workingWeights": [
+        35,
+        30
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        9,
+        12
+      ],
+      "totalReps": 21,
+      "volume": 675,
+      "pr": false,
+      "prType": null,
+      "workoutType": "B",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-006",
+      "date": "2026-08-28",
+      "exerciseId": "standing-triceps-extension",
+      "name": "Standing Triceps Extension",
+      "comparisonGroup": "standing-triceps-extension-unverified-006",
+      "weight": 25,
+      "workingWeights": [
+        25,
+        22.5
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        7,
+        10
+      ],
+      "totalReps": 17,
+      "volume": 400,
+      "pr": false,
+      "prType": null,
+      "workoutType": "B",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-006",
+      "date": "2026-08-28",
+      "exerciseId": "hyperextension",
+      "name": "Hyperextension",
+      "comparisonGroup": "hyperextension-bodyweight",
+      "weight": 15,
+      "workingWeights": [
+        15,
+        15
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        17,
+        15
+      ],
+      "totalReps": 32,
+      "volume": 480,
+      "pr": false,
+      "prType": null,
+      "workoutType": "B",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-007",
+      "date": "2026-08-31",
+      "exerciseId": "dumbbell-bench-press",
+      "name": "Dumbbell Bench Press",
+      "comparisonGroup": "dumbbell-bench-press-free-weight",
+      "weight": 30,
+      "workingWeights": [
+        30,
+        27.5
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        10,
+        12
+      ],
+      "totalReps": 22,
+      "volume": 630,
+      "pr": false,
+      "prType": null,
+      "workoutType": "A",
+      "progressionResult": "improved"
+    },
+    {
+      "sessionId": "session-007",
+      "date": "2026-08-31",
+      "exerciseId": "dumbbell-incline-bench-press",
+      "name": "Dumbbell Incline Bench Press",
+      "comparisonGroup": "dumbbell-incline-bench-press-free-weight",
+      "weight": 25,
+      "workingWeights": [
+        25,
+        20
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        8,
+        14
+      ],
+      "totalReps": 22,
+      "volume": 480,
+      "pr": false,
+      "prType": null,
+      "workoutType": "A",
+      "progressionResult": "dip"
+    },
+    {
+      "sessionId": "session-007",
+      "date": "2026-08-31",
+      "exerciseId": "lever-seated-fly",
+      "name": "Lever Seated Fly",
+      "comparisonGroup": "lever-seated-fly-unverified-007",
+      "weight": 45.4,
+      "workingWeights": [
+        45.4,
+        36.3
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        14,
+        11
+      ],
+      "totalReps": 25,
+      "volume": 1034.9,
+      "pr": false,
+      "prType": null,
+      "workoutType": "A",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-007",
+      "date": "2026-08-31",
+      "exerciseId": "sled-45-leg-wide-press",
+      "name": "Sled 45° Leg Wide Press",
+      "comparisonGroup": "sled-45-leg-wide-press-unverified-007",
+      "weight": 90,
+      "workingWeights": [
+        90,
+        75
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        10,
+        15
+      ],
+      "totalReps": 25,
+      "volume": 2025,
+      "pr": false,
+      "prType": null,
+      "workoutType": "A",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-007",
+      "date": "2026-08-31",
+      "exerciseId": "lever-seated-leg-curl",
+      "name": "Lever Seated Leg Curl",
+      "comparisonGroup": "lever-seated-leg-curl-unverified-007",
+      "weight": 65,
+      "workingWeights": [
+        65,
+        55
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        11,
+        14
+      ],
+      "totalReps": 25,
+      "volume": 1485,
+      "pr": false,
+      "prType": null,
+      "workoutType": "A",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-007",
+      "date": "2026-08-31",
+      "exerciseId": "lever-seated-hip-abduction",
+      "name": "Lever Seated Hip Abduction",
+      "comparisonGroup": "lever-seated-hip-abduction-unverified-007",
+      "weight": 70,
+      "workingWeights": [
+        70,
+        55
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        16,
+        19
+      ],
+      "totalReps": 35,
+      "volume": 2165,
+      "pr": false,
+      "prType": null,
+      "workoutType": "A",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-007",
+      "date": "2026-08-31",
+      "exerciseId": "lever-standing-calf-raise",
+      "name": "Lever Standing Calf Raise",
+      "comparisonGroup": "lever-standing-calf-raise-unverified-007",
+      "weight": 100,
+      "workingWeights": [
+        100,
+        100
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        17,
+        14
+      ],
+      "totalReps": 31,
+      "volume": 3100,
+      "pr": false,
+      "prType": null,
+      "workoutType": "A",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-007",
+      "date": "2026-08-31",
+      "exerciseId": "lever-preacher-curl",
+      "name": "Lever Preacher Curl",
+      "comparisonGroup": "lever-preacher-curl-unverified-007",
+      "weight": 50,
+      "workingWeights": [
+        50,
+        40
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        11,
+        9
+      ],
+      "totalReps": 20,
+      "volume": 910,
+      "pr": false,
+      "prType": null,
+      "workoutType": "A",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-007",
+      "date": "2026-08-31",
+      "exerciseId": "dumbbell-incline-biceps-curl",
+      "name": "Dumbbell Incline Biceps Curl",
+      "comparisonGroup": "dumbbell-incline-biceps-curl-free-weight",
+      "weight": 15,
+      "workingWeights": [
+        15,
+        12.5
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        9,
+        12
+      ],
+      "totalReps": 21,
+      "volume": 285,
+      "pr": false,
+      "prType": null,
+      "workoutType": "A",
+      "progressionResult": "improved"
+    },
+    {
+      "sessionId": "session-007",
+      "date": "2026-08-31",
+      "exerciseId": "dumbbell-one-arm-hammer-preacher-curl",
+      "name": "Dumbbell One Arm Hammer Preacher Curl",
+      "comparisonGroup": "dumbbell-one-arm-hammer-preacher-curl-free-weight",
+      "weight": 12.5,
+      "workingWeights": [
+        12.5,
+        10
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        11,
+        13
+      ],
+      "totalReps": 24,
+      "volume": 267.5,
+      "pr": false,
+      "prType": null,
+      "workoutType": "A",
+      "progressionResult": "improved"
+    },
+    {
+      "sessionId": "session-008",
+      "date": "2026-09-02",
+      "exerciseId": "pulldown",
+      "name": "Pulldown",
+      "comparisonGroup": "pulldown-unverified-008",
+      "weight": 65,
+      "workingWeights": [
+        65,
+        55
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        9,
+        12
+      ],
+      "totalReps": 21,
+      "volume": 1245,
+      "pr": false,
+      "prType": null,
+      "workoutType": "B",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-008",
+      "date": "2026-09-02",
+      "exerciseId": "lever-alternating-narrow-grip-seated-row",
+      "name": "Lever Alternating Narrow Grip Seated Row",
+      "comparisonGroup": "lever-alternating-narrow-grip-seated-row-unverified-008",
+      "weight": 30,
+      "workingWeights": [
+        30,
+        26
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        8,
+        10
+      ],
+      "totalReps": 18,
+      "volume": 500,
+      "pr": false,
+      "prType": null,
+      "workoutType": "B",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-008",
+      "date": "2026-09-02",
+      "exerciseId": "lever-shoulder-press",
+      "name": "Lever Shoulder Press",
+      "comparisonGroup": "lever-shoulder-press-unverified-008",
+      "weight": 60,
+      "workingWeights": [
+        60,
+        50
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        11,
+        13
+      ],
+      "totalReps": 24,
+      "volume": 1310,
+      "pr": false,
+      "prType": null,
+      "workoutType": "B",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-008",
+      "date": "2026-09-02",
+      "exerciseId": "cable-one-arm-lateral-raise",
+      "name": "Cable One Arm Lateral Raise",
+      "comparisonGroup": "cable-one-arm-lateral-raise-unverified-008",
+      "weight": 10,
+      "workingWeights": [
+        10,
+        7.5
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        11,
+        12
+      ],
+      "totalReps": 23,
+      "volume": 200,
+      "pr": false,
+      "prType": null,
+      "workoutType": "B",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-008",
+      "date": "2026-09-02",
+      "exerciseId": "cable-standing-single-delt-row",
+      "name": "Cable Standing Single Delt Row",
+      "comparisonGroup": "cable-standing-single-delt-row-unverified-008",
+      "weight": 10,
+      "workingWeights": [
+        10,
+        7.5
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        8,
+        13
+      ],
+      "totalReps": 21,
+      "volume": 177.5,
+      "pr": false,
+      "prType": null,
+      "workoutType": "B",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-008",
+      "date": "2026-09-02",
+      "exerciseId": "triceps-pushdown",
+      "name": "Triceps Pushdown",
+      "comparisonGroup": "triceps-pushdown-unverified-008",
+      "weight": 35,
+      "workingWeights": [
+        35,
+        30
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        10,
+        12
+      ],
+      "totalReps": 22,
+      "volume": 710,
+      "pr": false,
+      "prType": null,
+      "workoutType": "B",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-008",
+      "date": "2026-09-02",
+      "exerciseId": "standing-triceps-extension",
+      "name": "Standing Triceps Extension",
+      "comparisonGroup": "standing-triceps-extension-unverified-008",
+      "weight": 25,
+      "workingWeights": [
+        25,
+        22.5
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        7,
+        11
+      ],
+      "totalReps": 18,
+      "volume": 422.5,
+      "pr": false,
+      "prType": null,
+      "workoutType": "B",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-008",
+      "date": "2026-09-02",
+      "exerciseId": "hyperextension",
+      "name": "Hyperextension",
+      "comparisonGroup": "hyperextension-bodyweight",
+      "weight": 15,
+      "workingWeights": [
+        15,
+        15
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        17,
+        15
+      ],
+      "totalReps": 32,
+      "volume": 480,
+      "pr": false,
+      "prType": null,
+      "workoutType": "B",
+      "progressionResult": "stable"
+    },
+    {
+      "sessionId": "session-009",
+      "date": "2026-09-04",
+      "exerciseId": "dumbbell-bench-press",
+      "name": "Dumbbell Bench Press",
+      "comparisonGroup": "dumbbell-bench-press-free-weight",
+      "weight": 30,
+      "workingWeights": [
+        30,
+        27.5
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        11,
+        13
+      ],
+      "totalReps": 24,
+      "volume": 687.5,
+      "pr": false,
+      "prType": null,
+      "workoutType": "A",
+      "progressionResult": "improved"
+    },
+    {
+      "sessionId": "session-009",
+      "date": "2026-09-04",
+      "exerciseId": "dumbbell-incline-bench-press",
+      "name": "Dumbbell Incline Bench Press",
+      "comparisonGroup": "dumbbell-incline-bench-press-free-weight",
+      "weight": 25,
+      "workingWeights": [
+        25,
+        20
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        9,
+        15
+      ],
+      "totalReps": 24,
+      "volume": 525,
+      "pr": false,
+      "prType": null,
+      "workoutType": "A",
+      "progressionResult": "improved"
+    },
+    {
+      "sessionId": "session-009",
+      "date": "2026-09-04",
+      "exerciseId": "lever-incline-fly-male",
+      "name": "Lever Incline Fly (male)",
+      "comparisonGroup": "lever-incline-fly-male-unverified-009",
+      "weight": 40,
+      "workingWeights": [
+        40,
+        30
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        9,
+        10
+      ],
+      "totalReps": 19,
+      "volume": 660,
+      "pr": false,
+      "prType": null,
+      "workoutType": "A",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-009",
+      "date": "2026-09-04",
+      "exerciseId": "smith-full-squat",
+      "name": "Smith Full Squat",
+      "comparisonGroup": "smith-full-squat-unverified-009",
+      "weight": 30,
+      "workingWeights": [
+        30,
+        20
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        12,
+        15
+      ],
+      "totalReps": 27,
+      "volume": 660,
+      "pr": false,
+      "prType": null,
+      "workoutType": "A",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-009",
+      "date": "2026-09-04",
+      "exerciseId": "lever-seated-leg-curl",
+      "name": "Lever Seated Leg Curl",
+      "comparisonGroup": "lever-seated-leg-curl-unverified-009",
+      "weight": 65,
+      "workingWeights": [
+        65,
+        55
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        12,
+        15
+      ],
+      "totalReps": 27,
+      "volume": 1605,
+      "pr": false,
+      "prType": null,
+      "workoutType": "A",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-009",
+      "date": "2026-09-04",
+      "exerciseId": "lever-seated-hip-abduction",
+      "name": "Lever Seated Hip Abduction",
+      "comparisonGroup": "lever-seated-hip-abduction-unverified-009",
+      "weight": 70,
+      "workingWeights": [
+        70,
+        55
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        17,
+        20
+      ],
+      "totalReps": 37,
+      "volume": 2290,
+      "pr": false,
+      "prType": null,
+      "workoutType": "A",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-009",
+      "date": "2026-09-04",
+      "exerciseId": "lever-standing-calf-raise",
+      "name": "Lever Standing Calf Raise",
+      "comparisonGroup": "lever-standing-calf-raise-unverified-009",
+      "weight": 100,
+      "workingWeights": [
+        100,
+        100
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        18,
+        15
+      ],
+      "totalReps": 33,
+      "volume": 3300,
+      "pr": false,
+      "prType": null,
+      "workoutType": "A",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-009",
+      "date": "2026-09-04",
+      "exerciseId": "lever-preacher-curl",
+      "name": "Lever Preacher Curl",
+      "comparisonGroup": "lever-preacher-curl-unverified-009",
+      "weight": 50,
+      "workingWeights": [
+        50,
+        40
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        11,
+        10
+      ],
+      "totalReps": 21,
+      "volume": 950,
+      "pr": false,
+      "prType": null,
+      "workoutType": "A",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-009",
+      "date": "2026-09-04",
+      "exerciseId": "dumbbell-incline-biceps-curl",
+      "name": "Dumbbell Incline Biceps Curl",
+      "comparisonGroup": "dumbbell-incline-biceps-curl-free-weight",
+      "weight": 16,
+      "workingWeights": [
+        16,
+        12.5
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        6,
+        12
+      ],
+      "totalReps": 18,
+      "volume": 246,
+      "pr": true,
+      "prType": "weight",
+      "workoutType": "A",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-009",
+      "date": "2026-09-04",
+      "exerciseId": "dumbbell-one-arm-hammer-preacher-curl",
+      "name": "Dumbbell One Arm Hammer Preacher Curl",
+      "comparisonGroup": "dumbbell-one-arm-hammer-preacher-curl-free-weight",
+      "weight": 12.5,
+      "workingWeights": [
+        12.5
+      ],
+      "unit": "kg",
+      "sets": 1,
+      "reps": [
+        12
+      ],
+      "totalReps": 12,
+      "volume": 150,
+      "pr": false,
+      "prType": null,
+      "workoutType": "A",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-010",
+      "date": "2026-09-07",
+      "exerciseId": "pulldown",
+      "name": "Pulldown",
+      "comparisonGroup": "pulldown-unverified-010",
+      "weight": 65,
+      "workingWeights": [
+        65,
+        55
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        9,
+        13
+      ],
+      "totalReps": 22,
+      "volume": 1300,
+      "pr": false,
+      "prType": null,
+      "workoutType": "B",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-010",
+      "date": "2026-09-07",
+      "exerciseId": "lever-alternating-narrow-grip-seated-row",
+      "name": "Lever Alternating Narrow Grip Seated Row",
+      "comparisonGroup": "lever-alternating-narrow-grip-seated-row-unverified-010",
+      "weight": 30,
+      "workingWeights": [
+        30,
+        26
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        9,
+        11
+      ],
+      "totalReps": 20,
+      "volume": 556,
+      "pr": false,
+      "prType": null,
+      "workoutType": "B",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-010",
+      "date": "2026-09-07",
+      "exerciseId": "lever-shoulder-press",
+      "name": "Lever Shoulder Press",
+      "comparisonGroup": "lever-shoulder-press-unverified-010",
+      "weight": 60,
+      "workingWeights": [
+        60,
+        50
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        12,
+        13
+      ],
+      "totalReps": 25,
+      "volume": 1370,
+      "pr": false,
+      "prType": null,
+      "workoutType": "B",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-010",
+      "date": "2026-09-07",
+      "exerciseId": "cable-one-arm-lateral-raise",
+      "name": "Cable One Arm Lateral Raise",
+      "comparisonGroup": "cable-one-arm-lateral-raise-unverified-010",
+      "weight": 10,
+      "workingWeights": [
+        10,
+        7.5
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        13,
+        13
+      ],
+      "totalReps": 26,
+      "volume": 227.5,
+      "pr": false,
+      "prType": null,
+      "workoutType": "B",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-010",
+      "date": "2026-09-07",
+      "exerciseId": "cable-standing-single-delt-row",
+      "name": "Cable Standing Single Delt Row",
+      "comparisonGroup": "cable-standing-single-delt-row-unverified-010",
+      "weight": 10,
+      "workingWeights": [
+        10,
+        7.5
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        12,
+        13
+      ],
+      "totalReps": 25,
+      "volume": 217.5,
+      "pr": false,
+      "prType": null,
+      "workoutType": "B",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-010",
+      "date": "2026-09-07",
+      "exerciseId": "triceps-pushdown",
+      "name": "Triceps Pushdown",
+      "comparisonGroup": "triceps-pushdown-unverified-010",
+      "weight": 35,
+      "workingWeights": [
+        35,
+        30
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        10,
+        11
+      ],
+      "totalReps": 21,
+      "volume": 680,
+      "pr": false,
+      "prType": null,
+      "workoutType": "B",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-010",
+      "date": "2026-09-07",
+      "exerciseId": "standing-triceps-extension",
+      "name": "Standing Triceps Extension",
+      "comparisonGroup": "standing-triceps-extension-unverified-010",
+      "weight": 25,
+      "workingWeights": [
+        25,
+        22.5
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        8,
+        12
+      ],
+      "totalReps": 20,
+      "volume": 470,
+      "pr": false,
+      "prType": null,
+      "workoutType": "B",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-010",
+      "date": "2026-09-07",
+      "exerciseId": "hyperextension",
+      "name": "Hyperextension",
+      "comparisonGroup": "hyperextension-bodyweight",
+      "weight": 16,
+      "workingWeights": [
+        16,
+        16
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        16,
+        14
+      ],
+      "totalReps": 30,
+      "volume": 480,
+      "pr": false,
+      "prType": null,
+      "workoutType": "B",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-011",
+      "date": "2026-09-09",
+      "exerciseId": "dumbbell-bench-press",
+      "name": "Dumbbell Bench Press",
+      "comparisonGroup": "dumbbell-bench-press-free-weight",
+      "weight": 30,
+      "workingWeights": [
+        30,
+        27.5
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        12,
+        14
+      ],
+      "totalReps": 26,
+      "volume": 745,
+      "pr": false,
+      "prType": null,
+      "workoutType": "A",
+      "progressionResult": "improved"
+    },
+    {
+      "sessionId": "session-011",
+      "date": "2026-09-09",
+      "exerciseId": "dumbbell-incline-bench-press",
+      "name": "Dumbbell Incline Bench Press",
+      "comparisonGroup": "dumbbell-incline-bench-press-free-weight",
+      "weight": 25,
+      "workingWeights": [
+        25,
+        20
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        9,
+        15
+      ],
+      "totalReps": 24,
+      "volume": 525,
+      "pr": false,
+      "prType": null,
+      "workoutType": "A",
+      "progressionResult": "stable"
+    },
+    {
+      "sessionId": "session-011",
+      "date": "2026-09-09",
+      "exerciseId": "cable-standing-fly",
+      "name": "Cable Standing Fly",
+      "comparisonGroup": "cable-standing-fly-unverified-011",
+      "weight": 60,
+      "workingWeights": [
+        60,
+        60
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        24,
+        16
+      ],
+      "totalReps": 40,
+      "volume": 2400,
+      "pr": false,
+      "prType": null,
+      "workoutType": "A",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-011",
+      "date": "2026-09-09",
+      "exerciseId": "sled-45-leg-wide-press",
+      "name": "Sled 45° Leg Wide Press",
+      "comparisonGroup": "sled-45-leg-wide-press-unverified-011",
+      "weight": 90,
+      "workingWeights": [
+        90,
+        75
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        11,
+        16
+      ],
+      "totalReps": 27,
+      "volume": 2190,
+      "pr": false,
+      "prType": null,
+      "workoutType": "A",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-011",
+      "date": "2026-09-09",
+      "exerciseId": "lever-seated-leg-curl",
+      "name": "Lever Seated Leg Curl",
+      "comparisonGroup": "lever-seated-leg-curl-unverified-011",
+      "weight": 65,
+      "workingWeights": [
+        65,
+        55
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        13,
+        15
+      ],
+      "totalReps": 28,
+      "volume": 1670,
+      "pr": false,
+      "prType": null,
+      "workoutType": "A",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-011",
+      "date": "2026-09-09",
+      "exerciseId": "lever-seated-hip-abduction",
+      "name": "Lever Seated Hip Abduction",
+      "comparisonGroup": "lever-seated-hip-abduction-unverified-011",
+      "weight": 70,
+      "workingWeights": [
+        70,
+        55
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        17,
+        21
+      ],
+      "totalReps": 38,
+      "volume": 2345,
+      "pr": false,
+      "prType": null,
+      "workoutType": "A",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-011",
+      "date": "2026-09-09",
+      "exerciseId": "lever-standing-calf-raise",
+      "name": "Lever Standing Calf Raise",
+      "comparisonGroup": "lever-standing-calf-raise-unverified-011",
+      "weight": 100,
+      "workingWeights": [
+        100,
+        100
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        19,
+        15
+      ],
+      "totalReps": 34,
+      "volume": 3400,
+      "pr": false,
+      "prType": null,
+      "workoutType": "A",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-011",
+      "date": "2026-09-09",
+      "exerciseId": "lever-preacher-curl",
+      "name": "Lever Preacher Curl",
+      "comparisonGroup": "lever-preacher-curl-unverified-011",
+      "weight": 50,
+      "workingWeights": [
+        50,
+        40
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        12,
+        11
+      ],
+      "totalReps": 23,
+      "volume": 1040,
+      "pr": false,
+      "prType": null,
+      "workoutType": "A",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-011",
+      "date": "2026-09-09",
+      "exerciseId": "dumbbell-incline-biceps-curl",
+      "name": "Dumbbell Incline Biceps Curl",
+      "comparisonGroup": "dumbbell-incline-biceps-curl-free-weight",
+      "weight": 15,
+      "workingWeights": [
+        15,
+        12
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        9,
+        13
+      ],
+      "totalReps": 22,
+      "volume": 291,
+      "pr": false,
+      "prType": null,
+      "workoutType": "A",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-011",
+      "date": "2026-09-09",
+      "exerciseId": "dumbbell-one-arm-hammer-preacher-curl",
+      "name": "Dumbbell One Arm Hammer Preacher Curl",
+      "comparisonGroup": "dumbbell-one-arm-hammer-preacher-curl-free-weight",
+      "weight": 12,
+      "workingWeights": [
+        12
+      ],
+      "unit": "kg",
+      "sets": 1,
+      "reps": [
+        12
+      ],
+      "totalReps": 12,
+      "volume": 144,
+      "pr": false,
+      "prType": null,
+      "workoutType": "A",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-012",
+      "date": "2026-09-12",
+      "exerciseId": "pulldown",
+      "name": "Pulldown",
+      "comparisonGroup": "pulldown-unverified-012",
+      "weight": 64,
+      "workingWeights": [
+        64,
+        56
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        10,
+        14
+      ],
+      "totalReps": 24,
+      "volume": 1424,
+      "pr": false,
+      "prType": null,
+      "workoutType": "B",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-012",
+      "date": "2026-09-12",
+      "exerciseId": "lever-alternating-narrow-grip-seated-row",
+      "name": "Lever Alternating Narrow Grip Seated Row",
+      "comparisonGroup": "lever-alternating-narrow-grip-seated-row-unverified-012",
+      "weight": 30,
+      "workingWeights": [
+        30,
+        25
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        9,
+        12
+      ],
+      "totalReps": 21,
+      "volume": 570,
+      "pr": false,
+      "prType": null,
+      "workoutType": "B",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-012",
+      "date": "2026-09-12",
+      "exerciseId": "lever-shoulder-press",
+      "name": "Lever Shoulder Press",
+      "comparisonGroup": "lever-shoulder-press-unverified-012",
+      "weight": 60,
+      "workingWeights": [
+        60,
+        50
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        12,
+        11
+      ],
+      "totalReps": 23,
+      "volume": 1270,
+      "pr": false,
+      "prType": null,
+      "workoutType": "B",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-012",
+      "date": "2026-09-12",
+      "exerciseId": "cable-one-arm-lateral-raise",
+      "name": "Cable One Arm Lateral Raise",
+      "comparisonGroup": "cable-one-arm-lateral-raise-unverified-012",
+      "weight": 10,
+      "workingWeights": [
+        10,
+        7.5
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        12,
+        11
+      ],
+      "totalReps": 23,
+      "volume": 202.5,
+      "pr": false,
+      "prType": null,
+      "workoutType": "B",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-012",
+      "date": "2026-09-12",
+      "exerciseId": "cable-standing-single-delt-row",
+      "name": "Cable Standing Single Delt Row",
+      "comparisonGroup": "cable-standing-single-delt-row-unverified-012",
+      "weight": 10,
+      "workingWeights": [
+        10,
+        7.5
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        13,
+        13
+      ],
+      "totalReps": 26,
+      "volume": 227.5,
+      "pr": false,
+      "prType": null,
+      "workoutType": "B",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-012",
+      "date": "2026-09-12",
+      "exerciseId": "triceps-pushdown",
+      "name": "Triceps Pushdown",
+      "comparisonGroup": "triceps-pushdown-unverified-012",
+      "weight": 35,
+      "workingWeights": [
+        35,
+        30
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        6,
+        8
+      ],
+      "totalReps": 14,
+      "volume": 450,
+      "pr": false,
+      "prType": null,
+      "workoutType": "B",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-012",
+      "date": "2026-09-12",
+      "exerciseId": "standing-triceps-extension",
+      "name": "Standing Triceps Extension",
+      "comparisonGroup": "standing-triceps-extension-unverified-012",
+      "weight": 25,
+      "workingWeights": [
+        25,
+        22.5
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        9,
+        9
+      ],
+      "totalReps": 18,
+      "volume": 427.5,
+      "pr": false,
+      "prType": null,
+      "workoutType": "B",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-013",
+      "date": "2026-09-14",
+      "exerciseId": "dumbbell-bench-press",
+      "name": "Dumbbell Bench Press",
+      "comparisonGroup": "dumbbell-bench-press-free-weight",
+      "weight": 30,
+      "workingWeights": [
+        30,
+        28
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        13,
+        12
+      ],
+      "totalReps": 25,
+      "volume": 726,
+      "pr": false,
+      "prType": null,
+      "workoutType": "A",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-013",
+      "date": "2026-09-14",
+      "exerciseId": "dumbbell-incline-bench-press",
+      "name": "Dumbbell Incline Bench Press",
+      "comparisonGroup": "dumbbell-incline-bench-press-free-weight",
+      "weight": 26,
+      "workingWeights": [
+        26,
+        22
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        9,
+        10
+      ],
+      "totalReps": 19,
+      "volume": 454,
+      "pr": true,
+      "prType": "weight",
+      "workoutType": "A",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-013",
+      "date": "2026-09-14",
+      "exerciseId": "cable-standing-fly",
+      "name": "Cable Standing Fly",
+      "comparisonGroup": "cable-standing-fly-unverified-013",
+      "weight": 70,
+      "workingWeights": [
+        70,
+        70
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        16,
+        14
+      ],
+      "totalReps": 30,
+      "volume": 2100,
+      "pr": false,
+      "prType": null,
+      "workoutType": "A",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-013",
+      "date": "2026-09-14",
+      "exerciseId": "smith-full-squat",
+      "name": "Smith Full Squat",
+      "comparisonGroup": "smith-full-squat-unverified-013",
+      "weight": 20,
+      "workingWeights": [
+        20,
+        25
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        15,
+        12
+      ],
+      "totalReps": 27,
+      "volume": 600,
+      "pr": false,
+      "prType": null,
+      "workoutType": "A",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-013",
+      "date": "2026-09-14",
+      "exerciseId": "lever-seated-leg-curl",
+      "name": "Lever Seated Leg Curl",
+      "comparisonGroup": "lever-seated-leg-curl-unverified-013",
+      "weight": 65,
+      "workingWeights": [
+        65,
+        55
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        14,
+        15
+      ],
+      "totalReps": 29,
+      "volume": 1735,
+      "pr": false,
+      "prType": null,
+      "workoutType": "A",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-013",
+      "date": "2026-09-14",
+      "exerciseId": "lever-seated-hip-abduction",
+      "name": "Lever Seated Hip Abduction",
+      "comparisonGroup": "lever-seated-hip-abduction-unverified-013",
+      "weight": 70,
+      "workingWeights": [
+        70,
+        60
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        18,
+        20
+      ],
+      "totalReps": 38,
+      "volume": 2460,
+      "pr": false,
+      "prType": null,
+      "workoutType": "A",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-013",
+      "date": "2026-09-14",
+      "exerciseId": "lever-standing-calf-raise",
+      "name": "Lever Standing Calf Raise",
+      "comparisonGroup": "lever-standing-calf-raise-unverified-013",
+      "weight": 100,
+      "workingWeights": [
+        100,
+        100
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        20,
+        18
+      ],
+      "totalReps": 38,
+      "volume": 3800,
+      "pr": false,
+      "prType": null,
+      "workoutType": "A",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-013",
+      "date": "2026-09-14",
+      "exerciseId": "lever-preacher-curl",
+      "name": "Lever Preacher Curl",
+      "comparisonGroup": "lever-preacher-curl-unverified-013",
+      "weight": 50,
+      "workingWeights": [
+        50,
+        40
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        11,
+        9
+      ],
+      "totalReps": 20,
+      "volume": 910,
+      "pr": false,
+      "prType": null,
+      "workoutType": "A",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-013",
+      "date": "2026-09-14",
+      "exerciseId": "dumbbell-incline-biceps-curl",
+      "name": "Dumbbell Incline Biceps Curl",
+      "comparisonGroup": "dumbbell-incline-biceps-curl-free-weight",
+      "weight": 15,
+      "workingWeights": [
+        15,
+        12
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        9,
+        13
+      ],
+      "totalReps": 22,
+      "volume": 291,
+      "pr": false,
+      "prType": null,
+      "workoutType": "A",
+      "progressionResult": "stable"
+    },
+    {
+      "sessionId": "session-013",
+      "date": "2026-09-14",
+      "exerciseId": "dumbbell-one-arm-hammer-preacher-curl",
+      "name": "Dumbbell One Arm Hammer Preacher Curl",
+      "comparisonGroup": "dumbbell-one-arm-hammer-preacher-curl-free-weight",
+      "weight": 12,
+      "workingWeights": [
+        12
+      ],
+      "unit": "kg",
+      "sets": 1,
+      "reps": [
+        12
+      ],
+      "totalReps": 12,
+      "volume": 144,
+      "pr": false,
+      "prType": null,
+      "workoutType": "A",
+      "progressionResult": "stable"
+    },
+    {
+      "sessionId": "session-014",
+      "date": "2026-09-16",
+      "exerciseId": "pulldown",
+      "name": "Pulldown",
+      "comparisonGroup": "pulldown-unverified-014",
+      "weight": 65,
+      "workingWeights": [
+        65,
+        55
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        10,
+        14
+      ],
+      "totalReps": 24,
+      "volume": 1420,
+      "pr": false,
+      "prType": null,
+      "workoutType": "B",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-014",
+      "date": "2026-09-16",
+      "exerciseId": "lever-alternating-narrow-grip-seated-row",
+      "name": "Lever Alternating Narrow Grip Seated Row",
+      "comparisonGroup": "lever-alternating-narrow-grip-seated-row-unverified-014",
+      "weight": 30,
+      "workingWeights": [
+        30,
+        25
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        10,
+        13
+      ],
+      "totalReps": 23,
+      "volume": 625,
+      "pr": false,
+      "prType": null,
+      "workoutType": "B",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-014",
+      "date": "2026-09-16",
+      "exerciseId": "lever-shoulder-press",
+      "name": "Lever Shoulder Press",
+      "comparisonGroup": "lever-shoulder-press-unverified-014",
+      "weight": 60,
+      "workingWeights": [
+        60,
+        50
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        13,
+        12
+      ],
+      "totalReps": 25,
+      "volume": 1380,
+      "pr": false,
+      "prType": null,
+      "workoutType": "B",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-014",
+      "date": "2026-09-16",
+      "exerciseId": "cable-one-arm-lateral-raise",
+      "name": "Cable One Arm Lateral Raise",
+      "comparisonGroup": "cable-one-arm-lateral-raise-unverified-014",
+      "weight": 10,
+      "workingWeights": [
+        10,
+        7.5
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        14,
+        13
+      ],
+      "totalReps": 27,
+      "volume": 237.5,
+      "pr": false,
+      "prType": null,
+      "workoutType": "B",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-014",
+      "date": "2026-09-16",
+      "exerciseId": "cable-standing-single-delt-row",
+      "name": "Cable Standing Single Delt Row",
+      "comparisonGroup": "cable-standing-single-delt-row-unverified-014",
+      "weight": 10,
+      "workingWeights": [
+        10,
+        7.5
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        15,
+        20
+      ],
+      "totalReps": 35,
+      "volume": 300,
+      "pr": false,
+      "prType": null,
+      "workoutType": "B",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-014",
+      "date": "2026-09-16",
+      "exerciseId": "triceps-pushdown",
+      "name": "Triceps Pushdown",
+      "comparisonGroup": "triceps-pushdown-unverified-014",
+      "weight": 35,
+      "workingWeights": [
+        35,
+        30
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        9,
+        10
+      ],
+      "totalReps": 19,
+      "volume": 615,
+      "pr": false,
+      "prType": null,
+      "workoutType": "B",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-014",
+      "date": "2026-09-16",
+      "exerciseId": "standing-triceps-extension",
+      "name": "Standing Triceps Extension",
+      "comparisonGroup": "standing-triceps-extension-unverified-014",
+      "weight": 25,
+      "workingWeights": [
+        25,
+        22.5
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        8,
+        10
+      ],
+      "totalReps": 18,
+      "volume": 425,
+      "pr": false,
+      "prType": null,
+      "workoutType": "B",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-014",
+      "date": "2026-09-16",
+      "exerciseId": "hyperextension",
+      "name": "Hyperextension",
+      "comparisonGroup": "hyperextension-bodyweight",
+      "weight": 16,
+      "workingWeights": [
+        16,
+        16
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        15,
+        15
+      ],
+      "totalReps": 30,
+      "volume": 480,
+      "pr": false,
+      "prType": null,
+      "workoutType": "B",
+      "progressionResult": "stable"
+    },
+    {
+      "sessionId": "session-015",
+      "date": "2026-09-18",
+      "exerciseId": "dumbbell-bench-press",
+      "name": "Dumbbell Bench Press",
+      "comparisonGroup": "dumbbell-bench-press-free-weight",
+      "weight": 30,
+      "workingWeights": [
+        30,
+        27.5
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        13,
+        14
+      ],
+      "totalReps": 27,
+      "volume": 775,
+      "pr": false,
+      "prType": null,
+      "workoutType": "A",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-015",
+      "date": "2026-09-18",
+      "exerciseId": "dumbbell-incline-bench-press",
+      "name": "Dumbbell Incline Bench Press",
+      "comparisonGroup": "dumbbell-incline-bench-press-free-weight",
+      "weight": 25,
+      "workingWeights": [
+        25,
+        20
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        10,
+        15
+      ],
+      "totalReps": 25,
+      "volume": 550,
+      "pr": false,
+      "prType": null,
+      "workoutType": "A",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-015",
+      "date": "2026-09-18",
+      "exerciseId": "cable-standing-fly",
+      "name": "Cable Standing Fly",
+      "comparisonGroup": "cable-standing-fly-unverified-015",
+      "weight": 80,
+      "workingWeights": [
+        80,
+        70
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        14,
+        15
+      ],
+      "totalReps": 29,
+      "volume": 2170,
+      "pr": false,
+      "prType": null,
+      "workoutType": "A",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-015",
+      "date": "2026-09-18",
+      "exerciseId": "sled-45-leg-wide-press",
+      "name": "Sled 45° Leg Wide Press",
+      "comparisonGroup": "sled-45-leg-wide-press-unverified-015",
+      "weight": 90,
+      "workingWeights": [
+        90,
+        75
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        11,
+        16
+      ],
+      "totalReps": 27,
+      "volume": 2190,
+      "pr": false,
+      "prType": null,
+      "workoutType": "A",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-015",
+      "date": "2026-09-18",
+      "exerciseId": "lever-seated-leg-curl",
+      "name": "Lever Seated Leg Curl",
+      "comparisonGroup": "lever-seated-leg-curl-unverified-015",
+      "weight": 65,
+      "workingWeights": [
+        65,
+        55
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        13,
+        13
+      ],
+      "totalReps": 26,
+      "volume": 1560,
+      "pr": false,
+      "prType": null,
+      "workoutType": "A",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-015",
+      "date": "2026-09-18",
+      "exerciseId": "lever-seated-hip-abduction",
+      "name": "Lever Seated Hip Abduction",
+      "comparisonGroup": "lever-seated-hip-abduction-unverified-015",
+      "weight": 70,
+      "workingWeights": [
+        70,
+        60
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        18,
+        20
+      ],
+      "totalReps": 38,
+      "volume": 2460,
+      "pr": false,
+      "prType": null,
+      "workoutType": "A",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-015",
+      "date": "2026-09-18",
+      "exerciseId": "lever-standing-calf-raise",
+      "name": "Lever Standing Calf Raise",
+      "comparisonGroup": "lever-standing-calf-raise-unverified-015",
+      "weight": 100,
+      "workingWeights": [
+        100,
+        100
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        21,
+        17
+      ],
+      "totalReps": 38,
+      "volume": 3800,
+      "pr": false,
+      "prType": null,
+      "workoutType": "A",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-015",
+      "date": "2026-09-18",
+      "exerciseId": "lever-preacher-curl",
+      "name": "Lever Preacher Curl",
+      "comparisonGroup": "lever-preacher-curl-unverified-015",
+      "weight": 50,
+      "workingWeights": [
+        50,
+        40
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        12,
+        8
+      ],
+      "totalReps": 20,
+      "volume": 920,
+      "pr": false,
+      "prType": null,
+      "workoutType": "A",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-015",
+      "date": "2026-09-18",
+      "exerciseId": "dumbbell-incline-biceps-curl",
+      "name": "Dumbbell Incline Biceps Curl",
+      "comparisonGroup": "dumbbell-incline-biceps-curl-free-weight",
+      "weight": 14,
+      "workingWeights": [
+        14,
+        12
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        7,
+        9
+      ],
+      "totalReps": 16,
+      "volume": 206,
+      "pr": false,
+      "prType": null,
+      "workoutType": "A",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-015",
+      "date": "2026-09-18",
+      "exerciseId": "dumbbell-one-arm-hammer-preacher-curl",
+      "name": "Dumbbell One Arm Hammer Preacher Curl",
+      "comparisonGroup": "dumbbell-one-arm-hammer-preacher-curl-free-weight",
+      "weight": 12,
+      "workingWeights": [
+        12
+      ],
+      "unit": "kg",
+      "sets": 1,
+      "reps": [
+        13
+      ],
+      "totalReps": 13,
+      "volume": 156,
+      "pr": false,
+      "prType": null,
+      "workoutType": "A",
+      "progressionResult": "improved"
+    },
+    {
+      "sessionId": "session-016",
+      "date": "2026-09-21",
+      "exerciseId": "pulldown",
+      "name": "Pulldown",
+      "comparisonGroup": "pulldown-unverified-016",
+      "weight": 65,
+      "workingWeights": [
+        65,
+        55
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        10,
+        14
+      ],
+      "totalReps": 24,
+      "volume": 1420,
+      "pr": false,
+      "prType": null,
+      "workoutType": "B",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-016",
+      "date": "2026-09-21",
+      "exerciseId": "lever-alternating-narrow-grip-seated-row",
+      "name": "Lever Alternating Narrow Grip Seated Row",
+      "comparisonGroup": "lever-alternating-narrow-grip-seated-row-unverified-016",
+      "weight": 30,
+      "workingWeights": [
+        30,
+        25
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        11,
+        14
+      ],
+      "totalReps": 25,
+      "volume": 680,
+      "pr": false,
+      "prType": null,
+      "workoutType": "B",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-016",
+      "date": "2026-09-21",
+      "exerciseId": "lever-shoulder-press",
+      "name": "Lever Shoulder Press",
+      "comparisonGroup": "lever-shoulder-press-unverified-016",
+      "weight": 60,
+      "workingWeights": [
+        60,
+        50
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        13,
+        12
+      ],
+      "totalReps": 25,
+      "volume": 1380,
+      "pr": false,
+      "prType": null,
+      "workoutType": "B",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-016",
+      "date": "2026-09-21",
+      "exerciseId": "cable-one-arm-lateral-raise",
+      "name": "Cable One Arm Lateral Raise",
+      "comparisonGroup": "cable-one-arm-lateral-raise-unverified-016",
+      "weight": 10,
+      "workingWeights": [
+        10,
+        7.5
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        14,
+        10
+      ],
+      "totalReps": 24,
+      "volume": 215,
+      "pr": false,
+      "prType": null,
+      "workoutType": "B",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-016",
+      "date": "2026-09-21",
+      "exerciseId": "cable-standing-single-delt-row",
+      "name": "Cable Standing Single Delt Row",
+      "comparisonGroup": "cable-standing-single-delt-row-unverified-016",
+      "weight": 10,
+      "workingWeights": [
+        10,
+        7.5
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        15,
+        21
+      ],
+      "totalReps": 36,
+      "volume": 307.5,
+      "pr": false,
+      "prType": null,
+      "workoutType": "B",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-016",
+      "date": "2026-09-21",
+      "exerciseId": "triceps-pushdown",
+      "name": "Triceps Pushdown",
+      "comparisonGroup": "triceps-pushdown-unverified-016",
+      "weight": 35,
+      "workingWeights": [
+        35,
+        30
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        10,
+        10
+      ],
+      "totalReps": 20,
+      "volume": 650,
+      "pr": false,
+      "prType": null,
+      "workoutType": "B",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-016",
+      "date": "2026-09-21",
+      "exerciseId": "standing-triceps-extension",
+      "name": "Standing Triceps Extension",
+      "comparisonGroup": "standing-triceps-extension-unverified-016",
+      "weight": 25,
+      "workingWeights": [
+        25,
+        22.5
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        10,
+        10
+      ],
+      "totalReps": 20,
+      "volume": 475,
+      "pr": false,
+      "prType": null,
+      "workoutType": "B",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-016",
+      "date": "2026-09-21",
+      "exerciseId": "hyperextension",
+      "name": "Hyperextension",
+      "comparisonGroup": "hyperextension-bodyweight",
+      "weight": 16,
+      "workingWeights": [
+        16,
+        16
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        16,
+        14
+      ],
+      "totalReps": 30,
+      "volume": 480,
+      "pr": false,
+      "prType": null,
+      "workoutType": "B",
+      "progressionResult": "stable"
+    },
+    {
+      "sessionId": "session-017",
+      "date": "2026-09-23",
+      "exerciseId": "dumbbell-bench-press",
+      "name": "Dumbbell Bench Press",
+      "comparisonGroup": "dumbbell-bench-press-free-weight",
+      "weight": 30,
+      "workingWeights": [
+        30,
+        27.5
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        12,
+        11
+      ],
+      "totalReps": 23,
+      "volume": 662.5,
+      "pr": false,
+      "prType": null,
+      "workoutType": "A",
+      "progressionResult": "dip"
+    },
+    {
+      "sessionId": "session-017",
+      "date": "2026-09-23",
+      "exerciseId": "dumbbell-incline-bench-press",
+      "name": "Dumbbell Incline Bench Press",
+      "comparisonGroup": "dumbbell-incline-bench-press-free-weight",
+      "weight": 25,
+      "workingWeights": [
+        25,
+        20
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        8,
+        11
+      ],
+      "totalReps": 19,
+      "volume": 420,
+      "pr": false,
+      "prType": null,
+      "workoutType": "A",
+      "progressionResult": "dip"
+    },
+    {
+      "sessionId": "session-017",
+      "date": "2026-09-23",
+      "exerciseId": "cable-standing-fly",
+      "name": "Cable Standing Fly",
+      "comparisonGroup": "cable-standing-fly-unverified-017",
+      "weight": 90,
+      "workingWeights": [
+        90,
+        70
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        12,
+        14
+      ],
+      "totalReps": 26,
+      "volume": 2060,
+      "pr": false,
+      "prType": null,
+      "workoutType": "A",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-017",
+      "date": "2026-09-23",
+      "exerciseId": "sled-45-leg-wide-press",
+      "name": "Sled 45° Leg Wide Press",
+      "comparisonGroup": "sled-45-leg-wide-press-unverified-017",
+      "weight": 90,
+      "workingWeights": [
+        90,
+        75
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        12,
+        17
+      ],
+      "totalReps": 29,
+      "volume": 2355,
+      "pr": false,
+      "prType": null,
+      "workoutType": "A",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-017",
+      "date": "2026-09-23",
+      "exerciseId": "lever-seated-leg-curl",
+      "name": "Lever Seated Leg Curl",
+      "comparisonGroup": "lever-seated-leg-curl-unverified-017",
+      "weight": 65,
+      "workingWeights": [
+        65,
+        55
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        12,
+        13
+      ],
+      "totalReps": 25,
+      "volume": 1495,
+      "pr": false,
+      "prType": null,
+      "workoutType": "A",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-017",
+      "date": "2026-09-23",
+      "exerciseId": "lever-seated-hip-abduction",
+      "name": "Lever Seated Hip Abduction",
+      "comparisonGroup": "lever-seated-hip-abduction-unverified-017",
+      "weight": 70,
+      "workingWeights": [
+        70,
+        55
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        13,
+        15
+      ],
+      "totalReps": 28,
+      "volume": 1735,
+      "pr": false,
+      "prType": null,
+      "workoutType": "A",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-017",
+      "date": "2026-09-23",
+      "exerciseId": "lever-standing-calf-raise",
+      "name": "Lever Standing Calf Raise",
+      "comparisonGroup": "lever-standing-calf-raise-unverified-017",
+      "weight": 100,
+      "workingWeights": [
+        100,
+        100
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        22,
+        15
+      ],
+      "totalReps": 37,
+      "volume": 3700,
+      "pr": false,
+      "prType": null,
+      "workoutType": "A",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-017",
+      "date": "2026-09-23",
+      "exerciseId": "lever-preacher-curl",
+      "name": "Lever Preacher Curl",
+      "comparisonGroup": "lever-preacher-curl-unverified-017",
+      "weight": 50,
+      "workingWeights": [
+        50,
+        40
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        9,
+        7
+      ],
+      "totalReps": 16,
+      "volume": 730,
+      "pr": false,
+      "prType": null,
+      "workoutType": "A",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-017",
+      "date": "2026-09-23",
+      "exerciseId": "dumbbell-incline-biceps-curl",
+      "name": "Dumbbell Incline Biceps Curl",
+      "comparisonGroup": "dumbbell-incline-biceps-curl-free-weight",
+      "weight": 14,
+      "workingWeights": [
+        14,
+        10
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        7,
+        12
+      ],
+      "totalReps": 19,
+      "volume": 218,
+      "pr": false,
+      "prType": null,
+      "workoutType": "A",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-017",
+      "date": "2026-09-23",
+      "exerciseId": "dumbbell-one-arm-hammer-preacher-curl",
+      "name": "Dumbbell One Arm Hammer Preacher Curl",
+      "comparisonGroup": "dumbbell-one-arm-hammer-preacher-curl-free-weight",
+      "weight": 14,
+      "workingWeights": [
+        14
+      ],
+      "unit": "kg",
+      "sets": 1,
+      "reps": [
+        7
+      ],
+      "totalReps": 7,
+      "volume": 98,
+      "pr": true,
+      "prType": "weight",
+      "workoutType": "A",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-018",
+      "date": "2026-09-25",
+      "exerciseId": "pulldown",
+      "name": "Pulldown",
+      "comparisonGroup": "pulldown-unverified-018",
+      "weight": 65,
+      "workingWeights": [
+        65,
+        55
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        10,
+        14
+      ],
+      "totalReps": 24,
+      "volume": 1420,
+      "pr": false,
+      "prType": null,
+      "workoutType": "B",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-018",
+      "date": "2026-09-25",
+      "exerciseId": "lever-alternating-narrow-grip-seated-row",
+      "name": "Lever Alternating Narrow Grip Seated Row",
+      "comparisonGroup": "lever-alternating-narrow-grip-seated-row-unverified-018",
+      "weight": 30,
+      "workingWeights": [
+        30,
+        25
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        11,
+        16
+      ],
+      "totalReps": 27,
+      "volume": 730,
+      "pr": false,
+      "prType": null,
+      "workoutType": "B",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-018",
+      "date": "2026-09-25",
+      "exerciseId": "lever-shoulder-press",
+      "name": "Lever Shoulder Press",
+      "comparisonGroup": "lever-shoulder-press-unverified-018",
+      "weight": 60,
+      "workingWeights": [
+        60,
+        50
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        13,
+        12
+      ],
+      "totalReps": 25,
+      "volume": 1380,
+      "pr": false,
+      "prType": null,
+      "workoutType": "B",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-018",
+      "date": "2026-09-25",
+      "exerciseId": "cable-one-arm-lateral-raise",
+      "name": "Cable One Arm Lateral Raise",
+      "comparisonGroup": "cable-one-arm-lateral-raise-unverified-018",
+      "weight": 10,
+      "workingWeights": [
+        10,
+        7.5
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        14,
+        9
+      ],
+      "totalReps": 23,
+      "volume": 207.5,
+      "pr": false,
+      "prType": null,
+      "workoutType": "B",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-018",
+      "date": "2026-09-25",
+      "exerciseId": "cable-standing-single-delt-row",
+      "name": "Cable Standing Single Delt Row",
+      "comparisonGroup": "cable-standing-single-delt-row-unverified-018",
+      "weight": 10,
+      "workingWeights": [
+        10,
+        7.5
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        16,
+        17
+      ],
+      "totalReps": 33,
+      "volume": 287.5,
+      "pr": false,
+      "prType": null,
+      "workoutType": "B",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-018",
+      "date": "2026-09-25",
+      "exerciseId": "triceps-pushdown",
+      "name": "Triceps Pushdown",
+      "comparisonGroup": "triceps-pushdown-unverified-018",
+      "weight": 35,
+      "workingWeights": [
+        35,
+        25
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        9,
+        15
+      ],
+      "totalReps": 24,
+      "volume": 690,
+      "pr": false,
+      "prType": null,
+      "workoutType": "B",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-018",
+      "date": "2026-09-25",
+      "exerciseId": "standing-triceps-extension",
+      "name": "Standing Triceps Extension",
+      "comparisonGroup": "standing-triceps-extension-unverified-018",
+      "weight": 25,
+      "workingWeights": [
+        25,
+        22.5
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        10,
+        11
+      ],
+      "totalReps": 21,
+      "volume": 497.5,
+      "pr": false,
+      "prType": null,
+      "workoutType": "B",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-018",
+      "date": "2026-09-25",
+      "exerciseId": "hyperextension",
+      "name": "Hyperextension",
+      "comparisonGroup": "hyperextension-bodyweight",
+      "weight": 16,
+      "workingWeights": [
+        16,
+        16
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        16,
+        15
+      ],
+      "totalReps": 31,
+      "volume": 496,
+      "pr": false,
+      "prType": null,
+      "workoutType": "B",
+      "progressionResult": "improved"
+    },
+    {
+      "sessionId": "session-019",
+      "date": "2026-09-28",
+      "exerciseId": "dumbbell-bench-press",
+      "name": "Dumbbell Bench Press",
+      "comparisonGroup": "dumbbell-bench-press-free-weight",
+      "weight": 32,
+      "workingWeights": [
+        32,
+        26
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        5,
+        13
+      ],
+      "totalReps": 18,
+      "volume": 498,
+      "pr": true,
+      "prType": "weight",
+      "workoutType": "A",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-019",
+      "date": "2026-09-28",
+      "exerciseId": "dumbbell-incline-bench-press",
+      "name": "Dumbbell Incline Bench Press",
+      "comparisonGroup": "dumbbell-incline-bench-press-free-weight",
+      "weight": 26,
+      "workingWeights": [
+        26,
+        20
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        7,
+        12
+      ],
+      "totalReps": 19,
+      "volume": 422,
+      "pr": false,
+      "prType": null,
+      "workoutType": "A",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-019",
+      "date": "2026-09-28",
+      "exerciseId": "cable-standing-fly",
+      "name": "Cable Standing Fly",
+      "comparisonGroup": "cable-standing-fly-unverified-019",
+      "weight": 90,
+      "workingWeights": [
+        90,
+        70
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        12,
+        14
+      ],
+      "totalReps": 26,
+      "volume": 2060,
+      "pr": false,
+      "prType": null,
+      "workoutType": "A",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-019",
+      "date": "2026-09-28",
+      "exerciseId": "sled-45-leg-wide-press",
+      "name": "Sled 45° Leg Wide Press",
+      "comparisonGroup": "sled-45-leg-wide-press-unverified-019",
+      "weight": 90,
+      "workingWeights": [
+        90,
+        75
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        12,
+        17
+      ],
+      "totalReps": 29,
+      "volume": 2355,
+      "pr": false,
+      "prType": null,
+      "workoutType": "A",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-019",
+      "date": "2026-09-28",
+      "exerciseId": "lever-seated-leg-curl",
+      "name": "Lever Seated Leg Curl",
+      "comparisonGroup": "lever-seated-leg-curl-unverified-019",
+      "weight": 65,
+      "workingWeights": [
+        65,
+        55
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        11,
+        12
+      ],
+      "totalReps": 23,
+      "volume": 1375,
+      "pr": false,
+      "prType": null,
+      "workoutType": "A",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-019",
+      "date": "2026-09-28",
+      "exerciseId": "lever-standing-calf-raise",
+      "name": "Lever Standing Calf Raise",
+      "comparisonGroup": "lever-standing-calf-raise-unverified-019",
+      "weight": 100,
+      "workingWeights": [
+        100,
+        100
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        19,
+        15
+      ],
+      "totalReps": 34,
+      "volume": 3400,
+      "pr": false,
+      "prType": null,
+      "workoutType": "A",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-019",
+      "date": "2026-09-28",
+      "exerciseId": "lever-preacher-curl",
+      "name": "Lever Preacher Curl",
+      "comparisonGroup": "lever-preacher-curl-unverified-019",
+      "weight": 50,
+      "workingWeights": [
+        50,
+        40
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        10,
+        9
+      ],
+      "totalReps": 19,
+      "volume": 860,
+      "pr": false,
+      "prType": null,
+      "workoutType": "A",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-019",
+      "date": "2026-09-28",
+      "exerciseId": "dumbbell-incline-biceps-curl",
+      "name": "Dumbbell Incline Biceps Curl",
+      "comparisonGroup": "dumbbell-incline-biceps-curl-free-weight",
+      "weight": 14,
+      "workingWeights": [
+        14,
+        12
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        9,
+        11
+      ],
+      "totalReps": 20,
+      "volume": 258,
+      "pr": false,
+      "prType": null,
+      "workoutType": "A",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-019",
+      "date": "2026-09-28",
+      "exerciseId": "dumbbell-one-arm-hammer-preacher-curl",
+      "name": "Dumbbell One Arm Hammer Preacher Curl",
+      "comparisonGroup": "dumbbell-one-arm-hammer-preacher-curl-free-weight",
+      "weight": 14,
+      "workingWeights": [
+        14
+      ],
+      "unit": "kg",
+      "sets": 1,
+      "reps": [
+        8
+      ],
+      "totalReps": 8,
+      "volume": 112,
+      "pr": false,
+      "prType": null,
+      "workoutType": "A",
+      "progressionResult": "improved"
+    },
+    {
+      "sessionId": "session-020",
+      "date": "2026-09-30",
+      "exerciseId": "pulldown",
+      "name": "Pulldown",
+      "comparisonGroup": "pulldown-unverified-020",
+      "weight": 65,
+      "workingWeights": [
+        65,
+        55
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        10,
+        14
+      ],
+      "totalReps": 24,
+      "volume": 1420,
+      "pr": false,
+      "prType": null,
+      "workoutType": "B",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-020",
+      "date": "2026-09-30",
+      "exerciseId": "lever-lying-t-bar-row",
+      "name": "Lever Lying T-bar Row",
+      "comparisonGroup": "lever-lying-t-bar-row-unverified-020",
+      "weight": 25,
+      "workingWeights": [
+        25,
+        25
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        6,
+        10
+      ],
+      "totalReps": 16,
+      "volume": 400,
+      "pr": false,
+      "prType": null,
+      "workoutType": "B",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-020",
+      "date": "2026-09-30",
+      "exerciseId": "lever-seated-shoulder-press",
+      "name": "Lever Seated Shoulder Press",
+      "comparisonGroup": "lever-seated-shoulder-press-unverified-020",
+      "weight": 70,
+      "workingWeights": [
+        70,
+        55
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        10,
+        12
+      ],
+      "totalReps": 22,
+      "volume": 1360,
+      "pr": false,
+      "prType": null,
+      "workoutType": "B",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-020",
+      "date": "2026-09-30",
+      "exerciseId": "cable-one-arm-lateral-raise",
+      "name": "Cable One Arm Lateral Raise",
+      "comparisonGroup": "cable-one-arm-lateral-raise-unverified-020",
+      "weight": 10,
+      "workingWeights": [
+        10,
+        7.5
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        14,
+        12
+      ],
+      "totalReps": 26,
+      "volume": 230,
+      "pr": false,
+      "prType": null,
+      "workoutType": "B",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-020",
+      "date": "2026-09-30",
+      "exerciseId": "cable-standing-single-delt-row",
+      "name": "Cable Standing Single Delt Row",
+      "comparisonGroup": "cable-standing-single-delt-row-unverified-020",
+      "weight": 10,
+      "workingWeights": [
+        10,
+        7.5
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        17,
+        18
+      ],
+      "totalReps": 35,
+      "volume": 305,
+      "pr": false,
+      "prType": null,
+      "workoutType": "B",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-020",
+      "date": "2026-09-30",
+      "exerciseId": "triceps-pushdown",
+      "name": "Triceps Pushdown",
+      "comparisonGroup": "triceps-pushdown-unverified-020",
+      "weight": 35,
+      "workingWeights": [
+        35,
+        25
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        9,
+        17
+      ],
+      "totalReps": 26,
+      "volume": 740,
+      "pr": false,
+      "prType": null,
+      "workoutType": "B",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-020",
+      "date": "2026-09-30",
+      "exerciseId": "standing-triceps-extension",
+      "name": "Standing Triceps Extension",
+      "comparisonGroup": "standing-triceps-extension-unverified-020",
+      "weight": 25,
+      "workingWeights": [
+        25,
+        22.5
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        11,
+        12
+      ],
+      "totalReps": 23,
+      "volume": 545,
+      "pr": false,
+      "prType": null,
+      "workoutType": "B",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-020",
+      "date": "2026-09-30",
+      "exerciseId": "hyperextension",
+      "name": "Hyperextension",
+      "comparisonGroup": "hyperextension-bodyweight",
+      "weight": 16,
+      "workingWeights": [
+        16,
+        16
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        17,
+        15
+      ],
+      "totalReps": 32,
+      "volume": 512,
+      "pr": false,
+      "prType": null,
+      "workoutType": "B",
+      "progressionResult": "improved"
+    },
+    {
+      "sessionId": "session-020",
+      "date": "2026-09-30",
+      "exerciseId": "captains-chair-straight-leg-raise",
+      "name": "Captains Chair Straight Leg Raise",
+      "comparisonGroup": "captains-chair-straight-leg-raise-bodyweight",
+      "weight": 0,
+      "workingWeights": [
+        0,
+        0
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        15,
+        13
+      ],
+      "totalReps": 28,
+      "volume": 0,
+      "pr": false,
+      "prType": null,
+      "workoutType": "B",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-020",
+      "date": "2026-09-30",
+      "exerciseId": "dumbbell-side-bend",
+      "name": "Dumbbell Side Bend",
+      "comparisonGroup": "dumbbell-side-bend-free-weight",
+      "weight": 20,
+      "workingWeights": [
+        20,
+        26
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        15,
+        15
+      ],
+      "totalReps": 30,
+      "volume": 690,
+      "pr": false,
+      "prType": null,
+      "workoutType": "B",
+      "progressionResult": "unknown"
+    }
+  ]
 }

@@ -1,8 +1,361 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-28T05:00:00Z",
-  "status": "empty",
-  "workoutType": null,
-  "mainFocus": [],
-  "exercises": []
+  "generatedAt": "2026-09-30T19:54:50Z",
+  "status": "ready",
+  "workoutType": "A",
+  "summary": "A legutóbbi B edzés után a következő terv: A. A súlyok a Lyftában rögzített kg-értékek.",
+  "mainFocus": [
+    "Dumbbell Bench Press: új súly stabilizálása",
+    "Dumbbell Incline Biceps Curl: +1 ismétlés",
+    "Dumbbell One Arm Hammer Preacher Curl: +1 ismétlés"
+  ],
+  "exercises": [
+    {
+      "id": "dumbbell-bench-press",
+      "name": "Dumbbell Bench Press",
+      "weight": 32,
+      "workingWeights": [
+        32,
+        26
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "targetReps": [
+        5,
+        13
+      ],
+      "strategy": "HOLD",
+      "previous": {
+        "date": "2026-09-28",
+        "weight": 32,
+        "workingWeights": [
+          32,
+          26
+        ],
+        "unit": "kg",
+        "sets": 2,
+        "reps": [
+          5,
+          13
+        ],
+        "comparisonGroup": "dumbbell-bench-press-free-weight"
+      },
+      "reasoning": "Ismételd meg a legutóbbi sorozatonkénti súlyt és ismétlést. Az eltérő terhelések alapján most nem indokolt további súlyemelés.",
+      "progressSummary": "A grafikon az első munkasorozat súlyát mutatja.",
+      "comparisonGroup": "dumbbell-bench-press-free-weight",
+      "pr": true,
+      "change": {
+        "weight": 0,
+        "totalReps": 0
+      }
+    },
+    {
+      "id": "dumbbell-incline-bench-press",
+      "name": "Dumbbell Incline Bench Press",
+      "weight": 26,
+      "workingWeights": [
+        26,
+        20
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "targetReps": [
+        7,
+        12
+      ],
+      "strategy": "HOLD",
+      "previous": {
+        "date": "2026-09-28",
+        "weight": 26,
+        "workingWeights": [
+          26,
+          20
+        ],
+        "unit": "kg",
+        "sets": 2,
+        "reps": [
+          7,
+          12
+        ],
+        "comparisonGroup": "dumbbell-incline-bench-press-free-weight"
+      },
+      "reasoning": "Ismételd meg a legutóbbi sorozatonkénti súlyt és ismétlést. Az eltérő terhelések alapján most nem indokolt további súlyemelés.",
+      "progressSummary": "A grafikon az első munkasorozat súlyát mutatja.",
+      "comparisonGroup": "dumbbell-incline-bench-press-free-weight",
+      "pr": false,
+      "change": {
+        "weight": 0,
+        "totalReps": 0
+      }
+    },
+    {
+      "id": "cable-standing-fly",
+      "name": "Cable Standing Fly",
+      "weight": 90,
+      "workingWeights": [
+        90,
+        70
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "targetReps": [
+        12,
+        14
+      ],
+      "strategy": "HOLD",
+      "previous": {
+        "date": "2026-09-28",
+        "weight": 90,
+        "workingWeights": [
+          90,
+          70
+        ],
+        "unit": "kg",
+        "sets": 2,
+        "reps": [
+          12,
+          14
+        ],
+        "comparisonGroup": "cable-standing-fly-unverified-019"
+      },
+      "reasoning": "Az előző A edzésen használt, azonos gépen tartsd a sorozatonkénti súlyt és ismétlést. Gépváltás esetén ez a súlyajánlás nem összehasonlítható.",
+      "progressSummary": "Gépazonosság nem megerősített; elkülönített előzmény.",
+      "comparisonGroup": "cable-standing-fly-unverified-019",
+      "pr": false,
+      "change": {
+        "weight": 0,
+        "totalReps": 0
+      }
+    },
+    {
+      "id": "sled-45-leg-wide-press",
+      "name": "Sled 45° Leg Wide Press",
+      "weight": 90,
+      "workingWeights": [
+        90,
+        75
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "targetReps": [
+        12,
+        17
+      ],
+      "strategy": "HOLD",
+      "previous": {
+        "date": "2026-09-28",
+        "weight": 90,
+        "workingWeights": [
+          90,
+          75
+        ],
+        "unit": "kg",
+        "sets": 2,
+        "reps": [
+          12,
+          17
+        ],
+        "comparisonGroup": "sled-45-leg-wide-press-unverified-019"
+      },
+      "reasoning": "Az előző A edzésen használt, azonos gépen tartsd a sorozatonkénti súlyt és ismétlést. Gépváltás esetén ez a súlyajánlás nem összehasonlítható.",
+      "progressSummary": "Gépazonosság nem megerősített; elkülönített előzmény.",
+      "comparisonGroup": "sled-45-leg-wide-press-unverified-019",
+      "pr": false,
+      "change": {
+        "weight": 0,
+        "totalReps": 0
+      }
+    },
+    {
+      "id": "lever-seated-leg-curl",
+      "name": "Lever Seated Leg Curl",
+      "weight": 65,
+      "workingWeights": [
+        65,
+        55
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "targetReps": [
+        11,
+        12
+      ],
+      "strategy": "HOLD",
+      "previous": {
+        "date": "2026-09-28",
+        "weight": 65,
+        "workingWeights": [
+          65,
+          55
+        ],
+        "unit": "kg",
+        "sets": 2,
+        "reps": [
+          11,
+          12
+        ],
+        "comparisonGroup": "lever-seated-leg-curl-unverified-019"
+      },
+      "reasoning": "Az előző A edzésen használt, azonos gépen tartsd a sorozatonkénti súlyt és ismétlést. Gépváltás esetén ez a súlyajánlás nem összehasonlítható.",
+      "progressSummary": "Gépazonosság nem megerősített; elkülönített előzmény.",
+      "comparisonGroup": "lever-seated-leg-curl-unverified-019",
+      "pr": false,
+      "change": {
+        "weight": 0,
+        "totalReps": 0
+      }
+    },
+    {
+      "id": "lever-standing-calf-raise",
+      "name": "Lever Standing Calf Raise",
+      "weight": 100,
+      "workingWeights": [
+        100,
+        100
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "targetReps": [
+        19,
+        15
+      ],
+      "strategy": "HOLD",
+      "previous": {
+        "date": "2026-09-28",
+        "weight": 100,
+        "workingWeights": [
+          100,
+          100
+        ],
+        "unit": "kg",
+        "sets": 2,
+        "reps": [
+          19,
+          15
+        ],
+        "comparisonGroup": "lever-standing-calf-raise-unverified-019"
+      },
+      "reasoning": "Az előző A edzésen használt, azonos gépen tartsd a sorozatonkénti súlyt és ismétlést. Gépváltás esetén ez a súlyajánlás nem összehasonlítható.",
+      "progressSummary": "Gépazonosság nem megerősített; elkülönített előzmény.",
+      "comparisonGroup": "lever-standing-calf-raise-unverified-019",
+      "pr": false,
+      "change": {
+        "weight": 0,
+        "totalReps": 0
+      }
+    },
+    {
+      "id": "lever-preacher-curl",
+      "name": "Lever Preacher Curl",
+      "weight": 50,
+      "workingWeights": [
+        50,
+        40
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "targetReps": [
+        10,
+        9
+      ],
+      "strategy": "HOLD",
+      "previous": {
+        "date": "2026-09-28",
+        "weight": 50,
+        "workingWeights": [
+          50,
+          40
+        ],
+        "unit": "kg",
+        "sets": 2,
+        "reps": [
+          10,
+          9
+        ],
+        "comparisonGroup": "lever-preacher-curl-unverified-019"
+      },
+      "reasoning": "Az előző A edzésen használt, azonos gépen tartsd a sorozatonkénti súlyt és ismétlést. Gépváltás esetén ez a súlyajánlás nem összehasonlítható.",
+      "progressSummary": "Gépazonosság nem megerősített; elkülönített előzmény.",
+      "comparisonGroup": "lever-preacher-curl-unverified-019",
+      "pr": false,
+      "change": {
+        "weight": 0,
+        "totalReps": 0
+      }
+    },
+    {
+      "id": "dumbbell-incline-biceps-curl",
+      "name": "Dumbbell Incline Biceps Curl",
+      "weight": 14,
+      "workingWeights": [
+        14,
+        12
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "targetReps": [
+        10,
+        11
+      ],
+      "strategy": "REP_PROGRESSION",
+      "previous": {
+        "date": "2026-09-28",
+        "weight": 14,
+        "workingWeights": [
+          14,
+          12
+        ],
+        "unit": "kg",
+        "sets": 2,
+        "reps": [
+          9,
+          11
+        ],
+        "comparisonGroup": "dumbbell-incline-biceps-curl-free-weight"
+      },
+      "reasoning": "Az első sorozat azonos súlyon javult az előző alkalomhoz képest. Célozz meg még egy ismétlést; a többi sorozat súlya marad.",
+      "progressSummary": "A grafikon az első munkasorozat súlyát mutatja.",
+      "comparisonGroup": "dumbbell-incline-biceps-curl-free-weight",
+      "pr": false,
+      "change": {
+        "weight": 0,
+        "totalReps": 1
+      }
+    },
+    {
+      "id": "dumbbell-one-arm-hammer-preacher-curl",
+      "name": "Dumbbell One Arm Hammer Preacher Curl",
+      "weight": 14,
+      "workingWeights": [
+        14
+      ],
+      "unit": "kg",
+      "sets": 1,
+      "targetReps": [
+        9
+      ],
+      "strategy": "REP_PROGRESSION",
+      "previous": {
+        "date": "2026-09-28",
+        "weight": 14,
+        "workingWeights": [
+          14
+        ],
+        "unit": "kg",
+        "sets": 1,
+        "reps": [
+          8
+        ],
+        "comparisonGroup": "dumbbell-one-arm-hammer-preacher-curl-free-weight"
+      },
+      "reasoning": "Az első sorozat azonos súlyon javult az előző alkalomhoz képest. Célozz meg még egy ismétlést; a többi sorozat súlya marad.",
+      "progressSummary": "A grafikon az első munkasorozat súlyát mutatja.",
+      "comparisonGroup": "dumbbell-one-arm-hammer-preacher-curl-free-weight",
+      "pr": false,
+      "change": {
+        "weight": 0,
+        "totalReps": 1
+      }
+    }
+  ]
 }
