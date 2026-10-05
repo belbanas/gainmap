@@ -3,6 +3,7 @@ import { readFile } from 'node:fs/promises';
 import { validate } from '../js/schema.js';
 import { securityKeys } from './validate-data.mjs';
 import { comparable, assetPath, escape } from '../js/utils.js';
+import { exerciseImages } from '../js/exercise-images.js';
 import { chart } from '../js/charts.js';
 import { coachingView, alternativeCard } from '../js/coaching.js';
 const bundle=JSON.parse(await readFile(new URL('../data/demo.json',import.meta.url),'utf8'));
@@ -36,6 +37,14 @@ const ex=bundle.latest.exercises[0];const rows=comparable(bundle.history.records
 assert(rows.every(r=>r.comparisonGroup===ex.comparisonGroup&&r.unit===ex.unit));
 assert.equal(comparable([{...rows[0],unit:'lb'},{...rows[0],comparisonGroup:'other'}],ex).length,0);
 assert.equal(assetPath({...ex,image:'https://example.invalid/x.svg'}),'assets/exercises/fallback.svg');
+// A scheduled plan may omit image fields: known artwork must still resolve locally.
+assert.equal(assetPath({id:'pulldown'}),'assets/exercises/pulldown.jpg');
+assert.equal(assetPath({id:'lever-shoulder-press'}),'assets/exercises/lever-shoulder-press.png');
+assert.equal(assetPath({id:'pulldown',image:'assets/exercises/fallback.svg'}),'assets/exercises/fallback.svg');
+for (const path of Object.values(exerciseImages)) {
+  const bytes = await readFile(new URL('../'+path,import.meta.url));
+  assert(bytes.length>0,`Missing local artwork: ${path}`);
+}
 assert.equal(escape('<script>'),'&lt;script&gt;');
 assert(chart([], 'weight').includes('legalább két'));
 assert(chart(rows).includes('Grafikonértékek'));

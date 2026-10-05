@@ -1,0 +1,28 @@
+// Local Lyfta artwork, available independently of the current plan.
+export const exerciseImages = {
+  "dumbbell-bench-press": "assets/exercises/dumbbell-bench-press.jpg",
+  "dumbbell-incline-bench-press": "assets/exercises/dumbbell-incline-bench-press.jpg",
+  "cable-standing-fly": "assets/exercises/cable-standing-fly.jpg",
+  "sled-45-leg-wide-press": "assets/exercises/sled-45-leg-wide-press.jpg",
+  "lever-seated-leg-curl": "assets/exercises/lever-seated-leg-curl.jpg",
+  "lever-standing-calf-raise": "assets/exercises/lever-standing-calf-raise.jpg",
+  "lever-preacher-curl": "assets/exercises/lever-preacher-curl.jpg",
+  "dumbbell-incline-biceps-curl": "assets/exercises/dumbbell-incline-biceps-curl.jpg",
+  "dumbbell-one-arm-hammer-preacher-curl": "assets/exercises/dumbbell-one-arm-hammer-preacher-curl.jpg",
+  "pulldown": "assets/exercises/pulldown.jpg",
+  "lever-alternating-narrow-grip-seated-row": "assets/exercises/lever-alternating-narrow-grip-seated-row.jpg",
+  "lever-shoulder-press": "assets/exercises/lever-shoulder-press.png",
+  "cable-one-arm-lateral-raise": "assets/exercises/cable-one-arm-lateral-raise.jpg",
+  "cable-standing-single-delt-row": "assets/exercises/cable-standing-single-delt-row.jpg",
+  "triceps-pushdown": "assets/exercises/triceps-pushdown.jpg",
+  "standing-triceps-extension": "assets/exercises/standing-triceps-extension.jpg",
+  "hyperextension": "assets/exercises/hyperextension.jpg",
+  "lever-seated-hip-abduction": "assets/exercises/lever-seated-hip-abduction.jpg",
+  "lever-lying-t-bar-row": "assets/exercises/lever-lying-t-bar-row.jpg",
+  "lever-seated-shoulder-press": "assets/exercises/lever-seated-shoulder-press.jpg",
+  "captains-chair-straight-leg-raise": "assets/exercises/captains-chair-straight-leg-raise.jpg",
+  "dumbbell-side-bend": "assets/exercises/dumbbell-side-bend.jpg",
+  "cross-body-hammer-curl": "assets/exercises/cross-body-hammer-curl.jpg",
+  "front-plank": "assets/exercises/front-plank.jpg",
+  "side-plank": "assets/exercises/side-plank.jpg"
+};

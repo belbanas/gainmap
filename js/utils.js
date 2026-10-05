@@ -1,3 +1,4 @@
+import { exerciseImages } from './exercise-images.js';
 export const $ = id => document.getElementById(id);
 export const number = value => new Intl.NumberFormat('hu-HU', { maximumFractionDigits: 1 }).format(value);
 export const date = value => new Intl.DateTimeFormat('hu-HU', { month: 'short', day: 'numeric', timeZone: 'Europe/Budapest' }).format(new Date(value.length === 10 ? value + 'T12:00:00Z' : value));
@@ -19,7 +20,7 @@ export async function loadJSON(path) {
   return response.json();
 }
 export function assetPath(exercise) {
-  const path = exercise.image ?? `assets/exercises/${exercise.id}.svg`;
+  const path = exercise.image ?? exerciseImages[exercise.id] ?? `assets/exercises/${exercise.id}.svg`;
   return /^assets\/exercises\/[a-z0-9-]+\.(svg|png|webp|jpg)$/.test(path) ? path : 'assets/exercises/fallback.svg';
 }
 export function comparable(records, exercise) {

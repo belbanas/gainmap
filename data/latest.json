@@ -64,7 +64,8 @@
         "followUp": [
           "Melyik korábbi alkalommal volt biztosan azonos a gép és a beállítás?"
         ]
-      }
+      },
+      "image": "assets/exercises/pulldown.jpg"
     },
     {
       "id": "lever-lying-t-bar-row",
@@ -121,7 +122,8 @@
           "Melyik korábbi alkalommal volt biztosan azonos a gép és a beállítás?",
           "A szeptember 30-i gyakorlat tartós programváltozás vagy egyszeri csere volt?"
         ]
-      }
+      },
+      "image": "assets/exercises/lever-lying-t-bar-row.jpg"
     },
     {
       "id": "lever-seated-shoulder-press",
@@ -178,7 +180,8 @@
           "Melyik korábbi alkalommal volt biztosan azonos a gép és a beállítás?",
           "A szeptember 30-i gyakorlat tartós programváltozás vagy egyszeri csere volt?"
         ]
-      }
+      },
+      "image": "assets/exercises/lever-seated-shoulder-press.jpg"
     },
     {
       "id": "cable-one-arm-lateral-raise",
@@ -234,7 +237,8 @@
         "followUp": [
           "Melyik korábbi alkalommal volt biztosan azonos a gép és a beállítás?"
         ]
-      }
+      },
+      "image": "assets/exercises/cable-one-arm-lateral-raise.jpg"
     },
     {
       "id": "cable-standing-single-delt-row",
@@ -290,7 +294,8 @@
         "followUp": [
           "Melyik korábbi alkalommal volt biztosan azonos a gép és a beállítás?"
         ]
-      }
+      },
+      "image": "assets/exercises/cable-standing-single-delt-row.jpg"
     },
     {
       "id": "triceps-pushdown",
@@ -346,7 +351,8 @@
         "followUp": [
           "Melyik korábbi alkalommal volt biztosan azonos a gép és a beállítás?"
         ]
-      }
+      },
+      "image": "assets/exercises/triceps-pushdown.jpg"
     },
     {
       "id": "standing-triceps-extension",
@@ -402,7 +408,8 @@
         "followUp": [
           "Melyik korábbi alkalommal volt biztosan azonos a gép és a beállítás?"
         ]
-      }
+      },
+      "image": "assets/exercises/standing-triceps-extension.jpg"
     },
     {
       "id": "hyperextension",
@@ -460,7 +467,8 @@
         "followUp": [
           "A mozgástartomány és a kivitelezés azonos maradt ezeken az alkalmakon?"
         ]
-      }
+      },
+      "image": "assets/exercises/hyperextension.jpg"
     },
     {
       "id": "captains-chair-straight-leg-raise",
@@ -516,7 +524,8 @@
         "followUp": [
           "A következő B edzésen is ezt a szeptember 30-i törzsgyakorlatot szeretnéd megtartani?"
         ]
-      }
+      },
+      "image": "assets/exercises/captains-chair-straight-leg-raise.jpg"
     },
     {
       "id": "dumbbell-side-bend",
@@ -572,7 +581,8 @@
         "followUp": [
           "A két oldal terhelését és ismétléseit azonos módon rögzíted?"
         ]
-      }
+      },
+      "image": "assets/exercises/dumbbell-side-bend.jpg"
     }
   ],
   "coaching": {
