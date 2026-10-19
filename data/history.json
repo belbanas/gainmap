@@ -744,6 +744,11 @@
       "id": "session-067",
       "date": "2026-10-14",
       "workoutType": "B"
+    },
+    {
+      "id": "session-068",
+      "date": "2026-10-16",
+      "workoutType": "A"
     }
   ],
   "records": [
@@ -14210,6 +14215,196 @@
       "pr": false,
       "prType": null,
       "workoutType": "B",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-068",
+      "date": "2026-10-16",
+      "exerciseId": "dumbbell-bench-press",
+      "name": "Dumbbell Bench Press",
+      "comparisonGroup": "dumbbell-bench-press-free-weight",
+      "weight": 34,
+      "workingWeights": [
+        34,
+        28
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        5,
+        11
+      ],
+      "totalReps": 16,
+      "volume": 478,
+      "pr": false,
+      "prType": null,
+      "workoutType": "A",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-068",
+      "date": "2026-10-16",
+      "exerciseId": "dumbbell-incline-bench-press",
+      "name": "Dumbbell Incline Bench Press",
+      "comparisonGroup": "dumbbell-incline-bench-press-free-weight",
+      "weight": 30,
+      "workingWeights": [
+        30,
+        24
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        5,
+        8
+      ],
+      "totalReps": 13,
+      "volume": 342,
+      "pr": false,
+      "prType": null,
+      "workoutType": "A",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-068",
+      "date": "2026-10-16",
+      "exerciseId": "cable-standing-fly",
+      "name": "Cable Standing Fly",
+      "comparisonGroup": "cable-standing-fly-unverified-068",
+      "weight": 100,
+      "workingWeights": [
+        100,
+        80
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        10,
+        12
+      ],
+      "totalReps": 22,
+      "volume": 1960,
+      "pr": false,
+      "prType": null,
+      "workoutType": "A",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-068",
+      "date": "2026-10-16",
+      "exerciseId": "sled-45-leg-wide-press",
+      "name": "Sled 45° Leg Wide Press",
+      "comparisonGroup": "sled-45-leg-wide-press-unverified-068",
+      "weight": 100,
+      "workingWeights": [
+        100,
+        80
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        10,
+        13
+      ],
+      "totalReps": 23,
+      "volume": 2040,
+      "pr": false,
+      "prType": null,
+      "workoutType": "A",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-068",
+      "date": "2026-10-16",
+      "exerciseId": "lever-standing-calf-raise",
+      "name": "Lever Standing Calf Raise",
+      "comparisonGroup": "lever-standing-calf-raise-unverified-068",
+      "weight": 100,
+      "workingWeights": [
+        100,
+        100
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        22,
+        18
+      ],
+      "totalReps": 40,
+      "volume": 4000,
+      "pr": false,
+      "prType": null,
+      "workoutType": "A",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-068",
+      "date": "2026-10-16",
+      "exerciseId": "ez-bar-biceps-curl",
+      "name": "EZ-bar Biceps Curl",
+      "comparisonGroup": "ez-bar-biceps-curl-unverified-068",
+      "weight": 35,
+      "workingWeights": [
+        35,
+        30
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        8,
+        10
+      ],
+      "totalReps": 18,
+      "volume": 580,
+      "pr": false,
+      "prType": null,
+      "workoutType": "A",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-068",
+      "date": "2026-10-16",
+      "exerciseId": "cable-one-arm-biceps-curl",
+      "name": "Cable One Arm Biceps Curl",
+      "comparisonGroup": "cable-one-arm-biceps-curl-unverified-068",
+      "weight": 22.5,
+      "workingWeights": [
+        22.5,
+        17.5
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "reps": [
+        9,
+        13
+      ],
+      "totalReps": 22,
+      "volume": 430,
+      "pr": false,
+      "prType": null,
+      "workoutType": "A",
+      "progressionResult": "unknown"
+    },
+    {
+      "sessionId": "session-068",
+      "date": "2026-10-16",
+      "exerciseId": "cross-body-hammer-curl",
+      "name": "Cross Body Hammer Curl",
+      "comparisonGroup": "cross-body-hammer-curl-unverified-068",
+      "weight": 12,
+      "workingWeights": [
+        12
+      ],
+      "unit": "kg",
+      "sets": 1,
+      "reps": [
+        10
+      ],
+      "totalReps": 10,
+      "volume": 120,
+      "pr": false,
+      "prType": null,
+      "workoutType": "A",
       "progressionResult": "unknown"
     }
   ]
