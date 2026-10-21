@@ -1,372 +1,317 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-19T13:02:39.337Z",
+  "generatedAt": "2026-10-21T12:57:25.128Z",
   "status": "ready",
-  "workoutType": "B",
-  "summary": "Az október 16-i A után B következik. Az október 14-i B összeállítása a kiindulópont; a Hyperextension hiányát és az evezésváltást még tisztázni kell. A bizonytalan eszközű célok csak az előző azonos beállításon érvényesek.",
+  "workoutType": "A",
+  "summary": "Az október 19-i B után A következik. Az október 16-i A összeállítása a kiindulópont; a lábhajlítás két alkalmas hiányának szándéka még tisztázandó. A bizonytalan eszközű célok csak az előző azonos beállításon érvényesek.",
   "mainFocus": [
-    "Az új B súlypárokat előbb ismételd meg, további automatikus emelés nélkül.",
-    "Gépes trendhez erősítsd meg az azonos gépet és beállítást.",
-    "Tisztázd a Hyperextension és lábhajlítás hiányát; egyetlen kimaradás nem végleges törlés."
+    "Nyomások: stabilizáld az új 34/28 és 30/24 kg-os súlypárokat.",
+    "A gépes célokat csak az október 16-i azonos beállításon ismételd.",
+    "Tisztázd a lábhajlítás hiányát, és rögzíts következetes kivitelezést, pihenőt."
   ],
   "exercises": [
     {
-      "id": "pulldown",
-      "name": "Pulldown",
-      "weight": 65,
+      "id": "dumbbell-bench-press",
+      "name": "Dumbbell Bench Press",
+      "weight": 34,
       "workingWeights": [
-        65,
-        55
+        34,
+        28
       ],
       "unit": "kg",
       "sets": 2,
       "targetReps": [
-        10,
-        15
+        5,
+        11
       ],
       "strategy": "HOLD",
       "previous": {
-        "date": "2026-10-14",
-        "weight": 65,
+        "date": "2026-10-16",
+        "weight": 34,
         "workingWeights": [
-          65,
-          55
+          34,
+          28
         ],
         "unit": "kg",
         "sets": 2,
         "reps": [
-          10,
-          15
+          5,
+          11
         ],
-        "comparisonGroup": "pulldown-unverified-067"
+        "comparisonGroup": "dumbbell-bench-press-free-weight"
       },
-      "reasoning": "Csak az október 14-i azonos eszközön és beállításon ismételd a rögzített sorozatonkénti súlyt és ismétlést. Bizonytalan összehasonlíthatóság és új súlypárok mellett nem indokolt automatikus emelés vagy korrekció.",
-      "progressSummary": "A legutóbbi eredmény azonos gépen és beállításon megismételhető cél. Az alkalmonként külön csoportokból nincs igazolt több alkalmos javulás vagy stagnálás.",
-      "comparisonGroup": "pulldown-unverified-067",
+      "reasoning": "Az új 34/28 kg-os súlypárból egy 5/11 eredmény van. Ismételd ezt az előző azonos kivitelezéssel; most nincs elég bizonyíték újabb emeléshez vagy korrekcióhoz.",
+      "progressSummary": "Korábban azonos súlypáron javultál, legutóbb mindkét sorozat nehezebb lett. Az új terhelésen egy eredmény van; az alacsonyabb ismétlés önmagában nem romlás vagy stagnálás.",
+      "comparisonGroup": "dumbbell-bench-press-free-weight",
       "pr": false,
       "change": {
         "weight": 0,
         "totalReps": 0
       },
-      "image": "assets/exercises/pulldown.jpg",
+      "image": "assets/exercises/dumbbell-bench-press.jpg",
       "coaching": {
-        "generatedAt": "2026-10-19T13:02:39.337Z",
-        "assessment": "insufficient_data",
-        "evaluation": "A legutóbbi eredmény azonos gépen és beállításon megismételhető cél. Az alkalmonként külön csoportokból nincs igazolt több alkalmos javulás vagy stagnálás.",
+        "generatedAt": "2026-10-21T12:57:25.128Z",
+        "assessment": "mixed",
+        "evaluation": "Korábban azonos súlypáron javultál, legutóbb mindkét sorozat nehezebb lett. Az új terhelésen egy eredmény van; az alacsonyabb ismétlés önmagában nem romlás vagy stagnálás.",
         "evidence": [
-          "2026-10-14: 65 kg × 10; 55 kg × 15.",
-          "10-11.: 65/55 kg × 11/15; 10-14.: 65/55 kg × 10/15, külön csoportokban. Egy ismétlés eltérés gépazonosság nélkül nem igazolt romlás."
+          "10-02. és 10-12.: azonos 32,5/27,5 kg mellett 6/12 → 8/12.",
+          "10-07.: 32/28 kg × 7/12; 10-16.: 34/28 kg × 5/11. A teljes súlypár eltér; a második sorozat egy ismétléses különbsége sem bizonyít tartós romlást."
         ],
         "advice": [
-          "Az október 14-i azonos gépen és beállításon ismételd a fenti sorozatonkénti súlyt és ismétlést; most ne emelj automatikusan.",
-          "Rögzíts azonos kivitelezést és sorozatpihenőt 2–3 alkalmon az újraértékeléshez. Stagnálást legalább 3–5 összehasonlítható alkalommal vizsgálj."
+          "Következő cél: 34 kg × 5, majd 28 kg × 11, az előző azonos kivitelezéssel; most ne emelj újra.",
+          "Tarts következetes súlypárt és sorozatpihenőt 2–3 alkalmon, majd értékeld a sorozatonkénti ismétléseket."
         ],
-        "possibleCauses": [],
+        "possibleCauses": [
+          {
+            "text": "A nagyobb első súly és az első sorozat erőkifejtése befolyásolhatta a második eredményét, de pihenő- és tartalékadat nélkül az ok nem bizonyított.",
+            "confidence": "hypothesis"
+          }
+        ],
         "alternative": null,
         "followUp": [
-          "Mely korábbi alkalmak voltak biztosan azonos gépen és beállításon?"
+          "Az új súlynál megmaradt a mozgástartomány? Mennyi ismétlés maradt tartalékban, és mennyit pihentél?"
         ]
       }
     },
     {
-      "id": "lever-alternating-narrow-grip-seated-row",
-      "name": "Lever Alternating Narrow Grip Seated Row",
-      "weight": 40,
+      "id": "dumbbell-incline-bench-press",
+      "name": "Dumbbell Incline Bench Press",
+      "weight": 30,
       "workingWeights": [
-        40,
-        30
+        30,
+        24
       ],
       "unit": "kg",
       "sets": 2,
       "targetReps": [
-        6,
-        12
+        5,
+        8
       ],
       "strategy": "HOLD",
       "previous": {
-        "date": "2026-10-14",
-        "weight": 40,
+        "date": "2026-10-16",
+        "weight": 30,
         "workingWeights": [
-          40,
-          30
+          30,
+          24
         ],
         "unit": "kg",
         "sets": 2,
         "reps": [
-          6,
-          12
+          5,
+          8
         ],
-        "comparisonGroup": "lever-alternating-narrow-grip-seated-row-unverified-067"
+        "comparisonGroup": "dumbbell-incline-bench-press-free-weight"
       },
-      "reasoning": "Csak az október 14-i azonos eszközön és beállításon ismételd a rögzített sorozatonkénti súlyt és ismétlést. Bizonytalan összehasonlíthatóság és új súlypárok mellett nem indokolt automatikus emelés vagy korrekció.",
-      "progressSummary": "A legutóbbi eredmény azonos gépen és beállításon megismételhető cél. Az alkalmonként külön csoportokból nincs igazolt több alkalmos javulás vagy stagnálás.",
-      "comparisonGroup": "lever-alternating-narrow-grip-seated-row-unverified-067",
+      "reasoning": "Az új 30/24 kg-os súlypárból egy 5/8 eredmény van. A korábbi könnyebb súly több ismétlése nem indokol önmagában csökkentést; előbb ismételd meg az eredményt.",
+      "progressSummary": "A korábbi terhelésen stabil volt az eredmény, majd nagyobb súlypárra váltottál. Az 5/8 ismétlés egyetlen új terhelésű alkalom; nincs igazolt tartós stagnálás.",
+      "comparisonGroup": "dumbbell-incline-bench-press-free-weight",
       "pr": false,
       "change": {
         "weight": 0,
         "totalReps": 0
       },
-      "image": "assets/exercises/lever-alternating-narrow-grip-seated-row.jpg",
+      "image": "assets/exercises/dumbbell-incline-bench-press.jpg",
       "coaching": {
-        "generatedAt": "2026-10-19T13:02:39.337Z",
-        "assessment": "insufficient_data",
-        "evaluation": "A legutóbbi eredmény azonos gépen és beállításon megismételhető cél. Az alkalmonként külön csoportokból nincs igazolt több alkalmos javulás vagy stagnálás.",
+        "generatedAt": "2026-10-21T12:57:25.128Z",
+        "assessment": "mixed",
+        "evaluation": "A korábbi terhelésen stabil volt az eredmény, majd nagyobb súlypárra váltottál. Az 5/8 ismétlés egyetlen új terhelésű alkalom; nincs igazolt tartós stagnálás.",
         "evidence": [
-          "2026-10-14: 40 kg × 6; 30 kg × 12.",
-          "10-05.: 30/25 kg × 12/17; 10-14.: 40/30 kg × 6/12, külön csoportokban. Közben más evezés szerepelt; ezek nem összevonható eredmények."
+          "10-02. és 10-12.: 27,5/22,5 kg × 8/11; 10-07.: 28/22 kg × 8/11.",
+          "10-16.: 30/24 kg × 5/8. A súlyok megváltoztak, ezért az ismétléscsökkenés nem azonos súlyú visszaesés."
         ],
         "advice": [
-          "Az október 14-i azonos gépen és beállításon ismételd a fenti sorozatonkénti súlyt és ismétlést; most ne emelj automatikusan.",
-          "Rögzíts azonos kivitelezést és sorozatpihenőt 2–3 alkalmon az újraértékeléshez. Stagnálást legalább 3–5 összehasonlítható alkalommal vizsgálj."
+          "Következő cél: 30 kg × 5, majd 24 kg × 8, az előző paddőléssel és mozgástartománnyal.",
+          "Most ne változtass ismét a súlyon. Két-három ilyen alkalom után értékeld újra; stagnáláshoz legalább 3–5 összehasonlítható alkalom kell."
         ],
         "possibleCauses": [],
         "alternative": null,
         "followUp": [
-          "Mely korábbi alkalmak voltak biztosan azonos gépen és beállításon?",
-          "A váltott evezés marad tartósan, az október 11-i egykezes magas evezés pedig egyszeri csere volt?"
+          "Az 5 ismétléses sorozatnál ugyanaz a kivitelezés és tartalék maradt, mint korábban?"
         ]
       }
     },
     {
-      "id": "lever-seated-shoulder-press",
-      "name": "Lever Seated Shoulder Press",
-      "weight": 80,
+      "id": "cable-standing-fly",
+      "name": "Cable Standing Fly",
+      "weight": 100,
       "workingWeights": [
-        80,
+        100,
         80
       ],
       "unit": "kg",
       "sets": 2,
       "targetReps": [
-        11,
-        10
+        10,
+        12
       ],
       "strategy": "HOLD",
       "previous": {
-        "date": "2026-10-14",
-        "weight": 80,
+        "date": "2026-10-16",
+        "weight": 100,
         "workingWeights": [
-          80,
+          100,
           80
         ],
         "unit": "kg",
         "sets": 2,
         "reps": [
-          11,
-          10
-        ],
-        "comparisonGroup": "lever-seated-shoulder-press-unverified-067"
-      },
-      "reasoning": "Csak az október 14-i azonos eszközön és beállításon ismételd a rögzített sorozatonkénti súlyt és ismétlést. Bizonytalan összehasonlíthatóság és új súlypárok mellett nem indokolt automatikus emelés vagy korrekció.",
-      "progressSummary": "A legutóbbi eredmény azonos gépen és beállításon megismételhető cél. Az alkalmonként külön csoportokból nincs igazolt több alkalmos javulás vagy stagnálás.",
-      "comparisonGroup": "lever-seated-shoulder-press-unverified-067",
-      "pr": false,
-      "change": {
-        "weight": 0,
-        "totalReps": 0
-      },
-      "image": "assets/exercises/lever-seated-shoulder-press.jpg",
-      "coaching": {
-        "generatedAt": "2026-10-19T13:02:39.337Z",
-        "assessment": "insufficient_data",
-        "evaluation": "A legutóbbi eredmény azonos gépen és beállításon megismételhető cél. Az alkalmonként külön csoportokból nincs igazolt több alkalmos javulás vagy stagnálás.",
-        "evidence": [
-          "2026-10-14: 80 kg × 11; 80 kg × 10.",
-          "10-11.: 70/55 kg × 13/15; 10-14.: 80/80 kg × 11/10. Eltérő súlypár és külön csoportok; nincs igazolt ismétlés-visszaesés vagy PR."
-        ],
-        "advice": [
-          "Az október 14-i azonos gépen és beállításon ismételd a fenti sorozatonkénti súlyt és ismétlést; most ne emelj automatikusan.",
-          "Rögzíts azonos kivitelezést és sorozatpihenőt 2–3 alkalmon az újraértékeléshez. Stagnálást legalább 3–5 összehasonlítható alkalommal vizsgálj."
-        ],
-        "possibleCauses": [],
-        "alternative": null,
-        "followUp": [
-          "Mely korábbi alkalmak voltak biztosan azonos gépen és beállításon?"
-        ]
-      }
-    },
-    {
-      "id": "cable-one-arm-lateral-raise",
-      "name": "Cable One Arm Lateral Raise",
-      "weight": 12.5,
-      "workingWeights": [
-        12.5,
-        10
-      ],
-      "unit": "kg",
-      "sets": 2,
-      "targetReps": [
-        6,
-        11
-      ],
-      "strategy": "HOLD",
-      "previous": {
-        "date": "2026-10-14",
-        "weight": 12.5,
-        "workingWeights": [
-          12.5,
-          10
-        ],
-        "unit": "kg",
-        "sets": 2,
-        "reps": [
-          6,
-          11
-        ],
-        "comparisonGroup": "cable-one-arm-lateral-raise-unverified-067"
-      },
-      "reasoning": "Csak az október 14-i azonos eszközön és beállításon ismételd a rögzített sorozatonkénti súlyt és ismétlést. Bizonytalan összehasonlíthatóság és új súlypárok mellett nem indokolt automatikus emelés vagy korrekció.",
-      "progressSummary": "A legutóbbi eredmény azonos gépen és beállításon megismételhető cél. Az alkalmonként külön csoportokból nincs igazolt több alkalmos javulás vagy stagnálás.",
-      "comparisonGroup": "cable-one-arm-lateral-raise-unverified-067",
-      "pr": false,
-      "change": {
-        "weight": 0,
-        "totalReps": 0
-      },
-      "image": "assets/exercises/cable-one-arm-lateral-raise.jpg",
-      "coaching": {
-        "generatedAt": "2026-10-19T13:02:39.337Z",
-        "assessment": "insufficient_data",
-        "evaluation": "A legutóbbi eredmény azonos gépen és beállításon megismételhető cél. Az alkalmonként külön csoportokból nincs igazolt több alkalmos javulás vagy stagnálás.",
-        "evidence": [
-          "2026-10-14: 12,5 kg × 6; 10 kg × 11.",
-          "10-11.: 10/7,5 kg × 16/15; 10-14.: 12,5/10 kg × 6/11. A nagyobb rögzített súly melletti kevesebb ismétlés nem önmagában stagnálás."
-        ],
-        "advice": [
-          "Az október 14-i azonos gépen és beállításon ismételd a fenti sorozatonkénti súlyt és ismétlést; most ne emelj automatikusan.",
-          "Rögzíts azonos kivitelezést és sorozatpihenőt 2–3 alkalmon az újraértékeléshez. Stagnálást legalább 3–5 összehasonlítható alkalommal vizsgálj.",
-          "A 6 ismétléses első sorozatnál figyeld, tartható-e az előző mozgástartomány. Jegyezd fel a tartalék ismétlést; újabb emelés előtt legyen 2–3 azonos beállítású eredmény."
-        ],
-        "possibleCauses": [],
-        "alternative": null,
-        "followUp": [
-          "Mely korábbi alkalmak voltak biztosan azonos gépen és beállításon?"
-        ]
-      }
-    },
-    {
-      "id": "cable-standing-single-delt-row",
-      "name": "Cable Standing Single Delt Row",
-      "weight": 20,
-      "workingWeights": [
-        20,
-        15
-      ],
-      "unit": "kg",
-      "sets": 2,
-      "targetReps": [
-        8,
-        12
-      ],
-      "strategy": "HOLD",
-      "previous": {
-        "date": "2026-10-14",
-        "weight": 20,
-        "workingWeights": [
-          20,
-          15
-        ],
-        "unit": "kg",
-        "sets": 2,
-        "reps": [
-          8,
+          10,
           12
         ],
-        "comparisonGroup": "cable-standing-single-delt-row-unverified-067"
+        "comparisonGroup": "cable-standing-fly-unverified-068"
       },
-      "reasoning": "Csak az október 14-i azonos eszközön és beállításon ismételd a rögzített sorozatonkénti súlyt és ismétlést. Bizonytalan összehasonlíthatóság és új súlypárok mellett nem indokolt automatikus emelés vagy korrekció.",
-      "progressSummary": "A legutóbbi eredmény azonos gépen és beállításon megismételhető cél. Az alkalmonként külön csoportokból nincs igazolt több alkalmos javulás vagy stagnálás.",
-      "comparisonGroup": "cable-standing-single-delt-row-unverified-067",
+      "reasoning": "Csak az október 16-i azonos eszközön és beállításon ismételd a rögzített sorozatonkénti súlyt és ismétlést. Bizonytalan összehasonlíthatóság mellett nem indokolt automatikus terhelésváltoztatás.",
+      "progressSummary": "A legutóbbi eredmény azonos eszközön megismételhető cél. Az alkalmonként külön összehasonlítási csoportok miatt több alkalmos javulás vagy stagnálás még nem igazolt.",
+      "comparisonGroup": "cable-standing-fly-unverified-068",
       "pr": false,
       "change": {
         "weight": 0,
         "totalReps": 0
       },
-      "image": "assets/exercises/cable-standing-single-delt-row.jpg",
+      "image": "assets/exercises/cable-standing-fly.jpg",
       "coaching": {
-        "generatedAt": "2026-10-19T13:02:39.337Z",
+        "generatedAt": "2026-10-21T12:57:25.128Z",
         "assessment": "insufficient_data",
-        "evaluation": "A legutóbbi eredmény azonos gépen és beállításon megismételhető cél. Az alkalmonként külön csoportokból nincs igazolt több alkalmos javulás vagy stagnálás.",
+        "evaluation": "A legutóbbi eredmény azonos eszközön megismételhető cél. Az alkalmonként külön összehasonlítási csoportok miatt több alkalmos javulás vagy stagnálás még nem igazolt.",
         "evidence": [
-          "2026-10-14: 20 kg × 8; 15 kg × 12.",
-          "10-11.: 12,5/10 kg × 15/24; 10-14.: 20/15 kg × 8/12. A terheléspár és az összehasonlítási csoport eltér; nincs megalapozott trend."
+          "2026-10-16: 100 kg × 10; 80 kg × 12.",
+          "10-12.: 90/70 kg × 14/17; 10-16.: 100/80 kg × 10/12. Más súlypár és külön csoportok; nem igazolt romlás vagy PR."
         ],
         "advice": [
-          "Az október 14-i azonos gépen és beállításon ismételd a fenti sorozatonkénti súlyt és ismétlést; most ne emelj automatikusan.",
-          "Rögzíts azonos kivitelezést és sorozatpihenőt 2–3 alkalmon az újraértékeléshez. Stagnálást legalább 3–5 összehasonlítható alkalommal vizsgálj."
+          "Az október 16-i azonos eszközön és beállításon ismételd a fenti sorozatonkénti súlyt és ismétlést; most ne emelj automatikusan.",
+          "Rögzíts azonos kivitelezést, pihenőt és tartalék ismétlést 2–3 alkalmon az újraértékeléshez. Stagnálást legalább 3–5 összehasonlítható alkalommal vizsgálj."
         ],
         "possibleCauses": [],
         "alternative": null,
         "followUp": [
-          "Mely korábbi alkalmak voltak biztosan azonos gépen és beállításon?"
+          "Mely korábbi alkalmak voltak biztosan azonos eszközön és beállításon?"
         ]
       }
     },
     {
-      "id": "triceps-pushdown",
-      "name": "Triceps Pushdown",
+      "id": "sled-45-leg-wide-press",
+      "name": "Sled 45° Leg Wide Press",
+      "weight": 100,
+      "workingWeights": [
+        100,
+        80
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "targetReps": [
+        10,
+        13
+      ],
+      "strategy": "HOLD",
+      "previous": {
+        "date": "2026-10-16",
+        "weight": 100,
+        "workingWeights": [
+          100,
+          80
+        ],
+        "unit": "kg",
+        "sets": 2,
+        "reps": [
+          10,
+          13
+        ],
+        "comparisonGroup": "sled-45-leg-wide-press-unverified-068"
+      },
+      "reasoning": "Csak az október 16-i azonos eszközön és beállításon ismételd a rögzített sorozatonkénti súlyt és ismétlést. Bizonytalan összehasonlíthatóság mellett nem indokolt automatikus terhelésváltoztatás.",
+      "progressSummary": "A legutóbbi eredmény azonos eszközön megismételhető cél. Az alkalmonként külön összehasonlítási csoportok miatt több alkalmos javulás vagy stagnálás még nem igazolt.",
+      "comparisonGroup": "sled-45-leg-wide-press-unverified-068",
+      "pr": false,
+      "change": {
+        "weight": 0,
+        "totalReps": 0
+      },
+      "image": "assets/exercises/sled-45-leg-wide-press.jpg",
+      "coaching": {
+        "generatedAt": "2026-10-21T12:57:25.128Z",
+        "assessment": "insufficient_data",
+        "evaluation": "A legutóbbi eredmény azonos eszközön megismételhető cél. Az alkalmonként külön összehasonlítási csoportok miatt több alkalmos javulás vagy stagnálás még nem igazolt.",
+        "evidence": [
+          "2026-10-16: 100 kg × 10; 80 kg × 13.",
+          "10-07.: 90/75 kg × 15/18; 10-12.: 90/90 kg × 16/10; 10-16.: 100/80 kg × 10/13. Változó terheléspárok és külön csoportok, nem stagnálási sor."
+        ],
+        "advice": [
+          "Az október 16-i azonos eszközön és beállításon ismételd a fenti sorozatonkénti súlyt és ismétlést; most ne emelj automatikusan.",
+          "Rögzíts azonos kivitelezést, pihenőt és tartalék ismétlést 2–3 alkalmon az újraértékeléshez. Stagnálást legalább 3–5 összehasonlítható alkalommal vizsgálj."
+        ],
+        "possibleCauses": [],
+        "alternative": null,
+        "followUp": [
+          "Mely korábbi alkalmak voltak biztosan azonos eszközön és beállításon?"
+        ]
+      }
+    },
+    {
+      "id": "lever-standing-calf-raise",
+      "name": "Lever Standing Calf Raise",
+      "weight": 100,
+      "workingWeights": [
+        100,
+        100
+      ],
+      "unit": "kg",
+      "sets": 2,
+      "targetReps": [
+        22,
+        18
+      ],
+      "strategy": "HOLD",
+      "previous": {
+        "date": "2026-10-16",
+        "weight": 100,
+        "workingWeights": [
+          100,
+          100
+        ],
+        "unit": "kg",
+        "sets": 2,
+        "reps": [
+          22,
+          18
+        ],
+        "comparisonGroup": "lever-standing-calf-raise-unverified-068"
+      },
+      "reasoning": "Csak az október 16-i azonos eszközön és beállításon ismételd a rögzített sorozatonkénti súlyt és ismétlést. Bizonytalan összehasonlíthatóság mellett nem indokolt automatikus terhelésváltoztatás.",
+      "progressSummary": "A legutóbbi eredmény azonos eszközön megismételhető cél. Az alkalmonként külön összehasonlítási csoportok miatt több alkalmos javulás vagy stagnálás még nem igazolt.",
+      "comparisonGroup": "lever-standing-calf-raise-unverified-068",
+      "pr": false,
+      "change": {
+        "weight": 0,
+        "totalReps": 0
+      },
+      "image": "assets/exercises/lever-standing-calf-raise.jpg",
+      "coaching": {
+        "generatedAt": "2026-10-21T12:57:25.128Z",
+        "assessment": "insufficient_data",
+        "evaluation": "A legutóbbi eredmény azonos eszközön megismételhető cél. Az alkalmonként külön összehasonlítási csoportok miatt több alkalmos javulás vagy stagnálás még nem igazolt.",
+        "evidence": [
+          "2026-10-16: 100 kg × 22; 100 kg × 18.",
+          "10-07.: 100/100 kg × 21/16; 10-12.: 22/17; 10-16.: 22/18. Gépazonosság nélkül a nyers ismétlésnövekedés még nem igazolt összehasonlítható trend."
+        ],
+        "advice": [
+          "Az október 16-i azonos eszközön és beállításon ismételd a fenti sorozatonkénti súlyt és ismétlést; most ne emelj automatikusan.",
+          "Rögzíts azonos kivitelezést, pihenőt és tartalék ismétlést 2–3 alkalmon az újraértékeléshez. Stagnálást legalább 3–5 összehasonlítható alkalommal vizsgálj."
+        ],
+        "possibleCauses": [],
+        "alternative": null,
+        "followUp": [
+          "Mely korábbi alkalmak voltak biztosan azonos eszközön és beállításon?"
+        ]
+      }
+    },
+    {
+      "id": "ez-bar-biceps-curl",
+      "name": "EZ-bar Biceps Curl",
       "weight": 35,
       "workingWeights": [
         35,
-        25
-      ],
-      "unit": "kg",
-      "sets": 2,
-      "targetReps": [
-        10,
-        15
-      ],
-      "strategy": "HOLD",
-      "previous": {
-        "date": "2026-10-14",
-        "weight": 35,
-        "workingWeights": [
-          35,
-          25
-        ],
-        "unit": "kg",
-        "sets": 2,
-        "reps": [
-          10,
-          15
-        ],
-        "comparisonGroup": "triceps-pushdown-unverified-067"
-      },
-      "reasoning": "Csak az október 14-i azonos eszközön és beállításon ismételd a rögzített sorozatonkénti súlyt és ismétlést. Bizonytalan összehasonlíthatóság és új súlypárok mellett nem indokolt automatikus emelés vagy korrekció.",
-      "progressSummary": "A legutóbbi eredmény azonos gépen és beállításon megismételhető cél. Az alkalmonként külön csoportokból nincs igazolt több alkalmos javulás vagy stagnálás.",
-      "comparisonGroup": "triceps-pushdown-unverified-067",
-      "pr": false,
-      "change": {
-        "weight": 0,
-        "totalReps": 0
-      },
-      "image": "assets/exercises/triceps-pushdown.jpg",
-      "coaching": {
-        "generatedAt": "2026-10-19T13:02:39.337Z",
-        "assessment": "insufficient_data",
-        "evaluation": "A legutóbbi eredmény azonos gépen és beállításon megismételhető cél. Az alkalmonként külön csoportokból nincs igazolt több alkalmos javulás vagy stagnálás.",
-        "evidence": [
-          "2026-10-14: 35 kg × 10; 25 kg × 15.",
-          "10-11.: 35/25 kg × 9/15; 10-14.: 35/25 kg × 10/15. Külön csoportok; a nyers +1 ismétlést nem minősítem igazolt fejlődésnek."
-        ],
-        "advice": [
-          "Az október 14-i azonos gépen és beállításon ismételd a fenti sorozatonkénti súlyt és ismétlést; most ne emelj automatikusan.",
-          "Rögzíts azonos kivitelezést és sorozatpihenőt 2–3 alkalmon az újraértékeléshez. Stagnálást legalább 3–5 összehasonlítható alkalommal vizsgálj."
-        ],
-        "possibleCauses": [],
-        "alternative": null,
-        "followUp": [
-          "Mely korábbi alkalmak voltak biztosan azonos gépen és beállításon?"
-        ]
-      }
-    },
-    {
-      "id": "standing-triceps-extension",
-      "name": "Standing Triceps Extension",
-      "weight": 27.5,
-      "workingWeights": [
-        27.5,
-        25
+        30
       ],
       "unit": "kg",
       "sets": 2,
@@ -376,11 +321,11 @@
       ],
       "strategy": "HOLD",
       "previous": {
-        "date": "2026-10-14",
-        "weight": 27.5,
+        "date": "2026-10-16",
+        "weight": 35,
         "workingWeights": [
-          27.5,
-          25
+          35,
+          30
         ],
         "unit": "kg",
         "sets": 2,
@@ -388,69 +333,11 @@
           8,
           10
         ],
-        "comparisonGroup": "standing-triceps-extension-unverified-067"
+        "comparisonGroup": "ez-bar-biceps-curl-unverified-068"
       },
-      "reasoning": "Csak az október 14-i azonos eszközön és beállításon ismételd a rögzített sorozatonkénti súlyt és ismétlést. Bizonytalan összehasonlíthatóság és új súlypárok mellett nem indokolt automatikus emelés vagy korrekció.",
-      "progressSummary": "A legutóbbi eredmény azonos gépen és beállításon megismételhető cél. Az alkalmonként külön csoportokból nincs igazolt több alkalmos javulás vagy stagnálás.",
-      "comparisonGroup": "standing-triceps-extension-unverified-067",
-      "pr": false,
-      "change": {
-        "weight": 0,
-        "totalReps": 0
-      },
-      "image": "assets/exercises/standing-triceps-extension.jpg",
-      "coaching": {
-        "generatedAt": "2026-10-19T13:02:39.337Z",
-        "assessment": "insufficient_data",
-        "evaluation": "A legutóbbi eredmény azonos gépen és beállításon megismételhető cél. Az alkalmonként külön csoportokból nincs igazolt több alkalmos javulás vagy stagnálás.",
-        "evidence": [
-          "2026-10-14: 27,5 kg × 8; 25 kg × 10.",
-          "10-11.: 25/22,5 kg × 11/12; 10-14.: 27,5/25 kg × 8/10. Nagyobb rögzített terhelés, külön csoportok; az ismétléscsökkenés nem bizonyított romlás."
-        ],
-        "advice": [
-          "Az október 14-i azonos gépen és beállításon ismételd a fenti sorozatonkénti súlyt és ismétlést; most ne emelj automatikusan.",
-          "Rögzíts azonos kivitelezést és sorozatpihenőt 2–3 alkalmon az újraértékeléshez. Stagnálást legalább 3–5 összehasonlítható alkalommal vizsgálj."
-        ],
-        "possibleCauses": [],
-        "alternative": null,
-        "followUp": [
-          "Mely korábbi alkalmak voltak biztosan azonos gépen és beállításon?"
-        ]
-      }
-    },
-    {
-      "id": "dumbbell-straight-arm-crunch",
-      "name": "Dumbbell Straight Arm Crunch",
-      "weight": 25,
-      "workingWeights": [
-        25,
-        20
-      ],
-      "unit": "kg",
-      "sets": 2,
-      "targetReps": [
-        10,
-        10
-      ],
-      "strategy": "HOLD",
-      "previous": {
-        "date": "2026-10-14",
-        "weight": 25,
-        "workingWeights": [
-          25,
-          20
-        ],
-        "unit": "kg",
-        "sets": 2,
-        "reps": [
-          10,
-          10
-        ],
-        "comparisonGroup": "dumbbell-straight-arm-crunch-unverified-067"
-      },
-      "reasoning": "Csak az október 14-i azonos eszközön és beállításon ismételd a rögzített sorozatonkénti súlyt és ismétlést. Bizonytalan összehasonlíthatóság és új súlypárok mellett nem indokolt automatikus emelés vagy korrekció.",
-      "progressSummary": "Három saját alkalom szerepel, változó terhelésekkel és külön csoportokban. A nagyobb súly melletti kevesebb ismétlés nem igazol tartós stagnálást vagy visszaesést.",
-      "comparisonGroup": "dumbbell-straight-arm-crunch-unverified-067",
+      "reasoning": "Csak az október 16-i azonos eszközön és beállításon ismételd a rögzített sorozatonkénti súlyt és ismétlést. Bizonytalan összehasonlíthatóság mellett nem indokolt automatikus terhelésváltoztatás.",
+      "progressSummary": "A legutóbbi eredmény azonos eszközön megismételhető cél. Az alkalmonként külön összehasonlítási csoportok miatt több alkalmos javulás vagy stagnálás még nem igazolt.",
+      "comparisonGroup": "ez-bar-biceps-curl-unverified-068",
       "pr": false,
       "change": {
         "weight": 0,
@@ -458,116 +345,172 @@
       },
       "image": "assets/exercises/fallback.svg",
       "coaching": {
-        "generatedAt": "2026-10-19T13:02:39.337Z",
+        "generatedAt": "2026-10-21T12:57:25.128Z",
         "assessment": "insufficient_data",
-        "evaluation": "Három saját alkalom szerepel, változó terhelésekkel és külön csoportokban. A nagyobb súly melletti kevesebb ismétlés nem igazol tartós stagnálást vagy visszaesést.",
+        "evaluation": "A legutóbbi eredmény azonos eszközön megismételhető cél. Az alkalmonként külön összehasonlítási csoportok miatt több alkalmos javulás vagy stagnálás még nem igazolt.",
         "evidence": [
-          "10-05.: 16/16 kg × 15/13; 10-11.: 18/18 kg × 16/13; 10-14.: 25/20 kg × 10/10."
+          "2026-10-16: 35 kg × 8; 30 kg × 10.",
+          "10-07.: 30/25 kg × 11/16; 10-12.: 30/25 kg × 12/16; 10-16.: 35/30 kg × 8/10. Külön csoportok és új súlypár; nincs igazolt stagnálás."
         ],
         "advice": [
-          "Következő cél: 25 kg × 10, majd 20 kg × 10, az október 14-i azonos kivitelezéssel.",
-          "Az új súlypárt előbb stabilizáld 2–3 alkalmon; más törzsgyakorlat kg-értékéből ne számolj át terhelést."
+          "Az október 16-i azonos eszközön és beállításon ismételd a fenti sorozatonkénti súlyt és ismétlést; most ne emelj automatikusan.",
+          "Rögzíts azonos kivitelezést, pihenőt és tartalék ismétlést 2–3 alkalmon az újraértékeléshez. Stagnálást legalább 3–5 összehasonlítható alkalommal vizsgálj."
         ],
         "possibleCauses": [],
         "alternative": null,
         "followUp": [
-          "Egyezik a három alkalom kivitelezése és a terhelés rögzítésének módja?"
+          "Mely korábbi alkalmak voltak biztosan azonos eszközön és beállításon?",
+          "Az EZ-rúd és a terhelés rögzítési módja azonos maradt? Marad ez a bicepsz-összeállítás?"
         ]
       }
     },
     {
-      "id": "dumbbell-side-bend",
-      "name": "Dumbbell Side Bend",
-      "weight": 30,
+      "id": "cable-one-arm-biceps-curl",
+      "name": "Cable One Arm Biceps Curl",
+      "weight": 22.5,
       "workingWeights": [
-        30,
-        25
+        22.5,
+        17.5
       ],
       "unit": "kg",
       "sets": 2,
       "targetReps": [
-        12,
-        15
+        9,
+        13
       ],
       "strategy": "HOLD",
       "previous": {
-        "date": "2026-10-14",
-        "weight": 30,
+        "date": "2026-10-16",
+        "weight": 22.5,
         "workingWeights": [
-          30,
-          25
+          22.5,
+          17.5
         ],
         "unit": "kg",
         "sets": 2,
         "reps": [
-          12,
-          15
+          9,
+          13
         ],
-        "comparisonGroup": "dumbbell-side-bend-free-weight"
+        "comparisonGroup": "cable-one-arm-biceps-curl-unverified-068"
       },
-      "reasoning": "A legutóbbi 30/25 kg-os súlypár új terhelés; ismételd a 12/15 eredményt. Korábbi kisebb súlyon több ismétlés nem indokol önmagában korrekciót.",
-      "progressSummary": "A korábbi azonos csoportú eredményekben volt javulás, legutóbb nagyobb súlypárra váltottál. Az ismétléscsökkenés emiatt nem önmagában romlás; most tarts következetes viszonyítási pontot.",
-      "comparisonGroup": "dumbbell-side-bend-free-weight",
+      "reasoning": "Csak az október 16-i azonos eszközön és beállításon ismételd a rögzített sorozatonkénti súlyt és ismétlést. Bizonytalan összehasonlíthatóság mellett nem indokolt automatikus terhelésváltoztatás.",
+      "progressSummary": "A legutóbbi eredmény azonos eszközön megismételhető cél. Az alkalmonként külön összehasonlítási csoportok miatt több alkalmos javulás vagy stagnálás még nem igazolt.",
+      "comparisonGroup": "cable-one-arm-biceps-curl-unverified-068",
       "pr": false,
       "change": {
         "weight": 0,
         "totalReps": 0
       },
-      "image": "assets/exercises/dumbbell-side-bend.jpg",
+      "image": "assets/exercises/fallback.svg",
       "coaching": {
-        "generatedAt": "2026-10-19T13:02:39.337Z",
-        "assessment": "mixed",
-        "evaluation": "A korábbi azonos csoportú eredményekben volt javulás, legutóbb nagyobb súlypárra váltottál. Az ismétléscsökkenés emiatt nem önmagában romlás; most tarts következetes viszonyítási pontot.",
+        "generatedAt": "2026-10-21T12:57:25.128Z",
+        "assessment": "insufficient_data",
+        "evaluation": "A legutóbbi eredmény azonos eszközön megismételhető cél. Az alkalmonként külön összehasonlítási csoportok miatt több alkalmos javulás vagy stagnálás még nem igazolt.",
         "evidence": [
-          "10-05.: 22,5/20 kg × 17/17; 10-11.: 24/20 kg × 18/18; 10-14.: 30/25 kg × 12/15.",
-          "Az október 5-i és 11-i második sorozat azonos 20 kg-on 17-ről 18 ismétlésre javult. A 30/25 kg-os új összeállításból csak egy eredmény van."
+          "2026-10-16: 22,5 kg × 9; 17,5 kg × 13.",
+          "10-07.: 20/15 kg × 8/15; 10-12.: 20,5/15 kg × 10/15; 10-16.: 22,5/17,5 kg × 9/13. Változó terhelés és külön csoportok; nincs összevonható trend."
         ],
         "advice": [
-          "Következő cél: 30 kg × 12, majd 25 kg × 15, azonos oldalsorrenddel és mozgástartománnyal.",
-          "Most ne emelj újra. Két-három azonos terheléspárú alkalom után értékeld a sorozatonkénti ismétléseket."
+          "Az október 16-i azonos eszközön és beállításon ismételd a fenti sorozatonkénti súlyt és ismétlést; most ne emelj automatikusan.",
+          "Rögzíts azonos kivitelezést, pihenőt és tartalék ismétlést 2–3 alkalmon az újraértékeléshez. Stagnálást legalább 3–5 összehasonlítható alkalommal vizsgálj."
         ],
         "possibleCauses": [],
         "alternative": null,
         "followUp": [
-          "A legutóbbi súlyemelés mellett azonos maradt a mozgástartomány és az oldalak rögzítése?"
+          "Mely korábbi alkalmak voltak biztosan azonos eszközön és beállításon?"
+        ]
+      }
+    },
+    {
+      "id": "cross-body-hammer-curl",
+      "name": "Cross Body Hammer Curl",
+      "weight": 12,
+      "workingWeights": [
+        12
+      ],
+      "unit": "kg",
+      "sets": 1,
+      "targetReps": [
+        10
+      ],
+      "strategy": "HOLD",
+      "previous": {
+        "date": "2026-10-16",
+        "weight": 12,
+        "workingWeights": [
+          12
+        ],
+        "unit": "kg",
+        "sets": 1,
+        "reps": [
+          10
+        ],
+        "comparisonGroup": "cross-body-hammer-curl-unverified-068"
+      },
+      "reasoning": "Csak az október 16-i azonos eszközön és beállításon ismételd a rögzített sorozatonkénti súlyt és ismétlést. Bizonytalan összehasonlíthatóság mellett nem indokolt automatikus terhelésváltoztatás.",
+      "progressSummary": "A legutóbbi eredmény azonos eszközön megismételhető cél. Az alkalmonként külön összehasonlítási csoportok miatt több alkalmos javulás vagy stagnálás még nem igazolt.",
+      "comparisonGroup": "cross-body-hammer-curl-unverified-068",
+      "pr": false,
+      "change": {
+        "weight": 0,
+        "totalReps": 0
+      },
+      "image": "assets/exercises/cross-body-hammer-curl.jpg",
+      "coaching": {
+        "generatedAt": "2026-10-21T12:57:25.128Z",
+        "assessment": "insufficient_data",
+        "evaluation": "A legutóbbi eredmény azonos eszközön megismételhető cél. Az alkalmonként külön összehasonlítási csoportok miatt több alkalmos javulás vagy stagnálás még nem igazolt.",
+        "evidence": [
+          "2026-10-16: 12 kg × 10.",
+          "10-07.: 12,5 kg × 8; 10-12.: 12 kg × 9; 10-16.: 12 kg × 10. Azonos rögzített súly melletti +1 ismétlés, de külön csoportok miatt nem megerősített trend."
+        ],
+        "advice": [
+          "Az október 16-i azonos eszközön és beállításon ismételd a fenti sorozatonkénti súlyt és ismétlést; most ne emelj automatikusan.",
+          "Rögzíts azonos kivitelezést, pihenőt és tartalék ismétlést 2–3 alkalmon az újraértékeléshez. Stagnálást legalább 3–5 összehasonlítható alkalommal vizsgálj."
+        ],
+        "possibleCauses": [],
+        "alternative": null,
+        "followUp": [
+          "Mely korábbi alkalmak voltak biztosan azonos eszközön és beállításon?"
         ]
       }
     }
   ],
   "coaching": {
-    "generatedAt": "2026-10-19T13:02:39.337Z",
+    "generatedAt": "2026-10-21T12:57:25.128Z",
     "assessment": "mixed",
-    "evaluation": "A hosszabb előzményben a nyomások fejlődtek, a legutóbbi A nagyobb súlypárokra váltott. A kevesebb ismétlésből ezért nem állapítok meg romlást. Az edzésritmus rendszeres; a gépes trendek bizonytalanok. Tartós stagnálás nem igazolt. Most a súlypárok stabilizálása és a kimaradó gyakorlatok tisztázása a fő feladat.",
+    "evaluation": "A hosszabb előzményben a nyomások fejlődtek; az új súlypárok stabilizálása még hátravan. A Hyperextension azonos 16/16 kg-on javult, a Side Bend nagyobb súlyon több ismétlést hozott. Az edzésritmus rendszeres. Gépes trendhez kevés a megerősített összevetés; tartós stagnálás nem igazolt. A lábhajlítás hiányát tisztázni kell.",
     "evidence": [
-      "Az október 16-ig tartó utolsó 28 napban 12, 56 napban 24 mentett edzés: átlagosan heti három alkalom. Március 10-től 68 alkalom van megőrizve; a lekérdezési korlát miatt ez nem garantáltan teljes Lyfta-előzmény.",
-      "Bench Press 10-02. és 10-12.: azonos 32,5/27,5 kg-on 6/12 → 8/12 ismétlés. 10-16.: 34/28 kg × 5/11, új súlypár. Az előző összevetés javulás, a mostani alacsonyabb ismétlés nem azonos terhelésű romlás.",
-      "Incline Press 10-02. és 10-12.: 27,5/22,5 kg × 8/11 stabilan. 10-16.: 30/24 kg × 5/8. A nagyobb súly és kevesebb ismétlés nem bizonyít erőnövekedést vagy visszaesést; ezen az új terhelésen még csak egy eredmény van.",
-      "Hosszabb trend: Bench 30/27,5 kg-on 08-17. 7/10, 09-09. 12/14. Március 23-án Bench 22,5 kg × 10/10/10, Incline 20 kg × 9/9/9. Nőtt a használt terhelés, de az eltérő sorozatokból nem számolok százalékos erőnövekedést.",
-      "A legutóbbi B-n a vállnyomás 80/80 kg × 11/10, az oldalemelés 12,5/10 kg × 6/11. Mindkettő más súlypár és más csoport az október 11-ihez képest. Gépi PR vagy stagnálás nem igazolható.",
-      "Side Bend azonos csoportban 10-05. 22,5/20 kg × 17/17, 10-11. 24/20 kg × 18/18: javulás. 10-14. 30/25 kg × 12/15, új súlypár; a kisebb ismétlésszám önmagában nem romlás.",
-      "A lábhajlítás sem 10-12-én, sem 10-16-án nem szerepel; korábban rendszeres A gyakorlat volt. Hyperextension 10-11-én két 15 kg-os sorozat, 10-14-én nincs. Az okokat és a változtatások tartósságát a csatlakozó nem közli.",
-      "Az új bicepszgyakorlatok három alkalma változó terheléssel, külön csoportokban szerepel. Az evezés több változat között váltott. Nincs legalább 3–5 összehasonlítható alkalommal alátámasztott stagnálási időszak."
+      "Az október 19-ig tartó utolsó 28 napban 12, 56 napban 24 mentett edzés: átlagosan heti három alkalom. Március 10-től 69 alkalom van megőrizve; a lekérdezési korlát miatt ez nem garantáltan teljes Lyfta-előzmény.",
+      "Bench Press 10-02. és 10-12.: azonos 32,5/27,5 kg-on 6/12 → 8/12. 10-16.: 34/28 kg × 5/11, új súlypár. Incline korábban 27,5/22,5 kg × 8/11 stabil, majd 30/24 kg × 5/8; az alacsonyabb ismétlés nem azonos terhelésű romlás.",
+      "Hosszabb trend: Bench 30/27,5 kg-on 08-17. 7/10, 09-09. 12/14. Március 23-án Bench 22,5 kg × 10/10/10, Incline 20 kg × 9/9/9. Nőtt a használt terhelés; az eltérő sorozatokból nem számolok százalékos erőnövekedést.",
+      "Hyperextension azonos csoportban, 16/16 kg-on: 09-21. 16/14; 09-25. 16/15; 09-30. 17/15; 10-19. 17/16. Összismétlés 30 → 31 → 32 → 33. A második sorozat +1 a legutóbbi azonos súlyú eredményhez képest, nem stagnálás.",
+      "Side Bend azonos csoportban: 10-05. 22,5/20 kg × 17/17; 10-11. 24/20 kg × 18/18; 10-14. 30/25 kg × 12/15; 10-19. 32/26 kg × 15/15. Legutóbb mindkét súly nagyobb, az első ismétlésszám is nőtt.",
+      "A gépes evezés 10-14. 40/30 kg × 6/12, 10-19. 7/15; az oldalemelés 12,5/10 kg-on 6/11 → 7/13. Az alkalmak külön csoportokban maradnak: a nyers növekedés nem megerősített összehasonlítható trend.",
+      "Triceps Pushdown 10-14. 35/25 kg × 10/15, 10-19. 40/30 kg × 4/14. Új súlypár és külön csoportok: egy alacsony ismétlésű sorozat nem indokol tartós visszaesés vagy stagnálás megállapítását.",
+      "A Hyperextension visszatért a B edzésbe. A lábhajlítás a 10-12-i és 10-16-i A-ban továbbra sem szerepel. A bicepszterhelések és a gépes csoportok változnak; nincs igazolt, legalább 3–5 összehasonlítható alkalmos stagnálási időszak."
     ],
     "advice": [
-      "1. prioritás: a B tervben ismételd az október 14-i terheléspárokat, azonos beállításon. Két-három ilyen alkalom után nézd újra a sorozatonkénti ismétléseket; most ne emelj automatikusan.",
-      "2. prioritás: tisztázd a lábhajlítás két egymást követő hiányát, a Hyperextension kimaradását és az evezés tartós változatát. Ne válts újabb gyakorlatra pusztán az eltérő ismétlésszámok miatt.",
-      "3. prioritás: a nyomások új súlypárjain és a gépeknél rögzíts állandó kivitelezést, pihenőt és tartalék ismétlést. Stagnálást legalább 3–5 összehasonlítható alkalom után vizsgálj."
+      "1. prioritás: az A nyomásain ismételd az október 16-i új súlypárokat és ismétléseket. Azonos kivitelezéssel 2–3 alkalom után értékeld újra; most ne emelj ismét automatikusan.",
+      "2. prioritás: tisztázd a lábhajlítás két A-ból való hiányát. A Hyperextension már visszatért, így a korábbi kimaradásból nem következik végleges programtörlés; új gyakorlatcsere nem indokolt.",
+      "3. prioritás: erősítsd meg a gépes beállításokat, rögzíts pihenőt és tartalékot. A Pushdown 4 ismétléses első sorozatánál tisztázd a kivitelezést és terhelésválasztást; stagnálást csak 3–5 összehasonlítható alkalom alapján vizsgálj."
     ],
     "possibleCauses": [
       {
-        "text": "A nagyobb terheléslépcsők hozzájárulhatnak a kisebb ismétlésszámhoz; ez nem bizonyít tartós romlást, és a gépazonosság sem mindenhol ismert.",
+        "text": "A nagyobb súlylépcsők hozzájárulhatnak az alacsonyabb ismétléshez, de a gépazonosság és a kivitelezés több helyen nem ismert.",
         "confidence": "hypothesis"
       },
       {
-        "text": "Alvás-, táplálkozás-, pihenő- és erőkifejtési adatok hiányában ezek hatása tisztázandó lehetőség, nem bizonyított ok.",
+        "text": "Az alvás, táplálkozás, pihenőidő és erőkifejtés adatai hiányoznak; hatásuk tisztázandó lehetőség, nem bizonyított ok.",
         "confidence": "hypothesis"
       }
     ],
     "alternative": null,
     "followUp": [
-      "A lábhajlítás két A edzésből való hiánya szándékos? A Hyperextension maradjon a B programban?",
-      "Melyik evezés és bicepsz-összeállítás marad tartósan?",
-      "Az új súlyokkal azonos maradt a mozgástartomány? Mely gépes alkalmak összehasonlíthatók, és mennyi pihenőt, tartalékot hagysz?"
+      "A lábhajlítás szándékosan került ki az A programból, vagy két egyszeri kihagyás volt?",
+      "Az új nyomósúlyoknál és a Pushdown 4 ismétlésénél megmaradt a mozgástartomány, és mennyi tartalék maradt?",
+      "Mely gépes alkalmak azonos beállításúak? Mennyi a sorozatpihenő, és melyik evezés, bicepsz-összeállítás marad tartósan?"
     ]
   }
 }
